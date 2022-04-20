@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Apr 17 10:46:51 2022
+# Process ID: 25308
+# Current directory: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+# Command line: vivado.exe -log v1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source v1.tcl
+# Log file: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.vds
+# Journal file: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2\vivado.jou
+# Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
+#-----------------------------------------------------------
+source v1.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top v1 -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28412
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/.Xil/Vivado-25308-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/.Xil/Vivado-25308-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:78]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:79]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:80]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:81]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-6014] Unused sequential element x_shell_pos_init_reg was removed.  [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v:63]
+WARNING: [Synth 8-6014] Unused sequential element y_shell_pos_init_reg was removed.  [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (5#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (6#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (7#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v:45]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-3848] Net w in module/entity v1 does not have driver. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:17]
+WARNING: [Synth 8-3848] Net a in module/entity v1 does not have driver. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:18]
+WARNING: [Synth 8-3848] Net d in module/entity v1 does not have driver. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (8#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1413.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Finished Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Parsing XDC File [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:81]
+Finished Parsing XDC File [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/v1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1413.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1413.645 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for A. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   14 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 10    
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 10    
+	   3 Input    5 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 17    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |    81|
+|3     |LUT1    |    10|
+|4     |LUT2    |    78|
+|5     |LUT3    |    41|
+|6     |LUT4    |    62|
+|7     |LUT5    |    44|
+|8     |LUT6    |   130|
+|9     |FDRE    |    92|
+|10    |OBUF    |    14|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1413.645 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1413.645 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1419.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1423.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7079d7c5
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1423.152 ; gain = 9.508
+INFO: [Common 17-1381] The checkpoint 'F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file v1_utilization_synth.rpt -pb v1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 17 10:47:29 2022...

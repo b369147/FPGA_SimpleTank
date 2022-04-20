@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,900,564.363 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,900,932.985 ns"></ZoomEndTime>
+      <Cursor1Time time="2,900,871.548 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="266"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wave_markers>
+      <marker time="13339783333000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/sim1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/vga_vs" type="logic">
+      <obj_property name="ElementShortName">vga_vs</obj_property>
+      <obj_property name="ObjectShortName">vga_vs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/vga_rgb" type="array">
+      <obj_property name="ElementShortName">vga_rgb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_rgb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/VGA_xpos" type="array">
+      <obj_property name="ElementShortName">VGA_xpos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_xpos[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/VGA_ypos" type="array">
+      <obj_property name="ElementShortName">VGA_ypos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_ypos[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/mytank_display/VGA_data" type="array">
+      <obj_property name="ElementShortName">VGA_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_driver_VGA/hcnt" type="array">
+      <obj_property name="ElementShortName">hcnt[10:0]</obj_property>
+      <obj_property name="ObjectShortName">hcnt[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_driver_VGA/vcnt" type="array">
+      <obj_property name="ElementShortName">vcnt[10:0]</obj_property>
+      <obj_property name="ObjectShortName">vcnt[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_mytank_control/myshell_state_feedback" type="logic">
+      <obj_property name="ElementShortName">myshell_state_feedback</obj_property>
+      <obj_property name="ObjectShortName">myshell_state_feedback</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_mytank_control/x_rel_pos_out" type="array">
+      <obj_property name="ElementShortName">x_rel_pos_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">x_rel_pos_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_mytank_control/y_rel_pos_out" type="array">
+      <obj_property name="ElementShortName">y_rel_pos_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">y_rel_pos_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/u_mytank_control/clk_4Hz" type="logic">
+      <obj_property name="ElementShortName">clk_4Hz</obj_property>
+      <obj_property name="ObjectShortName">clk_4Hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/t/mytank_ypos" type="array">
+      <obj_property name="ElementShortName">mytank_ypos[5:0]</obj_property>
+      <obj_property name="ObjectShortName">mytank_ypos[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,1649850241,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/VGA_data_selector.v,,clk_wiz_0;clk_wiz_0_clk_wiz;glbl,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v,1650098135,verilog,,,,sim1,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/VGA_data_selector.v,1650126724,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v,,VGA_data_selector,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v,1650075374,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v,,driver_VGA,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v,1650159335,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v,,keyboard_control,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v,1650158773,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/u_clock.v,,shell,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/u_clock.v,1650126435,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v,,u_clock,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v,1650163137,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v,,v1,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v,1650158186,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v,,vga_display,,,,,,,,
+F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v,1650103432,verilog,,F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v,,vga_driver,,,,,,,,

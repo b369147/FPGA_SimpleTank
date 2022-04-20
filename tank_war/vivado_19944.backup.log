@@ -1,0 +1,2721 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Apr 15 15:07:01 2022
+# Process ID: 19944
+# Current directory: F:/10_Vivado/p_vga_test/p_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3520 F:\10_Vivado\p_vga_test\p_vga\p_vga.xpr
+# Log file: F:/10_Vivado/p_vga_test/p_vga/vivado.log
+# Journal file: F:/10_Vivado/p_vga_test/p_vga\vivado.jou
+# Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/10_Vivado/p_vga_test/p_vga/p_vga.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1412.305 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1412.305 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3061.570 ; gain = 1649.266
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v w ]
+add_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/my_clk_div.v]
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 10:25:17 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 10:25:17 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 10:26:28 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 10:26:28 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 10:27:06 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 10:27:06 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/simulate.log"
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driver_VGA
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol clk_vga, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2458] undeclared symbol clk_VGA, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:40]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3332.715 ; gain = 10.703
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driver_VGA
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol clk_vga, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2458] undeclared symbol clk_VGA, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:54]
+ERROR: [VRFC 10-3423] illegal output port connection to 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:54]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:55]
+ERROR: [VRFC 10-3423] illegal output port connection to 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:55]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driver_VGA
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol clk_vga, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2458] undeclared symbol clk_VGA, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.driver_VGA
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3332.715 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+WARNING: Simulation object /sim1/uut/x_counter was not found in the design.
+WARNING: Simulation object /sim1/uut/y_counter was not found in the design.
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 3352.469 ; gain = 19.754
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+run all
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} 117
+step
+Stopped at time : 943640 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943640 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943650 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943650 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943660 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943660 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943670 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+step
+Stopped at time : 943670 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 41
+run all
+run 10 us
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.driver_VGA
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 117
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3358.598 ; gain = 0.000
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} 118
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 118
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} 92
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.driver_VGA
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 92
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3358.598 ; gain = 0.000
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 109
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} 97
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.driver_VGA
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 97
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3358.598 ; gain = 0.000
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" Line 43
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 133
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 134
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 148
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 149
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 153
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 155
+step
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" Line 157
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.driver_VGA
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v" Line 97
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3358.598 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 11:27:10 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 11:27:10 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 11:28:01 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 11:28:01 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v]
+close [ open F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v w ]
+add_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v
+update_compile_order -fileset sources_1
+close [ open F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display1.v w ]
+add_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display1.v
+close [ open F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v w ]
+add_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v
+close [ open F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/div_clk.v w ]
+add_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/div_clk.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 12:04:34 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 12:04:34 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs synth_2 -jobs 12
+[Sat Apr 16 12:07:06 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 12:08:10 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 12:08:10 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 12:10:16 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 12:10:16 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 14:33:11 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 14:33:11 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 14:34:24 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 14:34:24 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 14:51:58 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 14:51:58 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Apr 16 14:55:04 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 15:11:45 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 15:11:45 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Apr 16 15:15:01 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 15:16:50 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 15:16:50 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs synth_2 -jobs 12
+[Sat Apr 16 15:20:10 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 12
+[Sat Apr 16 15:21:14 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 15:22:26 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs synth_2 -jobs 12
+[Sat Apr 16 15:28:44 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} -line 118
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} -line 117
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} -line 97
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/driver_VGA.v} -line 92
+launch_runs impl_2 -jobs 12
+[Sat Apr 16 15:29:33 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 15:34:07 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:13]
+INFO: [VRFC 10-2458] undeclared symbol VGA_xpos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+INFO: [VRFC 10-2458] undeclared symbol VGA_ypos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3606.418 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+WARNING: Simulation object /sim1/Hsync was not found in the design.
+WARNING: Simulation object /sim1/Vsync was not found in the design.
+WARNING: Simulation object /sim1/vgaRed was not found in the design.
+WARNING: Simulation object /sim1/vgaGreen was not found in the design.
+WARNING: Simulation object /sim1/vgaBlue was not found in the design.
+WARNING: Simulation object /sim1/uut/x_counter was not found in the design.
+WARNING: Simulation object /sim1/uut/y_counter was not found in the design.
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.684 ; gain = 1.266
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/vga_vs}} 
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 57
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 69
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 81
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 93
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 52
+save_wave_config {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:13]
+INFO: [VRFC 10-2458] undeclared symbol VGA_xpos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+INFO: [VRFC 10-2458] undeclared symbol VGA_ypos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v:30]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3608.703 ; gain = 0.664
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 57
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 69
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 81
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 93
+step
+Stopped at time : 1010 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 52
+step
+Stopped at time : 1020 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1020 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 57
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 69
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 81
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 93
+step
+Stopped at time : 1030 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 52
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 70
+step
+Stopped at time : 1040 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1040 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 57
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 69
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 81
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 93
+step
+Stopped at time : 1050 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 52
+step
+Stopped at time : 1060 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1060 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1070 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1070 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1070 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+run all
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 90
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 92
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 97
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 95
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 88
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 83
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 104
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 126
+step
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+step
+Stopped at time : 6460 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 6460 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 6470 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 6470 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+run all
+Stopped at time : 6470202 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 73
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 77
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 79
+step
+Stopped at time : 6470202 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 90
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 72
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 72
+step
+Stopped at time : 6470202 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+step
+Stopped at time : 6470202 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 88
+run all
+Stopped at time : 6490404 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6490404 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6490404 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+step
+Stopped at time : 6490404 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 88
+run all
+Stopped at time : 6510606 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6510606 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6510606 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6530808 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6530808 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6530808 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6551010 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6551010 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6551010 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6571212 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6571212 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6571212 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6591414 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6591414 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6591414 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6631818 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6631818 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6631818 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6652020 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6652020 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6652020 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6672222 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6672222 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6672222 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6692424 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6692424 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6692424 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6712626 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6712626 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6712626 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6732828 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6732828 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6732828 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6753030 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6753030 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6753030 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6793434 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6793434 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6793434 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6813636 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+run all
+Stopped at time : 6813636 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+run all
+Stopped at time : 6813636 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 70
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 73
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 77
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 79
+run all
+Stopped at time : 6833838 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6854040 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+run all
+Stopped at time : 6874242 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 92
+run all
+Stopped at time : 27763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 97
+run all
+Stopped at time : 49096464 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 70429797 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 91763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 113096464 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 134429797 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 155763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 177096464 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 198429797 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 219763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 111
+run all
+Stopped at time : 241096464 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 262429797 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+run all
+Stopped at time : 283763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 95
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 95
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 97
+run all
+Stopped at time : 544611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 111
+run all
+Stopped at time : 560773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 111
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 99
+run all
+Stopped at time : 565944949 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 111
+run all
+Stopped at time : 582106565 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 111
+run all
+Stopped at time : 587278282 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 111
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 111
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 3608.703 ; gain = 0.000
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 99
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 75
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 78
+run all
+Stopped at time : 3493850 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 3493870 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 3493890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 3493910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 3493930 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 3493950 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 78
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3608.703 ; gain = 0.000
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+run all
+Stopped at time : 8007217676 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007237878 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007258080 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007278282 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007298484 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007318686 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007338888 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007359090 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007379292 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007399494 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007419696 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007439898 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007460100 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007480302 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007500504 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007520706 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007540908 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007561110 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007581313 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007601515 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007621717 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007641919 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007662121 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007682323 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007702525 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007722727 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007742929 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007783333 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007803535 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007823737 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007843939 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007864141 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 8007884343 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 75
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sat Apr 16 15:50:49 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/runme.log
+[Sat Apr 16 15:50:49 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 16680 KB (Peak: 16680 KB), Simulation CPU Usage: 37249 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:13]
+INFO: [VRFC 10-2458] undeclared symbol VGA_xpos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+INFO: [VRFC 10-2458] undeclared symbol VGA_ypos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 3610.055 ; gain = 0.000
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/vga_rgb}} 
+run all
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3610.188 ; gain = 0.000
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/VGA_xpos}} 
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/VGA_ypos}} 
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 16516 KB (Peak: 16516 KB), Simulation CPU Usage: 11343 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3610.586 ; gain = 0.398
+run all
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3610.684 ; gain = 0.098
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: v1
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4186.949 ; gain = 351.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/p_vga_test/p_vga/.Xil/Vivado-19944-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/p_vga_test/p_vga/.Xil/Vivado-19944-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (2#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v:33]
+WARNING: [Synth 8-689] width (1) of port connection 'VGA_data' does not match port width (12) of module 'vga_display' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (3#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v:45]
+WARNING: [Synth 8-689] width (1) of port connection 'VGA_xpos' does not match port width (11) of module 'vga_driver' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [Synth 8-689] width (1) of port connection 'VGA_ypos' does not match port width (11) of module 'vga_driver' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (4#1) [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4241.324 ; gain = 406.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4259.195 ; gain = 424.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4259.195 ; gain = 424.133
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4280.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc:81]
+Finished Parsing XDC File [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/v1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4375.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 4423.027 ; gain = 587.965
+17 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 4423.027 ; gain = 812.223
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+run all
+Stopped at time : 1329500504 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329520706 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329540908 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329561110 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329581312 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329601515 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329621717 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329641919 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329662121 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329682323 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329702525 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329722727 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329742929 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329763131 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329783333 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329803535 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329823737 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1329843939 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+run all
+Stopped at time : 1895197474 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1895217676 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1895237878 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 1895258080 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+save_wave_config {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:13]
+INFO: [VRFC 10-2458] undeclared symbol VGA_xpos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+INFO: [VRFC 10-2458] undeclared symbol VGA_ypos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 4786.969 ; gain = 2.512
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+run all
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 59
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 59
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 62
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 62
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 71
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 75
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 78
+run all
+Stopped at time : 1265870 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+run all
+Stopped at time : 1265870 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 1265890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+step
+Stopped at time : 1265890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+step
+Stopped at time : 1265890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 81
+step
+Stopped at time : 1265890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 93
+step
+Stopped at time : 1265890 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 52
+step
+Stopped at time : 1265900 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1265900 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 72
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 76
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 77
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 70
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 90
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 92
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 88
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 83
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 104
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 126
+step
+Stopped at time : 1265904545 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" Line 35
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 54
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 57
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 69
+step
+Stopped at time : 1265910 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 71
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 78
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4802.805 ; gain = 0.000
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+run all
+Stopped at time : 2502793434 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+run all
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 75
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 78
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 16676 KB (Peak: 16676 KB), Simulation CPU Usage: 18437 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4803.168 ; gain = 0.000
+run all
+Stopped at time : 0 fs : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 10 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 10 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 30 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 50 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 70 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 90 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 110 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 130 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 78
+run all
+Stopped at time : 6450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 6470202 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 6490404 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 6510606 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+run all
+Stopped at time : 6530808 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 134
+current_wave_config {sim1_behav.wcfg}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'sim1_behav.wcfg'.
+add_wave {{/sim1/t/u_driver_VGA/VGA_data}} 
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+run all
+Stopped at time : 244449999 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 134
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 134
+run all
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 4815.602 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 16700 KB (Peak: 16700 KB), Simulation CPU Usage: 25999 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:14]
+INFO: [VRFC 10-2458] undeclared symbol VGA_xpos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+INFO: [VRFC 10-2458] undeclared symbol VGA_ypos, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:23]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:33]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_xpos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 11 for port 'VGA_ypos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:53]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 4815.602 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+run all
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 4815.602 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 16652 KB (Peak: 16652 KB), Simulation CPU Usage: 25046 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:16]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4815.602 ; gain = 0.000
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/mytank_display/VGA_data}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:16]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 4815.602 ; gain = 0.000
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/u_driver_VGA/hcnt}} 
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 16664 KB (Peak: 16664 KB), Simulation CPU Usage: 17577 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4815.602 ; gain = 0.000
+current_wave_config {sim1_behav.wcfg}
+sim1_behav.wcfg
+add_wave {{/sim1/t/u_driver_VGA/vcnt}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 4815.602 ; gain = 0.000
+save_wave_config {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg}
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 16664 KB (Peak: 16664 KB), Simulation CPU Usage: 37952 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:16]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/p_vga_test/p_vga/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 4815.602 ; gain = 0.000
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 4815.602 ; gain = 0.000
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 71
+run all
+Stopped at time : 6640470 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+run all
+Stopped at time : 6640490 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+run all
+Stopped at time : 6640510 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 75
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 74
+run all
+Stopped at time : 6640530 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 78
+run all
+Stopped at time : 6640530 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 78
+run all
+Stopped at time : 6640550 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 78
+run all
+Stopped at time : 6640570 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+run all
+Stopped at time : 6640590 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+run all
+Stopped at time : 6640610 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+run all
+Stopped at time : 6640630 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 71
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 71
+run all
+Stopped at time : 16675250 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:45 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+Stopped at time : 16675250 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675270 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675270 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675290 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675290 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675310 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675310 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675330 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675330 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675350 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675350 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675370 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675370 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675390 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675390 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675410 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675410 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675430 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675430 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675450 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675470 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675470 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675490 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675490 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+run all
+Stopped at time : 16675510 ns : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" Line 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 74
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} -line 75
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 109
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} 120
+run all
+Stopped at time : 16688773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16688773232 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+run all
+Stopped at time : 16693944949 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16693944949 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+run all
+Stopped at time : 16710106565 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16710106565 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+run all
+Stopped at time : 16715278282 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16715278282 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+run all
+Stopped at time : 16731439898 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16731439898 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+run all
+Stopped at time : 16736611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 109
+run all
+Stopped at time : 16736611616 ps : File "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" Line 120
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 120
+remove_bps -file {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v} -line 109
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 16680 KB (Peak: 16680 KB), Simulation CPU Usage: 77296 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:16]
+INFO: [VRFC 10-2458] undeclared symbol VGA_data_mytank, assumed default net type wire [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/p_vga_test/p_vga/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'x_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'y_rel_pos' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'VGA_data' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 4815.602 ; gain = 0.000
+add_bp {F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v} 62
+run all
+run: Time (s): cpu = 00:00:53 ; elapsed = 00:00:48 . Memory (MB): peak = 4815.602 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:46 ; elapsed = 00:01:02 . Memory (MB): peak = 4815.602 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 16668 KB (Peak: 16668 KB), Simulation CPU Usage: 123874 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 16 18:04:08 2022...
