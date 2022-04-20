@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.tcl"
+  variable script "F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.runs/synth_2/v1.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,13 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_2" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache F:/10_Vivado/p_vga_test/p_vga1/p_vga1/.Xil/Vivado-25432-DESKTOP-7Q8KQ0A/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tftg256-1
 
@@ -79,8 +84,8 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/10_Vivado/p_vga_test/p_vga/p_vga.cache/wt [current_project]
-set_property parent.project_path F:/10_Vivado/p_vga_test/p_vga/p_vga.xpr [current_project]
+set_property webtalk.parent_dir F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.cache/wt [current_project]
+set_property parent.project_path F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
@@ -88,18 +93,20 @@ set_property ip_cache_permissions disable [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/VGA_data_selector.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/shell.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/u_clock.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_driver.v
-  F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/Dynami_led.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/VGA_data_selector.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/keyboard_control.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/keyxd.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/shell.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/u_clock.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/vga_display.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/vga_driver.v
+  F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/new/v1.v
 }
-read_ip -quiet F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all f:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,8 +117,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc
-set_property used_in_implementation false [get_files F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/constrs_1/new/cons1.xdc]
+read_xdc F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/constrs_1/new/cons1.xdc
+set_property used_in_implementation false [get_files F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/constrs_1/new/cons1.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 

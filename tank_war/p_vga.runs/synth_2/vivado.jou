@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Apr 17 10:46:51 2022
-# Process ID: 25308
-# Current directory: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2
+# Start of session at: Wed Apr 20 20:01:24 2022
+# Process ID: 1132
+# Current directory: F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.runs/synth_2
 # Command line: vivado.exe -log v1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source v1.tcl
-# Log file: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2/v1.vds
-# Journal file: F:/10_Vivado/p_vga_test/p_vga/p_vga.runs/synth_2\vivado.jou
+# Log file: F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.runs/synth_2/v1.vds
+# Journal file: F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.runs/synth_2\vivado.jou
 # Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
 #-----------------------------------------------------------
 source v1.tcl -notrace

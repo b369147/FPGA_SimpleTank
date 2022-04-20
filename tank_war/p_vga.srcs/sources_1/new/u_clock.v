@@ -48,7 +48,9 @@ module u_clock
 	input				item_faster,
 	output 	reg			clk_4Hz,
 	output 	reg			clk_8Hz,
-	output	reg			clk_2Hz
+	output	reg			clk_2Hz,
+	output  reg         clk_100hz,
+	output  reg         clk_1khz
 );
 
 reg	[25:0]	cnt_2Hz;
@@ -102,18 +104,44 @@ end
 always@(posedge clk)
 begin
 	cnt_8Hz <= cnt_8Hz + 26'b1;
-	if (cnt_8Hz >= 3125000)
+	if (cnt_8Hz >= 156250)
 	begin
 		clk_8Hz <= 1;
 	end
 	else
 		clk_8Hz <= 0;
-	if (cnt_8Hz >= 6250000)
+	if (cnt_8Hz >= 312500)
 	begin
 		clk_8Hz <= 0;
 		cnt_8Hz <= 26'b0;
 	end
 end
+
+
+reg [24:0] cnt = 0;
+always@(posedge clk)
+ begin
+  
+   case(cnt%25000)
+     24999: 
+     begin
+     clk_1khz<=~clk_1khz;
+     end
+     endcase
+   case(cnt%500000)
+     499999: 
+     begin
+     clk_100hz<=~clk_100hz;
+     end
+     endcase
+   if(cnt==24999999)
+    begin
+    cnt<=0;
+    end
+    else cnt<=cnt+1;
+    
+ end
+    
 
 
 endmodule
