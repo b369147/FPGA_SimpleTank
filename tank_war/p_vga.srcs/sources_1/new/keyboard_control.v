@@ -51,8 +51,8 @@ reg 	tank_state_reg;
 //initial coordinate generation
 initial
 begin
-	x_rel_pos_out <= 7;
-	y_rel_pos_out <= 7;
+	x_rel_pos_out <= 1;
+	y_rel_pos_out <= 1;
 	tank_state_reg <= 1'b1;
 end
 
@@ -76,7 +76,7 @@ begin
 	//move downward and direction = 01
 	if(bt_s == 1'b1)
 	begin
-		if ( y_rel_pos_in < 12 && tank_en == 1'b1)
+		if ( y_rel_pos_in < 8 && tank_en == 1'b1)
 		begin
 			y_rel_pos_out <= y_rel_pos_out + 1'b1;
 			tank_dir_out <= 2'b01;
@@ -96,7 +96,7 @@ begin
 	//move right and direction = 11
 	if(bt_d == 1'b1)
 	begin
-		if ( x_rel_pos_in < 24 && tank_en == 1'b1)
+		if ( x_rel_pos_in < 10 && tank_en == 1'b1)
 		begin
 			x_rel_pos_out <= x_rel_pos_out + 1'b1;
 			tank_dir_out <= 2'b11;
