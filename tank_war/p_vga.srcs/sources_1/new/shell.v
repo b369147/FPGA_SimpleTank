@@ -136,10 +136,10 @@ module shell
         begin
             if(shell_state == 1'b1)
                 begin
-                    if((VGA_xpos > x_shell_pos_out * 20 + 80 - 3 )
-                    &&(VGA_xpos < x_shell_pos_out * 20 + 80 + 3 )
-                    &&(VGA_ypos > y_shell_pos_out * 20 + 80 - 3 )
-                    &&(VGA_ypos < y_shell_pos_out * 20 + 80 + 3 ))
+                    if((VGA_xpos > x_shell_pos_out * 64 - 3 )
+                    &&(VGA_xpos < x_shell_pos_out * 64 + 3 )
+                    &&(VGA_ypos > y_shell_pos_out * 64 - 3 )
+                    &&(VGA_ypos < y_shell_pos_out * 64 + 3 ))
                         begin
                             if(shell_ide)
                                 VGA_data <= 12'h0F0;

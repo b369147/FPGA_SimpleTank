@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1652313056" LaunchIncrCheckpoint="$PPRDIR/../p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
+<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1652343554" LaunchIncrCheckpoint="$PPRDIR/../p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
   <File Type="PA-TCL" Name="v1.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="v1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="v1_reports.tcl"/>
@@ -40,6 +40,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/shell.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tank_control.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -103,14 +110,6 @@
     <File Path="$PSRCDIR/sources_1/new/my_clk_div.v">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mytank_superdis.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1652313056">
+<GenRun Id="impl_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1652343554">
   <File Type="ROUTE-PWR" Name="v1_power_routed.rpt"/>
   <File Type="PA-TCL" Name="v1.tcl"/>
   <File Type="BITSTR-MMI" Name="v1.mmi"/>
@@ -112,6 +112,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/tank_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/u_clock.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -169,14 +176,6 @@
     <File Path="$PSRCDIR/sources_1/new/my_clk_div.v">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mytank_superdis.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

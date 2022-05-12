@@ -194,10 +194,10 @@ module vga_display
             // direction = upward 
             if (tank_state == 1'b1 && tank_dir == 2'b00)
             begin
-                if(VGA_xpos >x_rel_pos*64 && VGA_xpos<x_rel_pos*64+65 && VGA_ypos>y_rel_pos*64 && VGA_ypos<y_rel_pos*64+65)
+                if(VGA_xpos >x_rel_pos*64+30 && VGA_xpos<x_rel_pos*64+30+65 && VGA_ypos>y_rel_pos*64+30 && VGA_ypos<y_rel_pos*64+65+30)
                     begin
-                        x_ever = VGA_xpos-x_rel_pos*64-1;
-                        y_ever = VGA_ypos-y_rel_pos*64-1;
+                        x_ever = VGA_xpos-x_rel_pos*64-1-30;
+                        y_ever = VGA_ypos-y_rel_pos*64-1-30;
                         addra <= 63-y_ever + (x_ever)*64;
                         douta0 <=douta;
                         VGA_data[11:8] = douta0[11:8];
@@ -215,10 +215,10 @@ module vga_display
             // direction = downward
             if (tank_state == 1'b1 && tank_dir == 2'b01)
             begin
-                if(VGA_xpos >x_rel_pos*64 && VGA_xpos<x_rel_pos*64+65 && VGA_ypos>y_rel_pos*64 && VGA_ypos<y_rel_pos*64+65)
+                if(VGA_xpos >x_rel_pos*64+30 && VGA_xpos<x_rel_pos*64+65+30 && VGA_ypos>y_rel_pos*64+30 && VGA_ypos<y_rel_pos*64+65+30)
                     begin
-                        x_ever = VGA_xpos-x_rel_pos*64-1;
-                        y_ever = VGA_ypos-y_rel_pos*64-1;
+                        x_ever = VGA_xpos-x_rel_pos*64-1-30;
+                        y_ever = VGA_ypos-y_rel_pos*64-1-30;
                         addra <= y_ever + (x_ever)*64;
                         douta0 <=douta;
                         VGA_data[11:8] = douta0[11:8];
@@ -236,10 +236,10 @@ module vga_display
             //direction = left
             if (tank_state == 1'b1 && tank_dir == 2'b10)
             begin
-                if(VGA_xpos >x_rel_pos*64 && VGA_xpos<x_rel_pos*64+65 && VGA_ypos>y_rel_pos*64 && VGA_ypos<y_rel_pos*64+65)
+                if(VGA_xpos >x_rel_pos*64+30 && VGA_xpos<x_rel_pos*64+65+30 && VGA_ypos>y_rel_pos*64+30 && VGA_ypos<y_rel_pos*64+65+30)
                     begin
-                        x_ever = VGA_xpos-x_rel_pos*64-1;
-                        y_ever = VGA_ypos-y_rel_pos*64-1;
+                        x_ever = VGA_xpos-x_rel_pos*64-1-30;
+                        y_ever = VGA_ypos-y_rel_pos*64-1-30;
                         addra <= 63-x_ever + y_ever*64;
                         douta0 <=douta;
                         VGA_data[11:8] = douta0[11:8];
@@ -259,9 +259,11 @@ module vga_display
             //direction = right
             if (tank_state == 1'b1 && tank_dir == 2'b11)
             begin
-                if(VGA_xpos >x_rel_pos*64 && VGA_xpos<x_rel_pos*64+65 && VGA_ypos>y_rel_pos*64 && VGA_ypos<y_rel_pos*64+65)
+                if(VGA_xpos >x_rel_pos*64+30 && VGA_xpos<x_rel_pos*64+65+30 && VGA_ypos>y_rel_pos*64+30 && VGA_ypos<y_rel_pos*64+65+30)
                     begin
-                        addra <= (VGA_xpos-x_rel_pos*64-1) + (VGA_ypos-y_rel_pos*64-1)*64;
+                        x_ever = VGA_xpos-x_rel_pos*64-1-30;
+                        y_ever = VGA_ypos-y_rel_pos*64-1-30;
+                        addra <= x_ever + y_ever*64;
                         douta0 <=douta;
                         VGA_data[11:8] = douta0[11:8];
                         VGA_data[7:4] = douta0[7:4];

@@ -35,30 +35,85 @@ wire s=1'b1;
 wire d;
 //wire shoot = 1'b1;
 
+// my tank base
 wire		enable_mytank_control = 1'b1;
 wire			myshell_state_fb;
+wire [1:0]mytank_dir;
+// tank1 base
+wire enable_tank1_control = 1'b1;
+wire shell1_state_fb;
+wire [1:0] tank1_dir;
 
 wire en;
 wire [10:0]VGA_xpos;
 wire [10:0]VGA_ypos;
+wire [11:0]data;
+
+// my tank VGA
 wire [11:0]VGA_data_mytank;
 wire [11:0]VGA_data_myshell;
-wire [11:0]data;
-wire [1:0]mytank_dir;
 
-wire tank_id = 1'b1;
-wire shell_id = 1'b0;
+// tank1 VGA
+wire [11:0] VGA_data_tank1;
+wire [11:0] VGA_data_shell1;
+
+
+
+
+
+// tank ide
+wire mytank_id = 1'b1;
+wire myshell_id = 1'b0;
 wire enable_myshell = 1'b1;
 wire mytank_sht;
 
+// shell1 ide
+wire tank1_id = 1'b0;
+wire shell1_id = 1'b1;
+wire enable_shell1 = 1'b1;
+wire tank1_sht;
+
+// tank_ops
 wire[5:0] mytank_xpos;
 wire[5:0] mytank_ypos;
 wire 	[5:0]	mytank_xpos_feedback;// = mytank_xpos;
 wire 	[5:0]	mytank_ypos_feedback;// = mytank_ypos;
 
+// tabk1 
+wire[5:0] tank1_xpos;
+wire[5:0] tank1_ypos;
+wire 	[5:0]	tank1_xpos_feedback;// = mytank_xpos;
+wire 	[5:0]	tank1_ypos_feedback;// = mytank_ypos;
+
+// my shell
+wire [4:0] myshell_x;
+wire [4:0] myshell_y;
+wire [4:0] myshell_x_feedback;
+wire [4:0] myshell_y_feedback;
+
+// shell
+wire [4:0]shell1_x;
+wire [4:0]shell1_y;
+wire [4:0] shell1_y_feedback;
+wire [4:0] shell1_x_feedback;
+
+// state
+wire mytank_state;
+
+// tamk1 state
+wire tank1_state;
+
+
+
 assign	mytank_xpos = 	mytank_xpos_feedback;
 assign	mytank_ypos = 	mytank_ypos_feedback;
+assign 	shell1_x	=   shell1_x_feedback;
+assign 	shell1_y    =   shell1_y_feedback;
 
+assign tank1_xpos = tank1_xpos_feedback;
+assign tank1_ypos = tank1_ypos_feedback;
+assign myshell_x = myshell_x_feedback;
+assign myshell_y = myshell_y_feedback;
 
 wire  clk_100hz,clk_1khz;
 reg shoot;
@@ -79,11 +134,13 @@ clk_wiz_0 A(
     );
 
 reg [3:0] out=0;
+
 keyboard_control u_mytank_control
 (
 	.clk			(clk),
 	.clk_4Hz		(clk_4Hz),
-	.enable			(enable_mytank_control),
+//	.enable			(enable_mytank_control),
+	.enable			(sw[0]),
 	.tank_en		(1'b1),	//enable  
 	
 	// input button direction (w,a,s,d)
@@ -93,6 +150,9 @@ keyboard_control u_mytank_control
 	.bt_d			(out[3]),
 	.bt_st			(shoot), // shoot button
 	
+	.shell1_x(shell1_x),
+	.shell1_y(shell1_y),
+	
 	.myshell_state_feedback	(myshell_state_fb),
 	//relative position input and output
 	.x_rel_pos_in		(mytank_xpos),
@@ -100,17 +160,48 @@ keyboard_control u_mytank_control
 	.x_rel_pos_out		(mytank_xpos_feedback),
 	.y_rel_pos_out		(mytank_ypos_feedback),
 	
+	.tank_state(mytank_state),
 	.tank_dir_out	(mytank_dir),
 	.shell_sht		(mytank_sht)
 );
 
+
+tank_control tank1_control
+(
+	.clk			(clk),
+	.clk_4Hz		(clk_4Hz),
+//	.enable			(enable_tank1_control),
+	.enable			(sw[1]),
+	.tank_en		(1'b1),	//enable  
+	
+	// input button direction (w,a,s,d)
+	.bt_w			(out[0]),
+	.bt_a			(out[2]),
+	.bt_s			(out[1]),
+	.bt_d			(out[3]),
+	.bt_st			(shoot), // shoot button
+	
+	.shell1_x(myshell_x),
+	.shell1_y(myshell_y),
+	
+	.myshell_state_feedback	(shell1_state_fb),
+	//relative position input and output
+	.x_rel_pos_in		(tank1_xpos),
+	.y_rel_pos_in		(tank1_ypos),
+	.x_rel_pos_out		(tank1_xpos_feedback),
+	.y_rel_pos_out		(tank1_ypos_feedback),
+	
+	.tank_state(tank1_state),
+	.tank_dir_out	(tank1_dir),
+	.shell_sht		(tank1_sht)
+);
 
     shell u_myshell
     (
         .clk		(clk),
         .clk_8Hz	(clk_8Hz),
         .enable		(enable_myshell),
-        .shell_ide	(shell_id),
+        .shell_ide	(myshell_id),
 
 
         .shell_dir	(mytank_dir), //the direction of shell
@@ -119,8 +210,8 @@ keyboard_control u_mytank_control
         .tank_xpos	(mytank_xpos),
         .tank_ypos	(mytank_ypos),
         //input and output the position of my shell
-        .x_shell_pos_out	(),
-        .y_shell_pos_out	(),
+        .x_shell_pos_out	(myshell_x_feedback),
+        .y_shell_pos_out	(myshell_y_feedback),
 
         //input VGA scan coordinate
         .VGA_xpos	(VGA_xpos),
@@ -130,6 +221,32 @@ keyboard_control u_mytank_control
         .VGA_data	(VGA_data_myshell),
 
         .shell_state_feedback	(myshell_state_fb)
+    );
+
+    shell shell1
+    (
+        .clk		(clk),
+        .clk_8Hz	(clk_8Hz),
+        .enable		(enable_shell1),
+        .shell_ide	(shell1_id),
+
+        .shell_dir	(tank1_dir), //the direction of shell
+        .shell_state	(tank1_sht), //the state of my shell
+
+        .tank_xpos	(tank1_xpos),
+        .tank_ypos	(tank1_ypos),
+        //input and output the position of my shell
+        .x_shell_pos_out	(shell1_x_feedback),
+        .y_shell_pos_out	(shell1_y_feedback),
+
+        //input VGA scan coordinate
+        .VGA_xpos	(VGA_xpos),
+        .VGA_ypos	(VGA_ypos),
+
+        //input the VGA data
+        .VGA_data	(VGA_data_shell1),
+
+        .shell_state_feedback	(shell1_state_fb)
     );
 
 
@@ -145,17 +262,38 @@ keyboard_control u_mytank_control
         .VGA_ypos	(VGA_ypos),
 
         .tank_state	(1'b1), //the state of tank
-        .tank_ide	(tank_id), //the identify of tank (my tank(1'b1) or enemy tank(1'b0))
+        .tank_ide	(mytank_id), //the identify of tank (my tank(1'b1) or enemy tank(1'b0))
         .tank_dir	(mytank_dir), //the direction of tank
 
         //output the VGA data
         .VGA_data	(VGA_data_mytank)
     );
 			
+	    vga_display	tank1_display
+    (
+        .clk		(w_clk),
+        .enable		(en),
+
+        //input the relative position of tank
+        .x_rel_pos	(tank1_xpos),
+        .y_rel_pos	(tank1_ypos),
+        .VGA_xpos	(VGA_xpos),
+        .VGA_ypos	(VGA_ypos),
+
+        .tank_state	(1'b1), //the state of tank
+        .tank_ide	(tank1_id), //the identify of tank (my tank(1'b1) or enemy tank(1'b0))
+        .tank_dir	(tank1_dir), //the direction of tank
+
+        //output the VGA data
+        .VGA_data	(VGA_data_tank1)
+    );
+			
 			VGA_data_selector select(
 			.clk(clk),
 			.in1(VGA_data_myshell),
 			.in2(VGA_data_mytank),
+			.in3(VGA_data_tank1),
+			 .in4(VGA_data_shell1),
 			.out(data)
 			);
 			

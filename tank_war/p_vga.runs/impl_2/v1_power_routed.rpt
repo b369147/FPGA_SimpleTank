@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Thu May 12 07:52:41 2022
+| Date             : Thu May 12 16:21:07 2022
 | Host             : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command          : report_power -file v1_power_routed.rpt -pb v1_power_summary_routed.pb -rpx v1_power_routed.rpx
 | Design           : v1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.201        |
+| Total On-Chip Power (W)  | 0.204        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.129        |
+| Dynamic (W)              | 0.131        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 84.0         |
@@ -53,18 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.002 |     1326 |       --- |             --- |
-|   LUT as Logic |     0.002 |      729 |     20800 |            3.50 |
-|   CARRY4       |    <0.001 |      149 |      8150 |            1.83 |
-|   Register     |    <0.001 |      258 |     41600 |            0.62 |
-|   Others       |     0.000 |       26 |       --- |             --- |
+| Slice Logic    |     0.002 |     1783 |       --- |             --- |
+|   LUT as Logic |     0.002 |     1004 |     20800 |            4.83 |
+|   CARRY4       |    <0.001 |      193 |      8150 |            2.37 |
+|   Register     |    <0.001 |      334 |     41600 |            0.80 |
+|   F7/F8 Muxes  |    <0.001 |        8 |     32600 |            0.02 |
+|   Others       |     0.000 |       42 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |     0.002 |     1020 |       --- |             --- |
-| Block RAM      |     0.001 |      2.5 |        50 |            5.00 |
+| Signals        |     0.002 |     1241 |       --- |             --- |
+| Block RAM      |     0.002 |        5 |        50 |           10.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
-| I/O            |     0.006 |       49 |       170 |           28.82 |
+| I/O            |     0.008 |       51 |       170 |           30.00 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.201 |          |           |                 |
+| Total          |     0.204 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.017 |       0.007 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.065 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,13 +146,15 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| v1               |     0.129 |
+| v1               |     0.131 |
 |   A              |     0.117 |
 |     inst         |     0.117 |
 |   clock          |     0.003 |
 |   mytank_display |     0.001 |
 |     UUT1         |     0.001 |
 |       U0         |     0.001 |
+|   tank1_display  |     0.001 |
+|   u_driver_VGA   |     0.001 |
 +------------------+-----------+
 
 

@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_2" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tftg256-1
 
@@ -88,13 +87,14 @@ set_property target_language Verilog [current_project]
 set_property ip_cache_permissions disable [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe
+add_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe
 read_verilog -library xil_defaultlib {
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v
+  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/tank_control.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v
@@ -105,7 +105,7 @@ set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/
 set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
+read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
 set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01_ooc.xdc]
 
 OPTRACE "Adding files" END { }
