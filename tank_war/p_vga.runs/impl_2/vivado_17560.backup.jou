@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu May 12 21:13:54 2022
+# Process ID: 17560
+# Current directory: F:/10_Vivado/tank_war/p_vga.runs/impl_2
+# Command line: vivado.exe -log v1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source v1.tcl -notrace
+# Log file: F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.vdi
+# Journal file: F:/10_Vivado/tank_war/p_vga.runs/impl_2\vivado.jou
+# Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
+#-----------------------------------------------------------
+source v1.tcl -notrace

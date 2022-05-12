@@ -47,21 +47,26 @@ module keyboard_control(
 
 	output	reg		  		 tank_state,
     output	reg	[1:0]		tank_dir_out,
-    output  reg				shell_sht
-
+    output  reg				shell_sht,
+    output reg [2:0] blood
 );
 
+    // init position 
+    parameter pos_x = 1;
+    parameter pos_y = 1;
+    
+    // init blood
+    parameter blood_init = 5;
+        
     reg 	tank_state_reg;
-    reg [0:2] blood;
-
     //---------------------------------------------------
     //initial coordinate generation
     initial
     begin
-        x_rel_pos_out <= 1;
-        y_rel_pos_out <= 1;
+        x_rel_pos_out <= pos_x;
+        y_rel_pos_out <= pos_y;
         tank_state_reg <= 1'b1;
-        blood = 3'd5;
+        blood <= blood_init;
     end
 
     //---------------------------------------------------
@@ -75,7 +80,8 @@ module keyboard_control(
         if(enable)
         begin
             if	(shell1_x == x_rel_pos_in && shell1_y == y_rel_pos_in)
-                blood <= blood - 1'b1;
+                blood <= blood;
+//                blood <= blood - 1'b1;
             else	blood <= blood;
         end
     end

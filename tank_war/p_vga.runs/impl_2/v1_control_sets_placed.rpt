@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Thu May 12 16:20:44 2022
+| Date         : Thu May 12 21:44:23 2022
 | Host         : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file v1_control_sets_placed.rpt
 | Design       : v1
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    30 |
-|    Minimum number of control sets                        |    30 |
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   114 |
+| Unused register locations in slices containing registers |   121 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    30 |
+| Total control sets |    34 |
 | >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     9 |
 | >= 6 to < 8        |     5 |
 | >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     1 |
-| >= 12 to < 14      |     3 |
+| >= 12 to < 14      |     5 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     8 |
+| >= 16              |    10 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,51 +58,55 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             100 |           40 |
+| No           | No                    | No                     |              97 |           44 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              88 |           24 |
-| Yes          | No                    | No                     |             122 |           59 |
+| No           | Yes                   | No                     |              88 |           25 |
+| Yes          | No                    | No                     |             166 |           80 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              24 |           10 |
+| Yes          | Yes                   | No                     |              48 |           16 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------+-------------------------------------------+------------------------+------------------+----------------+--------------+
-|         Clock Signal         |               Enable Signal               |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------------+-------------------------------------------+------------------------+------------------+----------------+--------------+
-|  clock/trigger               |                                           |                        |                1 |              2 |         2.00 |
-|  u_mytank_control/mytank_sht |                                           |                        |                2 |              2 |         1.00 |
-|  tank1_control/tank1_sht     |                                           |                        |                1 |              2 |         2.00 |
-|  clock/CLK                   |                                           |                        |                3 |              4 |         1.33 |
-|  clock/clk_8Hz               |                                           |                        |                1 |              4 |         4.00 |
-|  clk_1khz_BUFG               |                                           | u1/clear               |                2 |              4 |         2.00 |
-|  u1/show_data_reg[3]_i_2_n_0 |                                           |                        |                1 |              4 |         4.00 |
-|  clock/CLK                   | u_mytank_control/x_rel_pos_out[4]_i_1_n_0 |                        |                2 |              5 |         2.50 |
-|  clock/CLK                   | u_mytank_control/y_rel_pos_out[4]_i_1_n_0 |                        |                2 |              5 |         2.50 |
-|  clock/CLK                   | tank1_control/y_rel_pos_out[4]_i_1__0_n_0 |                        |                3 |              5 |         1.67 |
-|  clock/CLK                   | tank1_control/x_rel_pos_out[4]_i_1__0_n_0 |                        |                2 |              5 |         2.50 |
-|  clk_1khz_BUFG               |                                           | u2/col_reg[3]_i_1_n_0  |                1 |              5 |         5.00 |
-|  clock/clk_8Hz               | shell1/y_shell_pos_out[5]_i_1__0_n_0      |                        |                4 |              6 |         1.50 |
-|  clock/clk_8Hz               | shell1/x_shell_pos_out[5]_i_1__0_n_0      |                        |                2 |              6 |         3.00 |
-|  clock/clk_8Hz               | u_myshell/y_shell_pos_out[5]_i_1_n_0      |                        |                2 |              6 |         3.00 |
-|  clock/clk_8Hz               | u_myshell/x_shell_pos_out[5]_i_1_n_0      |                        |                2 |              6 |         3.00 |
-|  clk_1khz_BUFG               | u2/E[0]                                   |                        |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG               |                                           |                        |                6 |              8 |         1.33 |
-|  A/inst/clk_out1             | u_driver_VGA/vcnt                         |                        |                3 |             10 |         3.33 |
-|  clock/trigger               | out                                       |                        |                5 |             12 |         2.40 |
-|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_0[0]            | u_mytank_control/SS[0] |                6 |             12 |         2.00 |
-|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_0[0]            | tank1_control/SS[0]    |                4 |             12 |         3.00 |
-|  clock/clk_100hz             |                                           |                        |                4 |             18 |         4.50 |
-|  clk_IBUF_BUFG               |                                           | clock/cnt[24]_i_1_n_0  |                6 |             24 |         4.00 |
-|  A/inst/clk_out1             | u_mytank_control/E[0]                     |                        |               14 |             25 |         1.79 |
-|  A/inst/clk_out1             | tank1_control/E[0]                        |                        |               15 |             25 |         1.67 |
-|  clk_IBUF_BUFG               |                                           | clock/clear            |                7 |             26 |         3.71 |
-|  A/inst/clk_out1             |                                           |                        |               10 |             26 |         2.60 |
-|  clk_IBUF_BUFG               |                                           | clock/clk_8Hz_i_1_n_0  |                8 |             29 |         3.62 |
-|  clk_1khz_BUFG               |                                           |                        |               11 |             30 |         2.73 |
-+------------------------------+-------------------------------------------+------------------------+------------------+----------------+--------------+
++------------------------------+-------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|         Clock Signal         |               Enable Signal               |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------+-------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  u_mytank_control/mytank_sht |                                           |                                |                1 |              2 |         2.00 |
+|  tank1_control/tank1_sht     |                                           |                                |                2 |              2 |         1.00 |
+|  clock/trigger               |                                           |                                |                1 |              2 |         2.00 |
+|  clock/clk_8Hz               |                                           |                                |                2 |              4 |         2.00 |
+|  clk_1khz_BUFG               |                                           | u1/clear                       |                2 |              4 |         2.00 |
+|  u1/show_data_reg[3]_i_2_n_0 |                                           |                                |                2 |              4 |         2.00 |
+|  clock/CLK                   |                                           |                                |                2 |              4 |         2.00 |
+|  clock/CLK                   | u_mytank_control/y_rel_pos_out[4]_i_1_n_0 |                                |                2 |              5 |         2.50 |
+|  clock/CLK                   | u_mytank_control/x_rel_pos_out[4]_i_1_n_0 |                                |                2 |              5 |         2.50 |
+|  clock/CLK                   | tank1_control/x_rel_pos_out[4]_i_1__0_n_0 |                                |                2 |              5 |         2.50 |
+|  clock/CLK                   | tank1_control/y_rel_pos_out[4]_i_1__0_n_0 |                                |                2 |              5 |         2.50 |
+|  clk_1khz_BUFG               |                                           | u2/col_reg[3]_i_1_n_0          |                2 |              5 |         2.50 |
+|  clock/clk_8Hz               | u_myshell/x_shell_pos_out[5]_i_1_n_0      |                                |                2 |              6 |         3.00 |
+|  clock/clk_8Hz               | u_myshell/y_shell_pos_out[5]_i_1_n_0      |                                |                3 |              6 |         2.00 |
+|  clock/clk_8Hz               | shell1/x_shell_pos_out[5]_i_1__0_n_0      |                                |                3 |              6 |         2.00 |
+|  clock/clk_8Hz               | shell1/y_shell_pos_out[5]_i_1__0_n_0      |                                |                3 |              6 |         2.00 |
+|  clk_1khz_BUFG               | u2/E[0]                                   |                                |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG               |                                           |                                |                7 |              8 |         1.14 |
+|  A/inst/clk_out1             | u_driver_VGA/vcnt                         |                                |                4 |             10 |         2.50 |
+|  clock/trigger               | out                                       |                                |                3 |             12 |         4.00 |
+|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_7[0]            | u_driver_VGA/SS[0]             |                3 |             12 |         4.00 |
+|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_7[0]            | u_mytank_control/SS[0]         |                4 |             12 |         3.00 |
+|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_7[0]            | u_driver_VGA/hcnt_reg[10]_9[0] |                5 |             12 |         2.40 |
+|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_7[0]            | tank1_control/SS[0]            |                4 |             12 |         3.00 |
+|  clock/clk_100hz             |                                           |                                |                7 |             18 |         2.57 |
+|  A/inst/clk_out1             | u_driver_VGA/E[0]                         |                                |               10 |             22 |         2.20 |
+|  A/inst/clk_out1             | u_driver_VGA/hcnt_reg[10]_10[0]           |                                |               12 |             22 |         1.83 |
+|  A/inst/clk_out1             |                                           |                                |                8 |             23 |         2.88 |
+|  clk_IBUF_BUFG               |                                           | clock/cnt[24]_i_1_n_0          |                6 |             24 |         4.00 |
+|  A/inst/clk_out1             | u_mytank_control/E[0]                     |                                |               15 |             25 |         1.67 |
+|  A/inst/clk_out1             | tank1_control/E[0]                        |                                |               14 |             25 |         1.79 |
+|  clk_IBUF_BUFG               |                                           | clock/clear                    |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG               |                                           | clock/clk_8Hz_i_1_n_0          |                8 |             29 |         3.62 |
+|  clk_1khz_BUFG               |                                           |                                |               12 |             30 |         2.50 |
++------------------------------+-------------------------------------------+--------------------------------+------------------+----------------+--------------+
 
 

@@ -88,13 +88,14 @@ set_property ip_cache_permissions disable [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe
+add_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_1.coe
 read_verilog -library xil_defaultlib {
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v
+  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v
-  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/tank_control.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v
@@ -107,6 +108,9 @@ set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/
 
 read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
 set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01_ooc.xdc]
+
+read_ip -quiet f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci
+set_property used_in_implementation false [get_files -all f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
