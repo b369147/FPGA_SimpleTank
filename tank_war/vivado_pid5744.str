@@ -1,0 +1,3303 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 5744
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed May 11 20:31:21 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	a
+User home directory: C:/Users/a
+User working directory: F:/10_Vivado/tank_war
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2021.2
+RDI_DATADIR: E:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	F:/10_Vivado/tank_war/vivado.log
+Vivado journal file: 	F:/10_Vivado/tank_war/vivado.jou
+Engine tmp dir: 	F:/10_Vivado/tank_war/.Xil/Vivado-5744-DESKTOP-7Q8KQ0A
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,496 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 71 MB (+71534kb) [00:00:14]
+// [Engine Memory]: 1,496 MB (+1417017kb) [00:00:14]
+// Opening Vivado Project: F:\10_Vivado\tank_war\p_vga.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 55 MB. Current time: 5/11/22, 8:31:23 PM CST
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+39902kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4078 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1755.965 ; gain = 0.000 
+// Project name: p_vga; location: F:/10_Vivado/tank_war; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (v1.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), A : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 121 MB (+3174kb) [00:00:33]
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// Elapsed time: 13 seconds
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 26 seconds
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+// [GUI Memory]: 135 MB (+8269kb) [00:01:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1123 ms.
+// Elapsed time: 26 seconds
+selectCodeEditor("vga_display.v", 151, 372); // be
+selectCodeEditor("vga_display.v", 151, 372, false, false, false, false, true); // be - Double Click
+// Elapsed time: 38 seconds
+selectCodeEditor("vga_display.v", 313, 183); // be
+selectCodeEditor("vga_display.v", 313, 183, false, false, false, false, true); // be - Double Click
+// Elapsed time: 82 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 22 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mytank_superdis"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 27 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/mytank_superdis.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/mytank_superdis.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 12, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1069 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("mytank_superdis.v", 132, 481); // be
+selectCodeEditor("mytank_superdis.v", 79, 425); // be
+selectCodeEditor("mytank_superdis.v", 83, 447); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'v'); // be
+selectCodeEditor("mytank_superdis.v", 51, 352); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("mytank_superdis.v", 134, 184); // be
+selectCodeEditor("mytank_superdis.v", 135, 168); // be
+selectCodeEditor("mytank_superdis.v", 134, 174); // be
+selectCodeEditor("mytank_superdis.v", 168, 197); // be
+selectCodeEditor("mytank_superdis.v", 113, 121); // be
+// Elapsed time: 22 seconds
+selectCodeEditor("mytank_superdis.v", 110, 101); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("mytank_superdis.v", 115, 97); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("mytank_superdis.v", 230, 95); // be
+selectCodeEditor("mytank_superdis.v", 201, 161); // be
+selectCodeEditor("mytank_superdis.v", 225, 131); // be
+selectCodeEditor("mytank_superdis.v", 225, 131, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 175, 154); // be
+selectCodeEditor("mytank_superdis.v", 198, 156); // be
+selectCodeEditor("mytank_superdis.v", 323, 169); // be
+selectCodeEditor("mytank_superdis.v", 218, 163); // be
+selectCodeEditor("mytank_superdis.v", 139, 127); // be
+selectCodeEditor("mytank_superdis.v", 97, 124); // be
+selectCodeEditor("mytank_superdis.v", 97, 124, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 159, 222); // be
+selectCodeEditor("mytank_superdis.v", 108, 179); // be
+selectCodeEditor("mytank_superdis.v", 108, 179, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 94, 204); // be
+selectCodeEditor("mytank_superdis.v", 143, 180); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 12, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 38 seconds
+selectCodeEditor("mytank_superdis.v", 200, 290); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'v'); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("mytank_superdis.v", 201, 421); // be
+selectCodeEditor("mytank_superdis.v", 189, 466); // be
+selectCodeEditor("mytank_superdis.v", 58, 375); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'v'); // be
+selectCodeEditor("mytank_superdis.v", 60, 239); // be
+selectCodeEditor("mytank_superdis.v", 117, 240); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'v'); // be
+selectCodeEditor("mytank_superdis.v", 95, 242); // be
+selectCodeEditor("mytank_superdis.v", 32, 181); // be
+selectCodeEditor("mytank_superdis.v", 2, 196); // be
+selectCodeEditor("mytank_superdis.v", 49, 181); // be
+selectCodeEditor("mytank_superdis.v", 124, 181); // be
+selectCodeEditor("mytank_superdis.v", 124, 181, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 124, 205); // be
+selectCodeEditor("mytank_superdis.v", 124, 205, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 117, 187); // be
+selectCodeEditor("mytank_superdis.v", 117, 187, false, false, false, false, true); // be - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("mytank_superdis.v", 207, 180); // be
+// Elapsed time: 103 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 12, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "design_1"); // aa
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "design_1"); // aa
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "bram"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'Q' command handler elapsed time: 24 seconds
+dismissDialog("Create Block Design"); // aX
+// Tcl Message: create_bd_design "bram" 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : <F:\10_Vivado\tank_war\p_vga.srcs\sources_1\bd\bram\bram.bd>  
+// Tcl Message: INFO: [BD 41-2613] The output directory f:/10_Vivado/tank_war/p_vga.gen/sources_1/bd/bram for bram cannot be found. 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2110 ms.
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1755.965 ; gain = 0.000 
+dismissDialog("Create Block Design"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 149 MB (+8197kb) [00:11:21]
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[bram]", 0, false); // a
+closeFrame(PAResourceOtoP.PAViews_SYSTEM_HIERARCHY, "Design"); // aA
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bram (bram.bd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bram (bram.bd)]", 11, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/bd/bram/bram.bd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: remove_files  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/bd/bram/bram.bd 
+// Tcl Message: Wrote  : <F:/10_Vivado/tank_war/p_vga.srcs/sources_1/bd/bram/ui/bd_9330469c.ui>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: PROJ_DESIGN_MODE_SET
+dismissDialog("Remove Sources"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bram (bram.bd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bram (bram.bd)]", 11, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: remove_files  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/bd/bram/bram.bd 
+// Tcl Message: file delete -force F:/10_Vivado/tank_war/p_vga.srcs/sources_1/bd/bram/bram.bd 
+// [GUI Memory]: 158 MB (+1073kb) [00:11:37]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+dismissDialog("Open IP Catalog"); // bA
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "bram"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false); // L
+// [GUI Memory]: 170 MB (+4532kb) [00:11:57]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false, false, false, false, false, true); // L - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+dismissDialog("Customize IP"); // k
+// [GUI Memory]: 183 MB (+4157kb) [00:12:03]
+// Elapsed time: 25 seconds
+setText("Component Name", "blk_mem_gen_01"); // B
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, PAResourceEtoH.HACGCBasePanel_IP_SYMBOL, "IP Symbol", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+// Elapsed time: 24 seconds
+selectComboBox("Memory Type (Memory_Type)", "Single Port RAM", 0); // E
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+setText("Defines the PortA Write Width(DINA)", "12"); // B
+setText("Write Depth", "4100", true); // B
+selectComboBox("Operating Mode (Operating_Mode_A)", "Read First", 1); // E
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectCheckBox((HResource) null, "Load Init File", true); // g: TRUE
+// Elapsed time: 100 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  3878 ms.
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // r
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_01 
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {blk_mem_gen_01} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {4100} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe}] [get_ips blk_mem_gen_01] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_0.coe' provided. It will be converted relative to IP Instance files '../blk_mem_gen_0.coe' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_01'... 
+dismissDialog("Customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "12", 11); // e
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_01'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_01'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_01'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_01'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs blk_mem_gen_01_synth_1 -jobs 12 
+// Tcl Message: [Wed May 11 20:47:05 2022] Launched blk_mem_gen_01_synth_1... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_01_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: INFO: [Vivado 12-4357] Exporting simulation files for 'blk_mem_gen_01'... please wait for 'blk_mem_gen_01_synth_1' run to finish... 
+// Tcl Message: wait_on_run blk_mem_gen_01_synth_1 
+// Tcl Message: [Wed May 11 20:47:05 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed May 11 20:47:10 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:47:15 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:47:20 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 96 MB. Current time: 5/11/22, 8:47:29 PM CST
+// Tcl Message: [Wed May 11 20:47:30 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:47:40 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:47:50 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 95 MB. Current time: 5/11/22, 8:47:59 PM CST
+// Tcl Message: [Wed May 11 20:48:01 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:48:21 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 95 MB. Current time: 5/11/22, 8:48:30 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Wed May 11 20:48:41 2022] Waiting for blk_mem_gen_01_synth_1 to finish... 
+// Tcl Message: [Wed May 11 20:48:41 2022] blk_mem_gen_01_synth_1 finished 
+// Tcl Message: wait_on_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:35 . Memory (MB): peak = 1755.965 ; gain = 0.000 
+// Tcl Message: export_simulation -of_objects [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci] -directory F:/10_Vivado/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/10_Vivado/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/10_Vivado/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 106 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, div_clk (div_clk.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, div_clk (div_clk.v)]", 12, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1069 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 13, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mytank_superdis (mytank_superdis.v)]", 13, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("mytank_superdis.v", 120, 196); // be
+// Elapsed time: 77 seconds
+selectCodeEditor("mytank_superdis.v", 242, 269); // be
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_display.v", 170, 293); // be
+selectCodeEditor("vga_display.v", 170, 293, false, false, false, false, true); // be - Double Click
+// Elapsed time: 122 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 3); // m
+// Elapsed time: 103 seconds
+selectCodeEditor("mytank_superdis.v", 103, 447); // be
+selectCodeEditor("mytank_superdis.v", 103, 447, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 103, 464); // be
+selectCodeEditor("mytank_superdis.v", 103, 464, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 104, 448); // be
+selectCodeEditor("mytank_superdis.v", 104, 448, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 103, 466); // be
+selectCodeEditor("mytank_superdis.v", 103, 466, false, false, false, false, true); // be - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("mytank_superdis.v", 319, 468); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("mytank_superdis.v", 203, 301); // be
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 6, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_display.v", 401, 289); // be
+selectCodeEditor("vga_display.v", 401, 289, false, false, false, false, true); // be - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 8, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_driver.v", 469, 195); // be
+selectCodeEditor("vga_driver.v", 294, 176); // be
+selectCodeEditor("vga_driver.v", 434, 173); // be
+selectCodeEditor("vga_driver.v", 333, 209); // be
+selectCodeEditor("vga_driver.v", 498, 174); // be
+selectCodeEditor("vga_driver.v", 194, 201); // be
+selectCodeEditor("vga_driver.v", 446, 172); // be
+selectCodeEditor("vga_driver.v", 83, 218); // be
+selectCodeEditor("vga_driver.v", 448, 264); // be
+selectCodeEditor("vga_driver.v", 471, 288); // be
+selectCodeEditor("vga_driver.v", 488, 294); // be
+selectCodeEditor("vga_driver.v", 315, 251); // be
+selectCodeEditor("vga_driver.v", 257, 352); // be
+selectCodeEditor("vga_driver.v", 263, 242); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 3); // m
+// Elapsed time: 303 seconds
+selectCodeEditor("mytank_superdis.v", 117, 278); // be
+selectCodeEditor("mytank_superdis.v", 117, 278, false, false, false, false, true); // be - Double Click
+selectCodeEditor("mytank_superdis.v", 260, 329); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 4, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectCodeEditor("v1.v", 337, 159); // be
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a
+dismissDialog("Text Changed"); // k
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 30 seconds
+selectCodeEditor("mytank_superdis.v", 125, 26); // be
+selectCodeEditor("mytank_superdis.v", 193, 380); // be
+selectCodeEditor("mytank_superdis.v", 131, 134); // be
+selectCodeEditor("mytank_superdis.v", 145, 120); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("mytank_superdis.v", 139, 82); // be
+selectCodeEditor("mytank_superdis.v", 306, 259); // be
+selectCodeEditor("mytank_superdis.v", 158, 424); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+selectCodeEditor("mytank_superdis.v", 317, 290); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectCodeEditor("vga_display.v", 464, 289); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 494, 242); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_display.v", 398, 268); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 262, 429); // be
+selectCodeEditor("vga_display.v", 216, 475); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectCodeEditor("mytank_superdis.v", 222, 383); // be
+selectCodeEditor("mytank_superdis.v", 205, 354); // be
+selectCodeEditor("mytank_superdis.v", 184, 350); // be
+selectCodeEditor("mytank_superdis.v", 290, 122); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("mytank_superdis.v", 255, 345); // be
+selectCodeEditor("mytank_superdis.v", 158, 457); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+selectCodeEditor("mytank_superdis.v", 5, 181); // be
+selectCodeEditor("mytank_superdis.v", 152, 275); // be
+selectCodeEditor("mytank_superdis.v", 134, 266); // be
+selectCodeEditor("mytank_superdis.v", 118, 236); // be
+selectCodeEditor("mytank_superdis.v", 131, 231); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_display.v", 130, 206); // be
+selectCodeEditor("vga_display.v", 130, 206, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 268, 207); // be
+selectCodeEditor("vga_display.v", 268, 207, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectCodeEditor("mytank_superdis.v", 228, 107); // be
+selectCodeEditor("mytank_superdis.v", 124, 104); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectCodeEditor("mytank_superdis.v", 63, 159); // be
+selectCodeEditor("mytank_superdis.v", 147, 228); // be
+selectCodeEditor("mytank_superdis.v", 49, 144); // be
+selectCodeEditor("mytank_superdis.v", 173, 306); // be
+selectCodeEditor("mytank_superdis.v", 142, 352); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("mytank_superdis.v", 280, 333); // be
+selectCodeEditor("mytank_superdis.v", 46, 145); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 2); // m
+selectCodeEditor("mytank_superdis.v", 228, 159); // be
+selectCodeEditor("mytank_superdis.v", 2, 63); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+typeControlKey((HResource) null, "mytank_superdis.v", 'c'); // be
+selectCodeEditor("mytank_superdis.v", 223, 318); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectCodeEditor("vga_display.v", 82, 407); // be
+selectCodeEditor("vga_display.v", 88, 388); // be
+selectCodeEditor("vga_display.v", 70, 335); // be
+selectCodeEditor("vga_display.v", 115, 365); // be
+selectCodeEditor("vga_display.v", 97, 349); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_display.v", 155, 188); // be
+selectCodeEditor("vga_display.v", 153, 200); // be
+selectCodeEditor("vga_display.v", 153, 200, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 132, 178); // be
+selectCodeEditor("vga_display.v", 132, 178, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 145, 426); // be
+selectCodeEditor("vga_display.v", 145, 426, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 205, 186); // be
+selectCodeEditor("vga_display.v", 205, 186, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 181, 432); // be
+selectCodeEditor("vga_display.v", 181, 432, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_display.v", 139, 420); // be
+selectCodeEditor("vga_display.v", 139, 420, false, false, false, false, true); // be - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("vga_display.v", 180, 433); // be
+selectCodeEditor("vga_display.v", 180, 433, false, false, false, false, true); // be - Double Click
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 11, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_driver.v", 208, 172); // be
+selectCodeEditor("vga_driver.v", 236, 191); // be
+selectCodeEditor("vga_driver.v", 230, 190); // be
+selectCodeEditor("vga_driver.v", 231, 184); // be
+selectCodeEditor("vga_driver.v", 209, 188); // be
+selectCodeEditor("vga_driver.v", 177, 163); // be
+selectCodeEditor("vga_driver.v", 177, 163, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_driver.v", 249, 197); // be
+selectCodeEditor("vga_driver.v", 249, 195, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_driver.v", 180, 177); // be
+selectCodeEditor("vga_driver.v", 180, 176, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_driver.v", 262, 176); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectCodeEditor("vga_display.v", 289, 427); // be
+selectCodeEditor("vga_display.v", 144, 436); // be
+selectCodeEditor("vga_display.v", 144, 436, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 328, 433); // be
+selectCodeEditor("vga_display.v", 328, 433, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 359, 428); // be
+selectCodeEditor("vga_display.v", 169, 428); // be
+selectCodeEditor("vga_display.v", 451, 311); // be
+selectCodeEditor("vga_display.v", 405, 186); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 364, 424); // be
+selectCodeEditor("vga_display.v", 382, 429); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 103, 180); // be
+selectCodeEditor("vga_display.v", 995, 191); // be
+// Elapsed time: 69 seconds
+selectCodeEditor("vga_display.v", 250, 351); // be
+selectCodeEditor("vga_display.v", 250, 351, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 295, 375); // be
+selectCodeEditor("vga_display.v", 232, 354); // be
+selectCodeEditor("vga_display.v", 232, 354, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 195, 360); // be
+selectCodeEditor("vga_display.v", 195, 360, false, false, false, false, true); // be - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("vga_display.v", 0, 201); // be
+selectCodeEditor("vga_display.v", 206, 212); // be
+selectCodeEditor("vga_display.v", 173, 218); // be
+selectCodeEditor("vga_display.v", 14, 331); // be
+selectCodeEditor("vga_display.v", 175, 434); // be
+selectCodeEditor("vga_display.v", 173, 433); // be
+selectCodeEditor("vga_display.v", 261, 235); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("vga_display.v", 328, 315); // be
+selectCodeEditor("vga_display.v", 114, 430); // be
+selectCodeEditor("vga_display.v", 44, 469); // be
+selectCodeEditor("vga_display.v", 44, 469, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 50, 444); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("vga_display.v", 345, 254); // be
+// Elapsed time: 46 seconds
+selectCodeEditor("vga_display.v", 286, 358); // be
+selectCodeEditor("vga_display.v", 286, 358, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 168, 356); // be
+selectCodeEditor("vga_display.v", 168, 356, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 215, 361); // be
+selectCodeEditor("vga_display.v", 215, 361, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 219, 357); // be
+selectCodeEditor("vga_display.v", 219, 357); // be
+selectCodeEditor("vga_display.v", 216, 351); // be
+selectCodeEditor("vga_display.v", 216, 351, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 335, 353); // be
+selectCodeEditor("vga_display.v", 335, 353, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 354, 347); // be
+selectCodeEditor("vga_display.v", 367, 344); // be
+selectCodeEditor("vga_display.v", 367, 344, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 611, 349); // be
+selectCodeEditor("vga_display.v", 233, 347); // be
+selectCodeEditor("vga_display.v", 233, 347, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 176, 358); // be
+selectCodeEditor("vga_display.v", 176, 358, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 343, 356); // be
+selectCodeEditor("vga_display.v", 343, 356, false, false, false, false, true); // be - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_display.v", 231, 360); // be
+selectCodeEditor("vga_display.v", 231, 360, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 156, 66); // be
+selectCodeEditor("vga_display.v", 156, 66, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 183, 356); // be
+selectCodeEditor("vga_display.v", 183, 356, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 253, 350); // be
+selectCodeEditor("vga_display.v", 271, 352); // be
+selectCodeEditor("vga_display.v", 271, 352, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 421, 356); // be
+selectCodeEditor("vga_display.v", 241, 336); // be
+selectCodeEditor("vga_display.v", 241, 336, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 304, 391); // be
+selectCodeEditor("vga_display.v", 137, 85); // be
+selectCodeEditor("vga_display.v", 137, 85, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 561, 84); // be
+selectCodeEditor("vga_display.v", 561, 84, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 573, 89); // be
+selectCodeEditor("vga_display.v", 573, 89, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 328, 356); // be
+selectCodeEditor("vga_display.v", 328, 356, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 286, 355); // be
+selectCodeEditor("vga_display.v", 286, 355, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 524, 357); // be
+selectCodeEditor("vga_display.v", 524, 357, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 407, 360); // be
+selectCodeEditor("vga_display.v", 407, 360, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 412, 389); // be
+selectCodeEditor("vga_display.v", 412, 389, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 375, 391); // be
+selectCodeEditor("vga_display.v", 375, 391, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 323, 366); // be
+selectCodeEditor("vga_display.v", 228, 125); // be
+selectCodeEditor("vga_display.v", 228, 125, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 224, 410); // be
+selectCodeEditor("vga_display.v", 224, 410, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 339, 408); // be
+selectCodeEditor("vga_display.v", 339, 408, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 297, 450); // be
+selectCodeEditor("vga_display.v", 297, 450, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 363, 410); // be
+selectCodeEditor("vga_display.v", 438, 445); // be
+selectCodeEditor("vga_display.v", 438, 445, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 472, 123); // be
+selectCodeEditor("vga_display.v", 472, 123, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 674, 129); // be
+selectCodeEditor("vga_display.v", 674, 129, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 477, 412); // be
+selectCodeEditor("vga_display.v", 477, 412, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 441, 445); // be
+selectCodeEditor("vga_display.v", 441, 445, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 598, 410); // be
+selectCodeEditor("vga_display.v", 598, 410, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 617, 451); // be
+selectCodeEditor("vga_display.v", 250, 415); // be
+selectCodeEditor("vga_display.v", 249, 412, false, false, false, false, true); // be - Double Click
+// Elapsed time: 54 seconds
+selectCodeEditor("vga_display.v", 276, 82); // be
+selectCodeEditor("vga_display.v", 276, 82, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 286, 88); // be
+selectCodeEditor("vga_display.v", 286, 88, false, false, false, false, true); // be - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_display.v", 269, 242); // be
+selectCodeEditor("vga_display.v", 455, 235); // be
+selectCodeEditor("vga_display.v", 606, 233); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_display.v", 251, 282); // be
+selectCodeEditor("vga_display.v", 251, 282, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 317, 277); // be
+selectCodeEditor("vga_display.v", 317, 277, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 433, 293); // be
+selectCodeEditor("vga_display.v", 433, 293, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 458, 275); // be
+selectCodeEditor("vga_display.v", 458, 275, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 434, 319); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("vga_display.v", 167, 371); // be
+selectCodeEditor("vga_display.v", 167, 371, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 193, 260); // be
+selectCodeEditor("vga_display.v", 193, 260, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 198, 278); // be
+selectCodeEditor("vga_display.v", 198, 278, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 198, 294); // be
+selectCodeEditor("vga_display.v", 198, 294, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 199, 378); // be
+selectCodeEditor("vga_display.v", 202, 391); // be
+selectCodeEditor("vga_display.v", 202, 391, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 205, 418); // be
+selectCodeEditor("vga_display.v", 205, 418, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 201, 408); // be
+selectCodeEditor("vga_display.v", 201, 408, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 218, 253); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mytank_superdis.v]", 2, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("mytank_superdis.v", 203, 161); // be
+selectCodeEditor("mytank_superdis.v", 203, 161); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_display.v", 211, 72); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 21:16:29 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 21:16:29 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-1031] addra is not declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:218]. ]", 2, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\10_Vivado\tank_war\p_vga.srcs\sources_1\new\vga_display.v;-;;-;16;-;line;-;218;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-1031] addra is not declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:218]. ]", 2, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\10_Vivado\tank_war\p_vga.srcs\sources_1\new\vga_display.v;-;;-;16;-;line;-;218;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-1031] addra is not declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:218]. ]", 2, true, false, false, false, false, true); // ah - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-1031] addra is not declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:218]. ]", 2, true); // ah - Node
+selectCodeEditor("vga_display.v", 185, 336); // be
+selectCodeEditor("vga_display.v", 185, 336, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 189, 346); // be
+selectCodeEditor("vga_display.v", 189, 346, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 186, 333); // be
+selectCodeEditor("vga_display.v", 186, 333, false, false, false, false, true); // be - Double Click
+// Elapsed time: 56 seconds
+selectCodeEditor("vga_display.v", 88, 228); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_display.v", 150, 276); // be
+selectCodeEditor("vga_display.v", 150, 276, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 59, 284); // be
+selectCodeEditor("vga_display.v", 59, 284, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 106 MB. Current time: 5/11/22, 9:18:33 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_display.v", 133, 315); // be
+selectCodeEditor("vga_display.v", 133, 315, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 133, 221); // be
+selectCodeEditor("vga_display.v", 133, 221); // be
+selectCodeEditor("vga_display.v", 133, 221); // be
+selectCodeEditor("vga_display.v", 133, 221, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 129, 314); // be
+selectCodeEditor("vga_display.v", 129, 314, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_display.v", 266, 248); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_display.v", 124, 105); // be
+selectCodeEditor("vga_display.v", 124, 105, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 113, 86); // be
+selectCodeEditor("vga_display.v", 113, 86, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 146, 133); // be
+selectCodeEditor("vga_display.v", 110, 217); // be
+selectCodeEditor("vga_display.v", 110, 217, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 114, 234); // be
+selectCodeEditor("vga_display.v", 114, 234, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 129, 255); // be
+selectCodeEditor("vga_display.v", 129, 255, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 129, 278); // be
+selectCodeEditor("vga_display.v", 129, 278, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 128, 296); // be
+selectCodeEditor("vga_display.v", 128, 296, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 21:19:38 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 21:19:39 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 175 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5678 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,566 MB. GUI used memory: 117 MB. Current time: 5/11/22, 9:22:47 PM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3147.605 ; gain = 1391.641 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_CREATE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 2,572 MB (+1050169kb) [00:51:44]
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'E:/Xilinx/Vivado/2021.2/data/xicom/cfgmem/spi_xc7a35t_pullnone.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip", 1); // aj
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "F:/10_Vivado/tank_war", 2); // aj
+// HMemoryUtils.trashcanNow. Engine heap size: 2,586 MB. GUI used memory: 102 MB. Current time: 5/11/22, 9:23:08 PM CST
+// Elapsed time: 17 seconds
+setFileChooser("F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 32 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 420 seconds
+selectCodeEditor("vga_display.v", 287, 284); // be
+selectCodeEditor("vga_display.v", 291, 272, false, true, false, false, false); // be - Control Key
+selectCodeEditor("vga_display.v", 457, 275); // be
+selectCodeEditor("vga_display.v", 604, 274); // be
+selectCodeEditor("vga_display.v", 607, 272); // be
+selectCodeEditor("vga_display.v", 772, 279); // be
+selectCodeEditor("vga_display.v", 812, 305); // be
+selectCodeEditor("vga_display.v", 235, 276); // be
+selectCodeEditor("vga_display.v", 235, 276, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("keyboard_control.v", 132, 334); // be
+selectCodeEditor("keyboard_control.v", 723, 262); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("keyboard_control.v", 723, 262); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 21:31:59 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 21:31:59 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 159 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 131 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1296 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("v1.v", 137, 277); // be
+selectCodeEditor("v1.v", 137, 277, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 141, 267); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("v1.v", 291, 226); // be
+selectCodeEditor("v1.v", 78, 178); // be
+selectCodeEditor("v1.v", 78, 178, false, false, false, false, true); // be - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("v1.v", 131, 102); // be
+selectCodeEditor("v1.v", 131, 102, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 231, 207); // be
+// Elapsed time: 52 seconds
+selectCodeEditor("v1.v", 248, 295); // be
+// Elapsed time: 219 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard_control.v", 7); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 8); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_display1 (vga_display1.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_display1 (vga_display1.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+dismissDialog("Opening Editor"); // bA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 1); // m
+selectCodeEditor("vga_display.v", 379, 363); // be
+selectCodeEditor("vga_display.v", 407, 205); // be
+selectCodeEditor("vga_display.v", 270, 156); // be
+// Elapsed time: 28 seconds
+selectCodeEditor("vga_display.v", 488, 258); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1025 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 21:43:31 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 21:43:31 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("vga_display.v", 461, 371); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 367 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 48 seconds
+selectCodeEditor("vga_display.v", 257, 366); // be
+selectCodeEditor("vga_display.v", 257, 366, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 306, 376); // be
+selectCodeEditor("vga_display.v", 306, 376, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 402, 364); // be
+selectCodeEditor("vga_display.v", 402, 364, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 440, 365); // be
+selectCodeEditor("vga_display.v", 440, 365, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 504, 366); // be
+selectCodeEditor("vga_display.v", 504, 366, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 235, 372); // be
+selectCodeEditor("vga_display.v", 235, 372, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 309, 376); // be
+selectCodeEditor("vga_display.v", 309, 376, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 530, 369); // be
+selectCodeEditor("vga_display.v", 540, 368); // be
+selectCodeEditor("vga_display.v", 564, 368); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("vga_display.v", 187, 210); // be
+selectCodeEditor("vga_display.v", 187, 210, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 181, 194); // be
+selectCodeEditor("vga_display.v", 181, 194, false, false, false, false, true); // be - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("vga_display.v", 293, 198); // be
+selectCodeEditor("vga_display.v", 293, 198, false, false, false, false, true); // be - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("vga_display.v", 241, 199); // be
+selectCodeEditor("vga_display.v", 241, 199, false, false, false, false, true); // be - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,599 MB. GUI used memory: 112 MB. Current time: 5/11/22, 9:53:08 PM CST
+// Elapsed time: 288 seconds
+selectCodeEditor("vga_display.v", 272, 220); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_display.v", 412, 220); // be
+selectCodeEditor("vga_display.v", 412, 220, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1173 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 84 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 21:58:44 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 21:58:44 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 152 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_2 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,892 MB. GUI used memory: 112 MB. Current time: 5/11/22, 10:01:23 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_CLOSE
+// [Engine Memory]: 3,362 MB (+693382kb) [01:30:25]
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tftg256-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3537.008 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 191 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 4223.547 ; gain = 0.000 open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 4223.547 ; gain = 1010.270 
+// Tcl Message: INFO: [Common 17-344] 'open_run' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'el' command handler elapsed time: 13 seconds
+dismissDialog("Open Implemented Design"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 47 seconds
+selectCodeEditor("vga_display.v", 509, 255); // be
+selectCodeEditor("vga_display.v", 343, 256); // be
+// Elapsed time: 23 seconds
+selectCodeEditor("vga_display.v", 188, 265); // be
+selectCodeEditor("vga_display.v", 188, 265, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 279, 299); // be
+selectCodeEditor("vga_display.v", 196, 200); // be
+selectCodeEditor("vga_display.v", 188, 210); // be
+selectCodeEditor("vga_display.v", 178, 205); // be
+selectCodeEditor("vga_display.v", 178, 205, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1253 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cU
+selectCodeEditor("vga_display.v", 535, 202); // be
+selectCodeEditor("vga_display.v", 252, 217); // be
+// Elapsed time: 19 seconds
+selectCodeEditor("vga_display.v", 358, 195); // be
+selectCodeEditor("vga_display.v", 385, 247); // be
+selectCodeEditor("vga_display.v", 344, 222); // be
+selectCodeEditor("vga_display.v", 264, 213); // be
+selectCodeEditor("vga_display.v", 262, 214); // be
+selectCodeEditor("vga_display.v", 262, 214, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 348, 231); // be
+selectCodeEditor("vga_display.v", 398, 222); // be
+selectCodeEditor("vga_display.v", 398, 222, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 462, 232); // be
+selectCodeEditor("vga_display.v", 354, 260); // be
+selectCodeEditor("vga_display.v", 354, 261); // be
+selectCodeEditor("vga_display.v", 376, 316); // be
+selectCodeEditor("vga_display.v", 461, 261); // be
+selectCodeEditor("vga_display.v", 461, 261, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 511, 265); // be
+selectCodeEditor("vga_display.v", 606, 260); // be
+selectCodeEditor("vga_display.v", 166, 264); // be
+selectCodeEditor("vga_display.v", 168, 257); // be
+selectCodeEditor("vga_display.v", 553, 253); // be
+selectCodeEditor("vga_display.v", 508, 261); // be
+selectCodeEditor("vga_display.v", 504, 250); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 404, 296); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1252 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 22:04:25 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 22:04:25 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 121 seconds
+selectCodeEditor("vga_display.v", 151, 288); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a
+dismissDialog("Feedback Request"); // aH
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 38 seconds
+selectCodeEditor("vga_display.v", 555, 255); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1248 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 11 22:07:52 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("vga_display.v", 579, 257); // be
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+dismissDialog("Reset to Previous Step"); // bA
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1341 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 22:08:47 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 22:08:47 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 72 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 62 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, "Generate Memory Configuration File"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 546, 254); // be
+selectCodeEditor("vga_display.v", 546, 254, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 450, 217); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1393 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 11 22:11:49 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1929 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 108 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+dismissDialog("Implementation is Out-of-date"); // cg
+// Tcl Message: open_run impl_2 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 113 MB. Current time: 5/11/22, 10:13:42 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2575 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4223.547 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 4242.176 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 4242.176 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4242.176 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4355.129 ; gain = 131.582 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 193 MB (+1778kb) [01:42:44]
+// [GUI Memory]: 211 MB (+7662kb) [01:42:44]
+// TclEventType: TIMING_SUMMARY_UPDATED
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// 'el' command handler elapsed time: 11 seconds
+dismissDialog("Open Implemented Design"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 223 MB (+1877kb) [01:42:47]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2 -jobs 12 
+// Tcl Message: [Wed May 11 22:13:53 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Device view-level: 0.0
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 12 
+// Tcl Message: [Wed May 11 22:14:52 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 74 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 22:16:09 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 48 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 553, 256); // be
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1812 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 11 22:17:38 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bA
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "Do Not Cancel Process"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'Implementation is currently running. OK to reset anyway? (Run Synthesis)'
+dismissDialog("Run Synthesis"); // A
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2 -jobs 12 
+// Tcl Message: [Wed May 11 22:17:58 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 56 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 12 
+// Tcl Message: [Wed May 11 22:18:56 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 76 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 22:20:15 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1140795 ms. Increasing delay to 4000 ms.
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1140491 ms. Increasing delay to 3421473 ms.
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: updateGUI() is taking  2218 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2219 ms.
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 1249 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 157 MB. Current time: 5/11/22, 10:43:42 PM CST
+// Elapsed time: 212 seconds
+selectCodeEditor("vga_display.v", 837, 234); // be
+selectCodeEditor("vga_display.v", 345, 488); // be
+selectCodeEditor("vga_display.v", 505, 264); // be
+selectCodeEditor("vga_display.v", 301, 313); // be
+selectCodeEditor("vga_display.v", 445, 380); // be
+selectCodeEditor("vga_display.v", 344, 332); // be
+selectCodeEditor("vga_display.v", 344, 332, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 809, 466); // be
+// Elapsed time: 27 seconds
+selectCodeEditor("vga_display.v", 57, 344); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1776 ms.
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("vga_display.v", 737, 253); // be
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_driver_VGA : vga_driver (vga_driver.v)]", 9, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 8, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1067 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 21 seconds
+selectCodeEditor("shell.v", 322, 405); // be
+// Elapsed time: 19 seconds
+selectCodeEditor("shell.v", 175, 225); // be
+selectCodeEditor("shell.v", 175, 225, false, false, false, false, true); // be - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("shell.v", 270, 500); // be
+selectCodeEditor("shell.v", 270, 500, false, false, false, false, true); // be - Double Click
+// Elapsed time: 63 seconds
+selectCodeEditor("shell.v", 252, 451); // be
+selectCodeEditor("shell.v", 252, 451, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 319, 448); // be
+selectCodeEditor("shell.v", 259, 451); // be
+selectCodeEditor("shell.v", 259, 451, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 261, 448); // be
+selectCodeEditor("shell.v", 265, 448, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 262, 445); // be
+selectCodeEditor("shell.v", 340, 363, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("shell.v", 361, 379, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("shell.v", 243, 413); // be
+selectCodeEditor("shell.v", 262, 503); // be
+selectCodeEditor("shell.v", 498, 447); // be
+selectCodeEditor("shell.v", 265, 531); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("shell.v", 438, 530); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), clock : u_clock (u_clock.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), clock : u_clock (u_clock.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1060 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_myshell : shell (shell.v)]", 6, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectCodeEditor("v1.v", 56, 523); // be
+selectCodeEditor("v1.v", 56, 523, false, false, false, false, true); // be - Double Click
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2); // D
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("vga_display.v", 165, 352); // be
+selectCodeEditor("vga_display.v", 165, 352, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 155, 375); // be
+selectCodeEditor("vga_display.v", 155, 375, false, false, false, false, true); // be - Double Click
+// Elapsed time: 47 seconds
+selectCodeEditor("vga_display.v", 232, 423); // be
+selectCodeEditor("vga_display.v", 233, 419, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 233, 419); // be
+selectCodeEditor("vga_display.v", 236, 409); // be
+selectCodeEditor("vga_display.v", 236, 409, false, false, false, false, true); // be - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("vga_display.v", 144, 307); // be
+selectCodeEditor("vga_display.v", 158, 295); // be
+selectCodeEditor("vga_display.v", 158, 295, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 205, 330); // be
+selectCodeEditor("vga_display.v", 121, 344); // be
+selectCodeEditor("vga_display.v", 121, 344, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 161, 353); // be
+selectCodeEditor("vga_display.v", 161, 353, false, false, false, false, true); // be - Double Click
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("v1.v", 143, 387); // be
+selectCodeEditor("v1.v", 143, 387, false, false, false, false, true); // be - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("v1.v", 163, 354); // be
+selectCodeEditor("v1.v", 163, 354, false, false, false, false, true); // be - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("keyboard_control.v", 52, 455); // be
+selectCodeEditor("keyboard_control.v", 52, 455, false, false, false, false, true); // be - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("keyboard_control.v", 111, 420); // be
+selectCodeEditor("keyboard_control.v", 217, 427); // be
+selectCodeEditor("keyboard_control.v", 217, 427, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 56, 69); // be
+selectCodeEditor("keyboard_control.v", 56, 69, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 62, 48); // be
+selectCodeEditor("keyboard_control.v", 62, 48, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 66, 69); // be
+selectCodeEditor("keyboard_control.v", 66, 69, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 223, 364); // be
+selectCodeEditor("keyboard_control.v", 214, 389); // be
+selectCodeEditor("keyboard_control.v", 214, 389, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 181, 347); // be
+selectCodeEditor("keyboard_control.v", 178, 346); // be
+// Elapsed time: 25 seconds
+selectCodeEditor("keyboard_control.v", 180, 503); // be
+selectCodeEditor("keyboard_control.v", 352, 494); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1209 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("keyboard_control.v", 294, 515); // be
+selectCodeEditor("keyboard_control.v", 300, 510); // be
+selectCodeEditor("keyboard_control.v", 310, 465); // be
+selectCodeEditor("keyboard_control.v", 173, 450); // be
+selectCodeEditor("keyboard_control.v", 107, 456); // be
+selectCodeEditor("keyboard_control.v", 115, 455); // be
+selectCodeEditor("keyboard_control.v", 115, 455, false, false, false, false, true); // be - Double Click
+selectCodeEditor("keyboard_control.v", 174, 453); // be
+selectCodeEditor("keyboard_control.v", 174, 453); // be
+selectCodeEditor("keyboard_control.v", 76, 529); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 22:55:27 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 22:55:27 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 172 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// [GUI Memory]: 234 MB (+387kb) [02:27:17]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_CFGMEM_DELETE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-TUL-C1234567A" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-TUL-C1234567A" may be locked by another hw_server.  
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 140 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // al
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Tcl Message: create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0] 
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'E:/Xilinx/Vivado/2021.2/data/xicom/cfgmem/spi_xc7a35t_pullnone.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "F:/10_Vivado/tank_war/p_vga.runs/impl_2", 1); // aj
+setFileChooser("F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 94 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "div_clk.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_driver.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_data_selector.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard_control.v", 5); // m
+// Elapsed time: 23 seconds
+selectCodeEditor("keyboard_control.v", 172, 126); // be
+selectCodeEditor("keyboard_control.v", 175, 384); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false, false, false, false, true, false); // n - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1553 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 23:03:22 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 128 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 12 
+// Tcl Message: [Wed May 11 23:05:37 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 23:05:37 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 226 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 23:09:26 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 59 seconds
+selectCodeEditor("keyboard_control.v", 168, 332); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("keyboard_control.v", 173, 59); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1372 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Launch Runs"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May 11 23:12:11 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Wed May 11 23:12:11 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 170 MB. Current time: 5/11/22, 11:13:42 PM CST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 657 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10 ms. Decreasing delay to 2010 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 169 MB. Current time: 5/11/22, 11:43:43 PM CST
+// Elapsed time: 3017 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_data_selector.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display1.v", 7); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 168 MB. Current time: 5/12/22, 12:13:43 AM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_driver.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_data_selector.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mytank_superdis.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 0); // m
+selectCodeEditor("vga_display.v", 71, 160); // be
+selectCodeEditor("vga_display.v", 178, 367); // be
+selectCodeEditor("vga_display.v", 94, 65); // be
+selectCodeEditor("vga_display.v", 178, 334); // be
+selectCodeEditor("vga_display.v", 139, 364); // be
+selectCodeEditor("vga_display.v", 141, 354); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("vga_display.v", 197, 302); // be
+selectCodeEditor("vga_display.v", 146, 391); // be
+selectCodeEditor("vga_display.v", 174, 342); // be
+selectCodeEditor("vga_display.v", 122, 91); // be
+selectCodeEditor("vga_display.v", 160, 390); // be
+selectCodeEditor("vga_display.v", 147, 272); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2312 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1249 ms. Increasing delay to 3747 ms.
+selectCodeEditor("vga_display.v", 177, 339); // be
+selectCodeEditor("vga_display.v", 107, 408); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_display.v", 156, 392); // be
+selectCodeEditor("vga_display.v", 148, 419); // be
+selectCodeEditor("vga_display.v", 114, 407); // be
+selectCodeEditor("vga_display.v", 127, 404); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 262, 261); // be
+selectCodeEditor("vga_display.v", 124, 276); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// Elapsed time: 27 seconds
+selectCodeEditor("vga_display.v", 205, 128); // be
+selectCodeEditor("vga_display.v", 205, 128, false, false, false, false, true); // be - Double Click
+// Elapsed time: 578 seconds
+selectCodeEditor("vga_display.v", 228, 218); // be
+selectCodeEditor("vga_display.v", 228, 218, false, false, false, false, true); // be - Double Click
+// Elapsed time: 293 seconds
+selectCodeEditor("vga_display.v", 281, 309); // be
+selectCodeEditor("vga_display.v", 231, 271); // be
+selectCodeEditor("vga_display.v", 231, 271, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 161, 279); // be
+selectCodeEditor("vga_display.v", 162, 278, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 232, 274); // be
+selectCodeEditor("vga_display.v", 232, 274, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 293, 277); // be
+selectCodeEditor("vga_display.v", 293, 277, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 351, 277); // be
+selectCodeEditor("vga_display.v", 351, 277, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 294, 270); // be
+selectCodeEditor("vga_display.v", 217, 269); // be
+selectCodeEditor("vga_display.v", 217, 269, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 282, 272); // be
+selectCodeEditor("vga_display.v", 282, 272, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 258, 256); // be
+selectCodeEditor("vga_display.v", 192, 281); // be
+selectCodeEditor("vga_display.v", 340, 287); // be
+selectCodeEditor("vga_display.v", 345, 282); // be
+selectCodeEditor("vga_display.v", 204, 276); // be
+selectCodeEditor("vga_display.v", 194, 273); // be
+selectCodeEditor("vga_display.v", 363, 280); // be
+selectCodeEditor("vga_display.v", 339, 277); // be
+selectCodeEditor("vga_display.v", 342, 276, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 241, 268); // be
+selectCodeEditor("vga_display.v", 196, 271); // be
+selectCodeEditor("vga_display.v", 346, 277); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 151, 272); // be
+selectCodeEditor("vga_display.v", 168, 275); // be
+selectCodeEditor("vga_display.v", 168, 275, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 168, 275); // be
+selectCodeEditor("vga_display.v", 194, 275); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_display.v", 237, 337); // be
+selectCodeEditor("vga_display.v", 237, 337, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 224, 347); // be
+selectCodeEditor("vga_display.v", 224, 347); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 220, 338); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// Elapsed time: 31 seconds
+selectCodeEditor("vga_display.v", 166, 355); // be
+selectCodeEditor("vga_display.v", 230, 131); // be
+selectCodeEditor("vga_display.v", 202, 166); // be
+selectCodeEditor("vga_display.v", 327, 147); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 235, 176); // be
+selectCodeEditor("vga_display.v", 398, 167); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2169 ms.
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2115 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:33:32 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 00:33:32 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 145 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 18 seconds
+selectCodeEditor("vga_display.v", 186, 408); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 258, 235); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+typeControlKey(null, null, 'z');
+// Elapsed time: 37 seconds
+selectCodeEditor("vga_display.v", 78, 315); // be
+selectCodeEditor("vga_display.v", 65, 316); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 119, 249); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+selectCodeEditor("vga_display.v", 182, 443); // be
+// Elapsed time: 170 seconds
+selectCodeEditor("vga_display.v", 7, 138); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_display.v", 216, 235); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("vga_display.v", 158, 373); // be
+selectCodeEditor("vga_display.v", 49, 325); // be
+selectCodeEditor("vga_display.v", 100, 272); // be
+selectCodeEditor("vga_display.v", 115, 422); // be
+typeControlKey((HResource) null, "vga_display.v", 'c'); // be
+selectCodeEditor("vga_display.v", 123, 314); // be
+typeControlKey((HResource) null, "vga_display.v", 'v'); // be
+// Elapsed time: 39 seconds
+selectCodeEditor("vga_display.v", 200, 218); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2047 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:41:35 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 00:41:35 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 169 MB. Current time: 5/12/22, 12:43:43 AM CST
+// Elapsed time: 133 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 85 seconds
+selectCodeEditor("vga_display.v", 211, 214); // be
+// Elapsed time: 58 seconds
+selectCodeEditor("vga_display.v", 208, 274); // be
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2124 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:46:39 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 68 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 12 
+// Tcl Message: [Thu May 12 00:47:51 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 00:47:51 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 112 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:49:46 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2110 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 122 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cU
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:52:48 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 00:52:48 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 63 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCodeEditor("vga_display.v", 231, 300); // be
+selectCodeEditor("vga_display.v", 231, 300, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 299, 297); // be
+selectCodeEditor("vga_display.v", 300, 297, false, false, false, false, true); // be - Double Click
+selectCodeEditor("vga_display.v", 277, 305); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2 -jobs 12 
+// Tcl Message: [Thu May 12 00:54:04 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("vga_display.v", 388, 398); // be
+selectCodeEditor("vga_display.v", 395, 369); // be
+selectCodeEditor("vga_display.v", 398, 348); // be
+selectCodeEditor("vga_display.v", 405, 335); // be
+selectCodeEditor("vga_display.v", 401, 347); // be
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-2715] syntax error near x_ever [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:201]. ]", 10, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\10_Vivado\tank_war\p_vga.srcs\sources_1\new\vga_display.v;-;;-;16;-;line;-;201;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-2715] syntax error near x_ever [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:201]. ]", 10, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\10_Vivado\tank_war\p_vga.srcs\sources_1\new\vga_display.v;-;;-;16;-;line;-;201;-;;-;16;-;"); // ah
+selectCodeEditor("vga_display.v", 208, 200); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2433 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 00:54:47 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 00:54:47 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// Elapsed time: 49 seconds
+applyEnter(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // n
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 74 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+closeMainWindow("p_vga - [F:/10_Vivado/tank_war/p_vga.xpr] - Vivado 2021.2"); // bb
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+dismissDialog("Exit Vivado"); // A
+// WARNING: HEventQueue.dispatchEvent() is taking  24459602 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 170 MB. Current time: 5/12/22, 7:44:54 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 24460946 ms. Increasing delay to 5000 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 24482 seconds
+selectCodeEditor("vga_display.v", 349, 278); // be
+selectCodeEditor("vga_display.v", 218, 196); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2183 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("vga_display.v", 202, 317); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2036 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 07:45:50 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 07:45:50 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 257 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin"); // ap
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 25 seconds
+selectCodeEditor("vga_display.v", 199, 203); // be
+selectCodeEditor("vga_display.v", 220, 429); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2082 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu May 12 07:50:56 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Thu May 12 07:50:56 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 233 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin"); // ap
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 58 seconds
+selectCodeEditor("vga_display.v", 782, 9); // be
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// WARNING: HEventQueue.dispatchEvent() is taking  8200050 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 171 MB. Current time: 5/12/22, 10:12:53 AM CST
+// Elapsed time: 8271 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), mytank_display : vga_display (vga_display.v)]", 7); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 3,362 MB. GUI used memory: 169 MB. Current time: 5/12/22, 10:42:53 AM CST
+// Elapsed time: 2945 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), u_mytank_control : keyboard_control (keyboard_control.v)]", 5, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 14 seconds
+selectCodeEditor("keyboard_control.v", 120, 388); // be
+typeControlKey((HResource) null, "keyboard_control.v", 'v'); // be
+selectCodeEditor("keyboard_control.v", 120, 206); // be
+selectCodeEditor("keyboard_control.v", 329, 443); // be
+// Elapsed time: 22 seconds
+selectCodeEditor("keyboard_control.v", 255, 350); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard_control.v", 315, 225); // be
+// Elapsed time: 47 seconds
+selectCodeEditor("keyboard_control.v", 426, 334); // be
+// Elapsed time: 75 seconds
+selectCodeEditor("keyboard_control.v", 266, 200); // be
+selectCodeEditor("keyboard_control.v", 144, 195); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard_control.v", 302, 202); // be
+typeControlKey(null, null, 'z');
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a
+dismissDialog("Text Changed"); // k

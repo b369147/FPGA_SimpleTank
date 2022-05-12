@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.srcs/constrs_1/new/cons1.xdc rfile:../../../p_vga.srcs/constrs_1/new/cons1.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc rfile:../../../p_vga.srcs/constrs_1/new/cons1.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN D4 [get_ports clk]
 set_property src_info {type:XDC file:1 line:48 export:INPUT save:INPUT read:READ} [current_design]

@@ -135,7 +135,7 @@ keyboard_control u_mytank_control
 
     vga_display	mytank_display
     (
-        .clk		(clk),
+        .clk		(w_clk),
         .enable		(en),
 
         //input the relative position of tank

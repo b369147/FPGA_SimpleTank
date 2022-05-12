@@ -1,0 +1,2 @@
+blk_mem_gen_01.v,verilog,xil_defaultlib,../../../../p_vga.gen/sources_1/ip/blk_mem_gen_01/sim/blk_mem_gen_01.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

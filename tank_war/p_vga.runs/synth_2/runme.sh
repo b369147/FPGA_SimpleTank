@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/10_Vivado/p_vga_test/p_vga1/p_vga1/p_vga.runs/synth_2'
+HD_PWD='F:/10_Vivado/tank_war/p_vga.runs/synth_2'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
