@@ -67,8 +67,13 @@ module shell
 
     //---------------------------------------------------
     //move
-    reg		sample_flag;
-    initial sample_flag <= 1'b0;
+//    reg		sample_flag;
+    
+    // init pos
+    parameter init_pos = 30;
+    
+    reg sample_flag ;
+    initial sample_flag= 1'b0;
 
     always@(posedge clk_8Hz)
     begin
@@ -78,14 +83,14 @@ module shell
                 begin
                     if(sample_flag == 1'b0)
                     begin
-                        x_shell_pos_out <= tank_xpos;
-                        y_shell_pos_out <= tank_ypos;
+                        x_shell_pos_out <= x_shell_pos_init;
+                        y_shell_pos_out <= y_shell_pos_init;
                         sample_flag <= 1'b1;
                     end
-                    if(sample_flag == 1'b1)
+                    else if(sample_flag == 1'b1)
                     begin
                         //boundary detection
-                        if((x_shell_pos_out == 6'b111111)||(x_shell_pos_out > 40)||(y_shell_pos_out == 6'b111111)||(y_shell_pos_out > 24))
+                        if((x_shell_pos_out == 6'b1010)||(x_shell_pos_out > 10)||(y_shell_pos_out == 6'b1001)||(y_shell_pos_out > 9))
                             begin
                                 shell_state_feedback <= 1'b0; //output 0 if reach the boundaries
                                 sample_flag <= 1'b0;
@@ -121,8 +126,8 @@ module shell
                 end
             else
                 begin
-                    x_shell_pos_out <= 6'd40;
-                    y_shell_pos_out <= 6'd40;
+                    x_shell_pos_out <= 6'd9;
+                    y_shell_pos_out <= 6'd8;
                 end
         end
     end
@@ -136,10 +141,10 @@ module shell
         begin
             if(shell_state == 1'b1)
                 begin
-                    if((VGA_xpos > x_shell_pos_out * 64 - 3 )
-                    &&(VGA_xpos < x_shell_pos_out * 64 + 3 )
-                    &&(VGA_ypos > y_shell_pos_out * 64 - 3 )
-                    &&(VGA_ypos < y_shell_pos_out * 64 + 3 ))
+                    if((VGA_xpos > x_shell_pos_out * 64 - 3 + init_pos + 15)
+                    &&(VGA_xpos < x_shell_pos_out * 64 + 3 + init_pos + 15)
+                    &&(VGA_ypos > y_shell_pos_out * 64 - 3 + init_pos + 20)
+                    &&(VGA_ypos < y_shell_pos_out * 64 + 3 + init_pos + 20))
                         begin
                             if(shell_ide)
                                 VGA_data <= 12'h0F0;

@@ -1,9 +1,1 @@
 Breakpoint File Version 1.0
-62,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/vga_display.v"
-67,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-69,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-54,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-55,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-62,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-72,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"
-71,true,"F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/keyboard_control.v"

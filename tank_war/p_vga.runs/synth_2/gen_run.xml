@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1652362940" LaunchIncrCheckpoint="$PPRDIR/../p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
+<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-1" LaunchTime="1654004060" LaunchIncrCheckpoint="$PPRDIR/../p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
   <File Type="PA-TCL" Name="v1.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="v1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="v1_reports.tcl"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Thu May 12 21:44:15 2022
+| Date         : Tue May 31 21:35:51 2022
 | Host         : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command      : report_drc -file v1_drc_opted.rpt -pb v1_drc_opted.pb -rpx v1_drc_opted.rpx
 | Design       : v1
@@ -61,11 +61,12 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT clock/out[3]_i_3 is driving clock pin of 14 cells. This could lead to large hold time violations. Involved cells are:
-finish_flag_reg, key_val_cal_last_reg[0], key_val_cal_last_reg[1],
-key_val_cal_last_reg[2], key_val_cal_last_reg[3], key_val_cal_last_reg[4],
-key_val_cal_last_reg[5], key_val_cal_last_reg[6], key_val_cal_last_reg[8],
-out_reg[0], out_reg[1], out_reg[2], out_reg[3], shoot_reg
+A LUT clock/finish_flag_i_3 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
+finish_flag_reg, finish_reg, key_val_cal_last_reg[0],
+key_val_cal_last_reg[1], key_val_cal_last_reg[2], key_val_cal_last_reg[3],
+key_val_cal_last_reg[4], key_val_cal_last_reg[5], key_val_cal_last_reg[6],
+key_val_cal_last_reg[8], out_reg[0], out_reg[1], out_reg[2], out_reg[3],
+shoot_reg (the first 15 of 20 listed)
 Related violations: <none>
 
 

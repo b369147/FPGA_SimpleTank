@@ -1,0 +1,1834 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May 25 18:03:27 2022
+# Process ID: 22568
+# Current directory: F:/10_Vivado/tank_war
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20112 F:\10_Vivado\tank_war\p_vga.xpr
+# Log file: F:/10_Vivado/tank_war/vivado.log
+# Journal file: F:/10_Vivado/tank_war\vivado.jou
+# Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/10_Vivado/tank_war/p_vga.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at E:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1412.938 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 18:06:30 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 18:06:30 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1412.938 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3072.031 ; gain = 1659.094
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 18:20:15 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 18:20:15 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim1'
+INFO: [Vivado 12-12490] The selected simulation model for 'blk_mem_gen_01' IP changed to 'rtl' from '', the simulation run directory will be deleted.
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/blk_mem_gen_01.mif'
+INFO: [SIM-utils-43] Exported 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/blk_mem_gen_0.coe'
+INFO: [SIM-utils-43] Exported 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/blk_mem_gen_02.mif'
+INFO: [SIM-utils-43] Exported 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/blk_mem_gen_1.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/sim/blk_mem_gen_02.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/sim/blk_mem_gen_01.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dynamic_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_data_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_others
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboard_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_xd
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module u_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2458] undeclared symbol w_clk, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:124]
+INFO: [VRFC 10-2458] undeclared symbol item_faster, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [VRFC 10-2458] undeclared symbol connect, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:170]
+WARNING: [VRFC 10-3248] data object 'data' is already declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+WARNING: [VRFC 10-3703] second declaration of 'data' ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+WARNING: [VRFC 10-2938] 'connect' is already implicitly declared on line 170 [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:415]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_x' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_y' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_x' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_y' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'x_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'y_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'x_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'y_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 13 for port 'addra' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 10 for port 'addra' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 7 for port 'key_val_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:378]
+WARNING: [VRFC 10-5021] port 'sw' is not connected on this instance [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:28]
+WARNING: [VRFC 10-3027] 'data' was previously declared with a different range [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.u_clock
+Compiling module xil_defaultlib.keyboard_control
+Compiling module xil_defaultlib.keyboard_control(blood_init=4)
+Compiling module xil_defaultlib.shell
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_01
+Compiling module xil_defaultlib.vga_display
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_02
+Compiling module xil_defaultlib.VGA_others
+Compiling module xil_defaultlib.VGA_others(init_pos=600)
+Compiling module xil_defaultlib.VGA_data_selector
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.dynamic_led
+Compiling module xil_defaultlib.key_xd
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 3134.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/10_Vivado/tank_war/p_vga.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim1_behav -key {Behavioral:sim_1:Functional:sim1} -tclbatch {sim1.tcl} -view {F:/10_Vivado/tank_war/sim1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/10_Vivado/tank_war/sim1_behav.wcfg
+source sim1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim1.t.mytank_display.UUT1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim1.t.tank1_display.UUT1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim1.t.mytank_interface.UUT1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sim1.t.tank1_interface.UUT1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:31 . Memory (MB): peak = 3177.395 ; gain = 56.617
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: v1
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:415]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3851.418 ; gain = 366.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-6014] Unused sequential element x_shell_pos_init_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:63]
+WARNING: [Synth 8-6014] Unused sequential element y_shell_pos_init_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:378]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:423]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3916.613 ; gain = 431.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3934.527 ; gain = 449.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3934.527 ; gain = 449.590
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 3963.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4043.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4096.043 ; gain = 611.105
+45 Infos, 61 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 4096.043 ; gain = 918.648
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 18:32:06 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 18:32:06 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:358]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:415]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4198.242 ; gain = 98.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-6014] Unused sequential element x_shell_pos_init_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:63]
+WARNING: [Synth 8-6014] Unused sequential element y_shell_pos_init_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:378]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:423]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4238.637 ; gain = 139.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4262.539 ; gain = 163.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4262.539 ; gain = 163.059
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.045 . Memory (MB): peak = 4281.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 4281.500 ; gain = 182.801
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 18:46:54 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 18:46:54 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 19:40:34 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 19:40:34 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 19:44:52 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 19:44:52 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 19:49:19 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 19:52:18 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 19:52:18 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:03:28 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:03:28 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:10:35 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:10:35 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4336.008 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4336.328 ; gain = 0.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4360.227 ; gain = 24.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4360.227 ; gain = 24.219
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 4380.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 4380.152 ; gain = 44.145
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4380.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_in' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [Synth 8-689] width (6) of port connection 'x_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [Synth 8-689] width (6) of port connection 'y_rel_pos_out' does not match port width (5) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4380.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4393.004 ; gain = 12.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4393.004 ; gain = 12.852
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 4412.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 4412.957 ; gain = 32.805
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4412.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4412.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4412.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4412.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4427.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 4427.844 ; gain = 14.887
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4427.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell1_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4427.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4428.926 ; gain = 1.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4428.926 ; gain = 1.082
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 4448.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 4448.898 ; gain = 21.055
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:34:39 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:34:39 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:45:39 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:45:39 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:52:34 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:52:34 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 20:56:17 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 20:56:17 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:05:02 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:05:02 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 21:10:33 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:11:56 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:11:56 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 21:19:05 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:19:58 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:19:58 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 21:24:28 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:30:23 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:30:23 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4507.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4507.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4518.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4518.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4537.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 4537.484 ; gain = 29.641
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 21:34:11 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:35:18 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:35:18 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:357]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:414]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4537.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_x' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_y' does not match port width (1) of module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+	Parameter blood_init bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_x' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [Synth 8-689] width (5) of port connection 'shell_y' does not match port width (1) of module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [Synth 8-689] width (5) of port connection 'x_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [Synth 8-689] width (5) of port connection 'y_shell_pos_out' does not match port width (6) of module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (5#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (6#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (7#1) [F:/10_Vivado/tank_war/.Xil/Vivado-22568-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (8#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:377]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:422]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_xpos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ypos[5] in module shell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4537.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4537.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4537.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'A'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.dcp' for cell 'mytank_display/UUT1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.dcp' for cell 'mytank_interface/UUT1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 4548.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'A/inst'
+Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'A/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4548.445 ; gain = 10.961
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:49:57 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:49:57 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:52:31 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:52:31 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 21:57:26 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 21:58:18 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 21:58:18 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 22:01:08 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed May 25 22:03:33 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/10_Vivado/tank_war/p_vga.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Wed May 25 22:04:25 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Wed May 25 22:04:25 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 25 22:09:01 2022...

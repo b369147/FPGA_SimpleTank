@@ -1,8 +1,13 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../p_vga.gen/sources_1/ip/blk_mem_gen_02/sim/blk_mem_gen_02.v" \
+"../../../../p_vga.gen/sources_1/ip/blk_mem_gen_01/sim/blk_mem_gen_01.v" \
 "../../../../p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../p_vga.srcs/sources_1/new/Dynami_led.v" \
 "../../../../p_vga.srcs/sources_1/new/VGA_data_selector.v" \
+"../../../../p_vga.srcs/sources_1/new/VGA_others.v" \
 "../../../../p_vga.srcs/sources_1/new/keyboard_control.v" \
+"../../../../p_vga.srcs/sources_1/new/keyxd.v" \
 "../../../../p_vga.srcs/sources_1/new/shell.v" \
 "../../../../p_vga.srcs/sources_1/new/u_clock.v" \
 "../../../../p_vga.srcs/sources_1/new/v1.v" \

@@ -1,13 +1,30 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_in' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:78]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_in' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:79]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_out' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:80]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_out' [F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/sources_1/new/v1.v:81]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_x' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:155]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_y' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:156]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:160]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:161]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:162]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:163]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_x' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:189]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'shell1_y' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:190]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:194]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_in' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:195]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'x_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:196]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'y_rel_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:197]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'x_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:221]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'y_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:222]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'x_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:247]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'y_shell_pos_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:248]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 13 for port 'addra' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 10 for port 'addra' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 7 for port 'key_val_out' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:378]
+WARNING: [VRFC 10-5021] port 'sw' is not connected on this instance [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:28]
+WARNING: [VRFC 10-3027] 'data' was previously declared with a different range [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:55]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -19,10 +36,27 @@ Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
 Compiling module xil_defaultlib.clk_wiz_0
 Compiling module xil_defaultlib.u_clock
 Compiling module xil_defaultlib.keyboard_control
+Compiling module xil_defaultlib.keyboard_control(blood_init=4)
 Compiling module xil_defaultlib.shell
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_01
 Compiling module xil_defaultlib.vga_display
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_02
+Compiling module xil_defaultlib.VGA_others
+Compiling module xil_defaultlib.VGA_others(init_pos=600)
 Compiling module xil_defaultlib.VGA_data_selector
 Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.dynamic_led
+Compiling module xil_defaultlib.key_xd
 Compiling module xil_defaultlib.v1
 Compiling module xil_defaultlib.sim1
 Compiling module xil_defaultlib.glbl
