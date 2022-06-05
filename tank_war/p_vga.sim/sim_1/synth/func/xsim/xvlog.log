@@ -1,0 +1,45 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.sim/sim_1/synth/func/xsim/sim1_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_data_selector
+INFO: [VRFC 10-311] analyzing module VGA_others
+INFO: [VRFC 10-311] analyzing module VGA_others__parameterized0
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module dynamic_led
+INFO: [VRFC 10-311] analyzing module key_xd
+INFO: [VRFC 10-311] analyzing module keyboard_control
+INFO: [VRFC 10-311] analyzing module keyboard_control__parameterized0
+INFO: [VRFC 10-311] analyzing module shell
+INFO: [VRFC 10-311] analyzing module shell_0
+INFO: [VRFC 10-311] analyzing module u_clock
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-311] analyzing module vga_display__xdcDup__1
+INFO: [VRFC 10-311] analyzing module vga_driver
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_bindec
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_mux
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_width__parameterized1
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_wrapper_init__parameterized0
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_prim_wrapper_init__parameterized1
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_v8_4_5
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_01_blk_mem_gen_v8_4_5_synth
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_v8_4_5
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_02_blk_mem_gen_v8_4_5_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol sw, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:36]
+INFO: [VRFC 10-2458] undeclared symbol row, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:38]
+INFO: [VRFC 10-2458] undeclared symbol led, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:39]
+INFO: [VRFC 10-2458] undeclared symbol dig, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:40]
+INFO: [VRFC 10-2458] undeclared symbol seg, assumed default net type wire [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:41]

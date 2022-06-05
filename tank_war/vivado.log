@@ -2,10 +2,10 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Thu May 12 19:41:02 2022
-# Process ID: 12900
+# Start of session at: Sun Jun  5 15:25:03 2022
+# Process ID: 20056
 # Current directory: F:/10_Vivado/tank_war
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20776 F:\10_Vivado\tank_war\p_vga.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13588 F:\10_Vivado\tank_war\p_vga.xpr
 # Log file: F:/10_Vivado/tank_war/vivado.log
 # Journal file: F:/10_Vivado/tank_war\vivado.jou
 # Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
@@ -31,18 +31,39 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1411.492 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1413.402 ; gain = 0.000
 update_compile_order -fileset sources_1
-close [ open F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v w ]
-add_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v
+close [ open F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/blood.v w ]
+add_files F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/blood.v
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_2
 INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
 launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:09:12 2022] Launched synth_2...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Sun Jun  5 15:43:07 2022] Launched synth_2...
 Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:09:12 2022] Launched impl_2...
+[Sun Jun  5 15:43:07 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+INFO: [Common 17-344] 'launch_runs' was cancelled
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 15:43:15 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 15:43:15 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2 -jobs 12
+[Sun Jun  5 15:44:11 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 15:45:36 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 15:45:36 2022] Launched impl_2...
 Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -67,11 +88,11 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.492 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1413.402 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3078.535 ; gain = 1667.043
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0]
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3086.812 ; gain = 1673.410
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
@@ -83,440 +104,245 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Jun  5 15:52:51 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 15:53:42 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 15:53:42 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 15:55:49 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 15:55:49 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Jun  5 16:00:41 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:01:01 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:01:01 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_1.coe' provided. It will be converted relative to IP Instance files '../../../../p_vga.srcs/sources_1/ip/blk_mem_gen_1.coe'
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_02
-set_property -dict [list CONFIG.Component_Name {blk_mem_gen_02} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {870} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_1.coe}] [get_ips blk_mem_gen_02]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_mem_gen_02' to 'blk_mem_gen_02' is not allowed and is ignored.
-INFO: [IP_Flow 19-3484] Absolute path of file 'f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_1.coe' provided. It will be converted relative to IP Instance files '../blk_mem_gen_1.coe'
-generate_target {instantiation_template} [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_02'...
-update_compile_order -fileset sources_1
-generate_target all [get_files  f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_02'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_02'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_02'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_02'...
-export_ip_user_files -of_objects [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci]
-launch_runs blk_mem_gen_02_synth_1 -jobs 12
-[Thu May 12 20:23:21 2022] Launched blk_mem_gen_02_synth_1...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_02_synth_1/runme.log
-INFO: [Vivado 12-4357] Exporting simulation files for 'blk_mem_gen_02'... please wait for 'blk_mem_gen_02_synth_1' run to finish...
-wait_on_run blk_mem_gen_02_synth_1
-[Thu May 12 20:23:22 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:23:27 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:23:32 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:23:37 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:23:47 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:23:57 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:24:07 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:24:17 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
-[Thu May 12 20:24:37 2022] Waiting for blk_mem_gen_02_synth_1 to finish...
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Jun  5 16:07:57 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
 
-*** Running vivado
-    with args -log blk_mem_gen_02.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_02.tcl
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
 
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:08:38 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:08:38 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Jun  5 16:14:14 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
 
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
 
-****** Vivado v2021.2 (64-bit)
-  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
-  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:14:30 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:14:30 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:19:23 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:19:23 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:31:30 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:31:30 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:37:51 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:37:51 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Jun  5 16:57:48 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
 
-source blk_mem_gen_02.tcl -notrace
-Command: synth_design -top blk_mem_gen_02 -part xc7a35tftg256-1 -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 16:58:10 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 16:58:10 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 17:02:41 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 17:02:41 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 17:04:59 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 17:04:59 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 17:10:36 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 17:10:36 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Jun  5 17:22:24 2022] Launched synth_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
+[Sun Jun  5 17:22:24 2022] Launched impl_2...
+Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
+open_run impl_2
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16840
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.840 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_02' [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/synth/blk_mem_gen_02.vhd:70]
-	Parameter C_FAMILY bound to: artix7 - type: string 
-	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
-	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
-	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
-	Parameter C_AXI_TYPE bound to: 1 - type: integer 
-	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
-	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
-	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
-	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
-	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
-	Parameter C_ALGORITHM bound to: 1 - type: integer 
-	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
-	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
-	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_02.mif - type: string 
-	Parameter C_INIT_FILE bound to: blk_mem_gen_02.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
-	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
-	Parameter C_HAS_RSTA bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
-	Parameter C_RSTRAM_A bound to: 0 - type: integer 
-	Parameter C_INITA_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENA bound to: 1 - type: integer 
-	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
-	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_A bound to: READ_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 870 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 870 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
-	Parameter C_HAS_RSTB bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
-	Parameter C_RSTRAM_B bound to: 0 - type: integer 
-	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
-	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
-	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 870 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 870 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
-	Parameter C_USE_ECC bound to: 0 - type: integer 
-	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
-	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
-	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
-	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_COMMON_CLK bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
-	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_USE_URAM bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
-	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
-	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.48885 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/synth/blk_mem_gen_02.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_02' (9#1) [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/synth/blk_mem_gen_02.vhd:70]
-WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[11] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[10] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[9] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[8] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[7] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[6] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[5] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[4] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[3] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[2] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[1] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB_I[0] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[17] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[16] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[15] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[14] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[13] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[12] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[11] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[10] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[9] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[8] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[7] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[6] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[5] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[4] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[3] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[2] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[1] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTB[0] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ENB in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[9] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[8] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[7] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[6] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[5] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[4] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[3] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[2] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[1] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[0] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[17] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[16] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[15] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[14] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[13] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[12] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[11] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[10] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[9] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ram_rstram_b in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ram_rstreg_b in module blk_mem_gen_prim_wrapper_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEA[1] in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEB[0] in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[1] in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTA in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLKB in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTB in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ENB in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[9] in module blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDRB[8] in module blk_mem_input_block is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1594.980 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3546.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 233 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02_ooc.xdc] for cell 'U0'
-Parsing XDC File [F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_02_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_02_synth_1/dont_touch.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1594.980 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1594.980 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a35tftg256-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_02_synth_1/dont_touch.xdc, line 9).
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 90 (col length:60)
-BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |RAMB18E1 |     1|
-+------+---------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 157 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:01:02 . Memory (MB): peak = 1594.980 ; gain = 182.141
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.980 ; gain = 182.141
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1594.980 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1594.980 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Synth Design complete, checksum: 874299cc
-INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1594.980 ; gain = 182.141
-INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint 'F:/10_Vivado/tank_war/p_vga.runs/blk_mem_gen_02_synth_1/blk_mem_gen_02.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file blk_mem_gen_02_utilization_synth.rpt -pb blk_mem_gen_02_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 12 20:24:45 2022...
-[Thu May 12 20:24:47 2022] blk_mem_gen_02_synth_1 finished
-wait_on_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:25 . Memory (MB): peak = 3200.465 ; gain = 0.000
-export_simulation -of_objects [get_files f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci] -directory F:/10_Vivado/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/10_Vivado/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/10_Vivado/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/10_Vivado/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-update_compile_order -fileset sources_1
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:33:14 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:33:14 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:34:31 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:34:31 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'A/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 4184.031 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 4184.031 ; gain = 950.594
+INFO: [Common 17-344] 'open_run' was cancelled
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
@@ -527,46 +353,10 @@ INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed wi
 reset_run synth_2
 INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
 launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:38:03 2022] Launched synth_2...
+[Sun Jun  5 17:28:21 2022] Launched synth_2...
 Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:38:03 2022] Launched impl_2...
+[Sun Jun  5 17:28:21 2022] Launched impl_2...
 Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:42:10 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:42:10 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 20:45:16 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 20:45:16 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
@@ -576,117 +366,60 @@ refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:11:54 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:11:54 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:12:47 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:12:47 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
-[Thu May 12 21:17:47 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-reset_run impl_2 -prev_step 
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:18:12 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:18:12 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
-[Thu May 12 21:22:07 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-reset_run impl_2 -prev_step 
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
-launch_runs impl_2 -jobs 12
-[Thu May 12 21:22:21 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:22:22 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:25:03 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:28:10 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:28:10 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:33:36 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:33:36 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_2
-INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-launch_runs impl_2 -to_step write_bitstream -jobs 12
-[Thu May 12 21:42:20 2022] Launched synth_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log
-[Thu May 12 21:42:20 2022] Launched impl_2...
-Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-TUL-C1234567A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-TUL-C1234567A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:05 ; elapsed = 00:01:07 . Memory (MB): peak = 4184.031 ; gain = 0.000
+endgroup
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  5 17:42:40 2022...

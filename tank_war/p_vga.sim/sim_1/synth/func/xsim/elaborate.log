@@ -1,0 +1,67 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot sim1_func_synth xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'sw' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:36]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'col' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:37]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'row' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:38]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'led' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:39]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 'dig' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:40]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'seg' [F:/10_Vivado/tank_war/p_vga.srcs/sim_1/new/sim1.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.PULLDOWN
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=37.12...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.u_clock
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,INITP_00=256'...
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,RDADDR_COLLIS...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,INIT_00=256'b...
+Compiling module xil_defaultlib.blk_mem_gen_01
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.vga_display__xdcDup__1
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,INIT_00=256'b...
+Compiling module xil_defaultlib.blk_mem_gen_02
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.VGA_others
+Compiling module xil_defaultlib.VGA_data_selector
+Compiling module xil_defaultlib.shell
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.keyboard_control__parameterized0
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.VGA_others__parameterized0
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module xil_defaultlib.dynamic_led
+Compiling module xil_defaultlib.key_xd
+Compiling module xil_defaultlib.vga_driver
+Compiling module xil_defaultlib.shell_0
+Compiling module xil_defaultlib.keyboard_control
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_func_synth

@@ -1,0 +1,705 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 13452
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue May 31 18:52:50 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	a
+User home directory: C:/Users/a
+User working directory: F:/10_Vivado/tank_war
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2021.2
+RDI_DATADIR: E:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	F:/10_Vivado/tank_war/vivado.log
+Vivado journal file: 	F:/10_Vivado/tank_war/vivado.jou
+Engine tmp dir: 	F:/10_Vivado/tank_war/.Xil/Vivado-13452-DESKTOP-7Q8KQ0A
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	329 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,418 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 69 MB (+70321kb) [00:00:07]
+// [Engine Memory]: 1,418 MB (+1334901kb) [00:00:07]
+// Opening Vivado Project: F:\10_Vivado\tank_war\p_vga.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 56 MB. Current time: 5/31/22, 6:52:51 PM CST
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+31677kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3568 ms.
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 1411.633 ; gain = 0.000 
+// Project name: p_vga; location: F:/10_Vivado/tank_war; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), A : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 115 MB (+6729kb) [00:00:25]
+// [GUI Memory]: 134 MB (+14396kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  1481 ms.
+// Elapsed time: 18 seconds
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), shell1 : shell (shell.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), shell1 : shell (shell.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 74 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 35 seconds
+selectCodeEditor("v1.v", 162, 258); // be
+selectCodeEditor("v1.v", 162, 258, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 172, 256); // be
+selectCodeEditor("v1.v", 296, 267); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("v1.v", 175, 277); // be
+selectCodeEditor("v1.v", 189, 284); // be
+selectCodeEditor("v1.v", 189, 284, false, false, false, false, true); // be - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("v1.v", 222, 232); // be
+selectCodeEditor("v1.v", 185, 328); // be
+selectCodeEditor("v1.v", 185, 328, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 109, 333); // be
+selectCodeEditor("v1.v", 225, 332); // be
+selectCodeEditor("v1.v", 207, 329); // be
+selectCodeEditor("v1.v", 196, 326); // be
+selectCodeEditor("v1.v", 196, 326, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 150, 461); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("v1.v", 158, 375); // be
+selectCodeEditor("v1.v", 158, 375, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 174, 538); // be
+selectCodeEditor("v1.v", 165, 535); // be
+selectCodeEditor("v1.v", 165, 535, false, false, false, false, true); // be - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tank1_sht"); // k
+selectCodeEditor("v1.v", 241, 179); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("v1.v", 238, 170); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shell.v", 2); // m
+selectCodeEditor("shell.v", 215, 211); // be
+selectCodeEditor("shell.v", 211, 199); // be
+selectCodeEditor("shell.v", 20, 196); // be
+selectCodeEditor("shell.v", 151, 195); // be
+selectCodeEditor("shell.v", 151, 195, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 150, 195); // be
+selectCodeEditor("shell.v", 152, 195, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 152, 195); // be
+selectCodeEditor("shell.v", 159, 196); // be
+selectCodeEditor("shell.v", 163, 199); // be
+selectCodeEditor("shell.v", 99, 193); // be
+selectCodeEditor("shell.v", 99, 193, false, false, false, false, true); // be - Double Click
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "init_pos"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "init_pos"); // k
+selectCodeEditor("shell.v", 87, 274); // be
+selectCodeEditor("shell.v", 87, 274, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "shell.v", 'c'); // be
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sample_flag"); // k
+selectCodeEditor("shell.v", 118, 278); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("shell.v", 848, 373); // be
+selectCodeEditor("shell.v", 571, 278); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("shell.v", 571, 278); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "12", 11); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue May 31 18:58:49 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Tue May 31 18:58:50 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // n
+// Elapsed time: 16 seconds
+selectCodeEditor("shell.v", 219, 505); // be
+selectCodeEditor("shell.v", 219, 505, false, false, false, false, true); // be - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 141 MB (+494kb) [00:07:23]
+// Elapsed time: 19 seconds
+selectCodeEditor("shell.v", 313, 389); // be
+selectCodeEditor("shell.v", 443, 393); // be
+selectCodeEditor("shell.v", 752, 394); // be
+selectCodeEditor("shell.v", 511, 402); // be
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 21 seconds
+selectCodeEditor("shell.v", 302, 387); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("shell.v", 477, 434); // be
+selectCodeEditor("shell.v", 490, 395); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 18 seconds
+selectCodeEditor("shell.v", 260, 462); // be
+selectCodeEditor("shell.v", 255, 452); // be
+selectCodeEditor("shell.v", 256, 448); // be
+selectCodeEditor("shell.v", 256, 448, false, false, false, false, true); // be - Double Click
+selectCodeEditor("shell.v", 246, 440); // be
+selectCodeEditor("shell.v", 241, 465); // be
+selectCodeEditor("shell.v", 241, 465); // be
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Tue May 31 19:02:51 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Tue May 31 19:02:52 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 152 MB (+4117kb) [00:12:24]
+// Elapsed time: 135 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+// Elapsed time: 148 seconds
+selectCodeEditor("v1.v", 268, 319); // be
+selectCodeEditor("v1.v", 404, 275); // be
+selectCodeEditor("v1.v", 403, 350); // be
+// WARNING: HEventQueue.dispatchEvent() is taking  362602 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 84 MB. Current time: 5/31/22, 7:22:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 73 MB. Current time: 5/31/22, 7:52:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 72 MB. Current time: 5/31/22, 8:22:55 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 72 MB. Current time: 5/31/22, 8:52:55 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 72 MB. Current time: 5/31/22, 9:22:55 PM CST
+// Elapsed time: 8170 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2021.2   **** Build date : Oct 19 2021 at 03:13:30     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2021.2.0   ****** Build date   : Sep 28 2021-05:44:20     **** Build number : 2021.2.1632779060       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.633 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5698 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,909 MB. GUI used memory: 98 MB. Current time: 5/31/22, 9:24:09 PM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3077.445 ; gain = 1665.812 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0] 
+// Elapsed time: 19 seconds
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 2,951 MB (+1533724kb) [02:31:32]
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "F:/10_Vivado/tank_war", 1); // aj
+setFileChooser("F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 15 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 46 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+setText(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin"); // ap
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 120 seconds
+selectCodeEditor("v1.v", 179, 306); // be
+selectCodeEditor("v1.v", 168, 318); // be
+selectCodeEditor("v1.v", 168, 318, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 393, 301); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue May 31 21:27:28 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Tue May 31 21:27:28 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+applyEscape(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // n
+selectCodeEditor("v1.v", 401, 265); // be
+selectCodeEditor("v1.v", 401, 265); // be
+// Elapsed time: 55 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bC
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 109 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shell.v", 1); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 27 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 153 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 0); // m
+selectCodeEditor("v1.v", 157, 183); // be
+selectCodeEditor("v1.v", 157, 183, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 153, 261); // be
+selectCodeEditor("v1.v", 81, 98); // be
+selectCodeEditor("v1.v", 81, 98, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 81, 98); // be
+selectCodeEditor("v1.v", 179, 178); // be
+selectCodeEditor("v1.v", 144, 429); // be
+selectCodeEditor("v1.v", 144, 429, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 196, 383); // be
+selectCodeEditor("v1.v", 206, 367); // be
+selectCodeEditor("v1.v", 206, 367, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+// Elapsed time: 25 seconds
+selectCodeEditor("v1.v", 217, 171); // be
+selectCodeEditor("v1.v", 221, 164); // be
+selectCodeEditor("v1.v", 221, 164, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 322, 222); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Tue May 31 21:34:20 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log [Tue May 31 21:34:20 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 663 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 76 MB. Current time: 5/31/22, 9:54:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 74 MB. Current time: 5/31/22, 10:24:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 73 MB. Current time: 5/31/22, 10:54:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 73 MB. Current time: 5/31/22, 11:24:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 73 MB. Current time: 5/31/22, 11:54:12 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  32813541 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 73 MB. Current time: 6/1/22, 9:26:03 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 32813881 ms. Increasing delay to 3000 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 42062 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 9:56:03 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 10:26:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 10:56:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 11:26:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 11:56:05 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 12:26:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 12:56:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 1:26:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 1:56:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 2:26:06 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4534 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 2:56:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 3:26:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 3:56:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 4:26:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 4:56:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 5:26:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 5:56:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 6:26:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 6:56:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 7:26:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 7:56:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 8:26:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 8:56:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 9:26:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 9:56:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 10:26:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 10:56:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 11:26:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/1/22, 11:56:13 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  35722869 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,963 MB. GUI used memory: 65 MB. Current time: 6/2/22, 10:17:02 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35723767 ms. Increasing delay to 107171301 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1361 ms.
+// Elapsed time: 89520 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0, false, true); // m - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+selectCodeEditor("v1.v", 244, 112); // be
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, v1.v]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, v1.v]", 12, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("v1.v", 460, 358); // be
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "5", true); // k
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "5"); // k
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "5"); // k
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "5"); // k
+// Elapsed time: 18 seconds
+selectCodeEditor("v1.v", 59, 85); // be
+selectCodeEditor("v1.v", 101, 114); // be
+selectCodeEditor("v1.v", 112, 148); // be
+selectCodeEditor("v1.v", 293, 151); // be
+selectCodeEditor("v1.v", 193, 139); // be
+selectCodeEditor("v1.v", 193, 139, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 193, 139); // be
+selectCodeEditor("v1.v", 189, 144); // be
+selectCodeEditor("v1.v", 189, 144, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 183, 156); // be
+selectCodeEditor("v1.v", 179, 141); // be
+selectCodeEditor("v1.v", 179, 141, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 179, 119); // be
+selectCodeEditor("v1.v", 179, 119, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 120, 110); // be
+selectCodeEditor("v1.v", 120, 110, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 130, 90); // be
+selectCodeEditor("v1.v", 130, 90, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 155, 138); // be
+selectCodeEditor("v1.v", 155, 138, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 161, 123); // be
+selectCodeEditor("v1.v", 161, 123, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 161, 132); // be
+selectCodeEditor("v1.v", 160, 132, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 164, 122); // be
+selectCodeEditor("v1.v", 164, 122, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 164, 122); // be
+selectCodeEditor("v1.v", 52, 88); // be
+selectCodeEditor("v1.v", 169, 128); // be

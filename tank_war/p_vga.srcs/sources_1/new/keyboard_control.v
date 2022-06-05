@@ -24,7 +24,6 @@ module keyboard_control(
     input clk,
     input clk_4Hz,
     input enable,
-    input tank_en, //enable
 
     // input button direction (w,a,s,d)
     input bt_w,
@@ -34,57 +33,62 @@ module keyboard_control(
     input bt_st, // shoot button
 
     input 			myshell_state_feedback,
-
+    input  [2:0] blood,
     //relative position input and output
     input	[4:0] 	x_rel_pos_in,
     input	[4:0]	y_rel_pos_in,
-    // shell
-    input shell1_x,
-    input shell1_y,
-    
+
     output	reg 	[4:0]	x_rel_pos_out,
     output	reg 	[4:0]	y_rel_pos_out,
 
 	output	reg		  		 tank_state,
     output	reg	[1:0]		tank_dir_out,
     output  reg				shell_sht,
-    output reg [2:0] blood
-);
+    output reg keyboard_trig,
+    input  wire connect
+    );
 
     // init position 
-    parameter pos_x = 1;
-    parameter pos_y = 1;
-    
-    // init blood
-    parameter blood_init = 5;
+    parameter pos_x = 2;
+    parameter pos_y = 2;
         
-    reg 	tank_state_reg;
+    // reg 	tank_state_reg;
     //---------------------------------------------------
     //initial coordinate generation
     initial
     begin
         x_rel_pos_out <= pos_x;
         y_rel_pos_out <= pos_y;
-        tank_state_reg <= 1'b1;
-        blood <= blood_init;
+        tank_state <= 1'b1;
+    end
+    
+    always@(posedge clk_4Hz) begin
+    if(!blood)
+        tank_state = 0;
     end
 
-    //---------------------------------------------------
-    //check whether it was hit
-    always@(posedge clk)
-    begin
-        if(blood == 0)
-            tank_state <= 1'b0;
-        else
-            tank_state <= 1'b1;
-        if(enable)
-        begin
-            if	(shell1_x == x_rel_pos_in && shell1_y == y_rel_pos_in)
-                blood <= blood;
-//                blood <= blood - 1'b1;
-            else	blood <= blood;
-        end
-    end
+//    //---------------------------------------------------
+//    //check whether it was hit
+//    always@(posedge clk_4Hz)
+//    begin
+//    if(enable_shoot)
+//    begin
+//        if(blood)
+//        begin
+//            if	(shell_x == x_rel_pos_out && shell_y == y_rel_pos_out)
+//                attack <= 1;
+//            else	
+//                attack <= 0;
+//        end
+//        end
+//      else
+//      attack <= 0;
+//    end
+    
+//    always@(negedge attack) begin
+//    blood <= blood -1;
+//    end
+    
 
 
     //---------------------------------------------------
@@ -96,40 +100,62 @@ module keyboard_control(
             //move upward and direction = 00
             if(bt_w == 1'b1)
             begin
-                if (y_rel_pos_in > 0 && tank_en == 1'b1)
+         if(connect == 0)
+                     begin
+                if (y_rel_pos_in > 0 && enable == 1'b1)
                 begin
+
                     y_rel_pos_out <= y_rel_pos_out - 1'b1;
                     tank_dir_out <= 2'b00;
+                    
+                    end
+     keyboard_trig = ~keyboard_trig;
                 end
             end
 
             //move downward and direction = 01
             if(bt_s == 1'b1)
             begin
-                if ( y_rel_pos_in < 8 && tank_en == 1'b1)
+         if(connect == 0)
+                     begin
+                if ( y_rel_pos_in < 8 && enable == 1'b1)
                 begin
+
                     y_rel_pos_out <= y_rel_pos_out + 1'b1;
                     tank_dir_out <= 2'b01;
+                  
+                    end
+          keyboard_trig = ~keyboard_trig;
                 end
             end
 
             //move left and direction = 10
             if(bt_a ==1'b1)
             begin
-                if (x_rel_pos_in > 0  && tank_en == 1'b1)
+      if(connect == 0)
+        begin 
+                if (x_rel_pos_in > 0  && enable == 1'b1)
                 begin
+
                     x_rel_pos_out <= x_rel_pos_out - 1'b1;
                     tank_dir_out <= 2'b10;
+                 
+                   end
+                     keyboard_trig = ~keyboard_trig;
                 end
             end
 
             //move right and direction = 11
             if(bt_d == 1'b1)
             begin
-                if ( x_rel_pos_in < 10 && tank_en == 1'b1)
+            if(connect == 0)
+             begin
+                if ( x_rel_pos_in < 10 && enable == 1'b1)
                 begin
                     x_rel_pos_out <= x_rel_pos_out + 1'b1;
-                    tank_dir_out <= 2'b11;
+                    tank_dir_out <= 2'b11;   
+                    end
+             keyboard_trig = ~keyboard_trig;
                 end
             end
         end
@@ -137,14 +163,13 @@ module keyboard_control(
 
     //---------------------------------------------------
     //Shoot
-
     always@(posedge clk)
     begin
         if(enable)
         begin
             if (myshell_state_feedback == 1'b0)
                 begin
-                    if ((tank_en == 1'b1)&&(bt_st == 1'b1))
+                    if ((bt_st == 1'b1))
                         shell_sht <= 1'b1;
                     else
                         shell_sht <= 1'b0;
@@ -154,7 +179,11 @@ module keyboard_control(
                     shell_sht <= 1'b1;
                 end
         end
+        else begin
+            shell_sht <= 1'b0;
+        end
     end
+
 
 endmodule
 

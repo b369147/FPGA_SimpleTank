@@ -42,7 +42,7 @@
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
+    <File Path="$PPRDIR/../../../10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

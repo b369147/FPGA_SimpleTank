@@ -75,16 +75,16 @@ module v1(
     wire tank1_sht;
 
     // tank_ops
-    wire[5:0] mytank_xpos;
-    wire[5:0] mytank_ypos;
-    wire 	[5:0]	mytank_xpos_feedback; // = mytank_xpos;
-    wire 	[5:0]	mytank_ypos_feedback; // = mytank_ypos;
+    wire[4:0] mytank_xpos;
+    wire[4:0] mytank_ypos;
+    wire 	[4:0]	mytank_xpos_feedback; // = mytank_xpos;
+    wire 	[4:0]	mytank_ypos_feedback; // = mytank_ypos;
 
     // tabk1 
-    wire[5:0] tank1_xpos;
-    wire[5:0] tank1_ypos;
-    wire 	[5:0]	tank1_xpos_feedback; // = mytank_xpos;
-    wire 	[5:0]	tank1_ypos_feedback; // = mytank_ypos;
+    wire[4:0] tank1_xpos;
+    wire[4:0] tank1_ypos;
+    wire 	[4:0]	tank1_xpos_feedback; // = mytank_xpos;
+    wire 	[4:0]	tank1_ypos_feedback; // = mytank_ypos;
 
     // my shell
     wire [4:0] myshell_x;
@@ -98,13 +98,13 @@ module v1(
     wire [4:0] shell1_y_feedback;
     wire [4:0] shell1_x_feedback;
 
-    // state
+    // my tank state
     wire mytank_state;
-
     // tamk1 state
     wire tank1_state;
 
-
+    // keyboard trig 每当完成一次操作之后，置位
+    wire keyboard_trig;
 
     assign	mytank_xpos = 	mytank_xpos_feedback;
     assign	mytank_ypos = 	mytank_ypos_feedback;
@@ -136,13 +136,12 @@ module v1(
 
     reg [3:0] out=0;
 
-    keyboard_control #(2, 2) u_mytank_control
+    keyboard_control #(3, 3) u_mytank_control
     (
         .clk			(clk),
         .clk_4Hz		(clk_4Hz),
         //	.enable			(enable_mytank_control),
-        .enable			(sw[0]),
-        .tank_en		(1'b1), //enable  
+        .enable			(mytank_state),
 
         // input button direction (w,a,s,d)
         .bt_w			(out[0]),
@@ -150,9 +149,6 @@ module v1(
         .bt_s			(out[1]),
         .bt_d			(out[3]),
         .bt_st			(shoot), // shoot button
-
-        .shell1_x(shell1_x),
-        .shell1_y(shell1_y),
 
         .myshell_state_feedback	(myshell_state_fb),
         //relative position input and output
@@ -164,17 +160,18 @@ module v1(
         .tank_state(mytank_state),
         .tank_dir_out	(mytank_dir),
         .shell_sht		(mytank_sht),
-        .blood(mytank_blood)
+        .blood(mytank_blood),
+        .keyboard_trig(keyboard_trig),
+        .connect(connect)
     );
 
 
-    keyboard_control #(5, 5, 4) tank1_control
+    keyboard_control #(5, 5) tank1_control
     (
         .clk			(clk),
         .clk_4Hz		(clk_4Hz),
         //	.enable			(enable_tank1_control),
-        .enable			(sw[1]),
-        .tank_en		(1'b1), //enable  
+        .enable			(tank1_state),
 
         // input button direction (w,a,s,d)
         .bt_w			(out[0]),
@@ -182,9 +179,6 @@ module v1(
         .bt_s			(out[1]),
         .bt_d			(out[3]),
         .bt_st			(shoot), // shoot button
-
-        .shell1_x(myshell_x),
-        .shell1_y(myshell_y),
 
         .myshell_state_feedback	(shell1_state_fb),
         //relative position input and output
@@ -196,7 +190,9 @@ module v1(
         .tank_state(tank1_state),
         .tank_dir_out	(tank1_dir),
         .shell_sht		(tank1_sht),
-        .blood(tank1_blood)
+        .blood(tank1_blood),
+        .keyboard_trig(),
+        .connect()
     );
 
     shell u_myshell
@@ -210,8 +206,8 @@ module v1(
         .shell_dir	(mytank_dir), //the direction of shell
         .shell_state	(mytank_sht), //the state of my shell
 
-        .tank_xpos	(mytank_xpos),
-        .tank_ypos	(mytank_ypos),
+        .tank_xpos	(mytank_xpos_feedback),
+        .tank_ypos	(mytank_ypos_feedback),
         //input and output the position of my shell
         .x_shell_pos_out	(myshell_x_feedback),
         .y_shell_pos_out	(myshell_y_feedback),
@@ -236,8 +232,8 @@ module v1(
         .shell_dir	(tank1_dir), //the direction of shell
         .shell_state	(tank1_sht), //the state of my shell
 
-        .tank_xpos	(tank1_xpos),
-        .tank_ypos	(tank1_ypos),
+        .tank_xpos	(tank1_xpos_feedback),
+        .tank_ypos	(tank1_ypos_feedback),
         //input and output the position of my shell
         .x_shell_pos_out	(shell1_x_feedback),
         .y_shell_pos_out	(shell1_y_feedback),
@@ -251,12 +247,26 @@ module v1(
 
         .shell_state_feedback	(shell1_state_fb)
     );
-
+    
+    blood blood_2
+    (
+        .clk(clk_8Hz),
+        .mytank_x(mytank_xpos_feedback),
+        .mytank_y(mytank_ypos_feedback),
+        .tank1_x(tank1_xpos_feedback),
+        .tank1_y(tank1_ypos_feedback),
+        .myshell_x(myshell_x_feedback),
+        .myshell_y(myshell_y_feedback),
+        .shell1_x(shell1_x_feedback),
+        .shell1_y(shell1_y_feedback),
+        .mytank_blood(mytank_blood),
+        .tank1_blood(tank1_blood)
+    );
 
     vga_display	mytank_display
     (
         .clk		(w_clk),
-        .enable		(en),
+        .enable		(mytank_state),
 
         //input the relative position of tank
         .x_rel_pos	(mytank_xpos),
@@ -275,7 +285,7 @@ module v1(
     vga_display	tank1_display
     (
         .clk		(w_clk),
-        .enable		(en),
+        .enable		(tank1_state),
 
         //input the relative position of tank
         .x_rel_pos	(tank1_xpos),
@@ -310,7 +320,7 @@ module v1(
     );
 
     VGA_data_selector select(
-        .clk(clk),
+        .clk(w_clk),
         .in1(VGA_data_myshell),
         .in2(VGA_data_mytank),
         .in3(VGA_data_tank1),
@@ -406,37 +416,50 @@ module v1(
     reg [12:0]Y=0;
     reg [2:0]suan=0;
 
-
+    reg finish = 0;
+    wire connect;
+    assign connect=((!finish)&(!keyboard_trig))||(finish&keyboard_trig);
     assign trigger=clk_100hz&(!relase_flag);
     assign fin_tre=((!finish_flag)&(!ti_flag))||(finish_flag&ti_flag);
     always@(posedge trigger)
     begin
 
+     
         if(key_val_last>=13&&key_val_last<=28) key_val_cal=key_val_last-4-1;
         else if(key_val_last>=29) key_val_cal=key_val_last-16-1;
         else key_val_cal=key_val_last-1;
 
+       if(key_val_cal==15) shoot=1;
+       else shoot = 0;
+
         if(flag)
         begin
+        if(connect == 1)
+           begin
             if(fin_tre) begin
 
                 if(key_val_cal==5)  out=4'b0001;
                 else if(key_val_cal==1) out=4'b0010;
                 else if(key_val_cal==2) out=4'b0100;
                 else if(key_val_cal==0) out=4'b1000;
-                else if(key_val_cal==15) shoot=1;
                 else
                     begin
-                        out =0;
-                        // shoot =0;
+                      out =0;
+                      finish = ~finish;
                     end
-                showdata = out;
-
+//                showdata = out;
+                    showdata = myshell_x_feedback;
+                
                 if(key_val_cal_last==key_val_cal)
-                    shoot=0;
+                begin
+                    shoot=0;               
+                      end
                 key_val_cal_last<=key_val_cal;
                 finish_flag=~finish_flag;
-            end
+                finish = ~finish;
+             end             
+             if(key_val_last == 0) out =0;           
+            end      
         end
     end
 

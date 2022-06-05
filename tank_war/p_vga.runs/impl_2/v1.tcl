@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_2" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_2" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -139,7 +140,7 @@ OPTRACE "add files" START { }
   add_files -quiet F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
   read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
-  read_ip -quiet f:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci
+  read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc
 OPTRACE "read constraints: implementation" END { }

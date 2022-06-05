@@ -25,12 +25,20 @@ module sim1;
 	wire vga_hs;
 	wire vga_vs;
 	wire [11:0] vga_rgb;
- v1 t(
+	wire col;
+	wire rol;
+	    
+v1 tt(
     clk,
     rst_n,
-	vga_hs,
-	vga_vs,
-	vga_rgb
-	    );
+    vga_hs,vga_vs,
+    vga_rgb,
+    sw,
+    col,
+    row,
+    led,
+    dig,
+    seg
+);	    
    always # 10 clk=~clk;   
 endmodule
