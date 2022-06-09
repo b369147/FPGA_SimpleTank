@@ -50,7 +50,9 @@ module u_clock
     output 	reg			clk_8Hz,
     output	reg			clk_2Hz,
     output  reg         clk_100hz,
-    output  reg         clk_1khz
+    output  reg         clk_1khz,
+    output reg clk_x,
+    output reg clk_16x
 );
 
     reg	[25:0]	cnt_2Hz;
@@ -141,6 +143,32 @@ module u_clock
         else cnt<=cnt+1;
 
     end
+
+ reg[31:0] cnt2 = 0;
+ reg[31:0] cnt3 = 0;   
+    always @ (posedge clk) //50M/153.6=325.5K~=326    9.6K*16=153.6K
+     begin
+         if(cnt2 == 'd163)
+         begin
+                 cnt2 <= 'd0;
+                 clk_16x <= ~clk_16x;
+         end
+         else
+                 cnt2 <= cnt2 + 1'd1;
+     end    
+
+     always @ (posedge clk) //50M/9600=5208 
+     begin
+         if(cnt3== 'd2604)
+         begin
+             clk_x <=~ clk_x;
+             cnt3 <= 0;
+         end
+         else
+         begin
+              cnt3 <= cnt3+1'b1;
+         end        
+     end
 
 
 

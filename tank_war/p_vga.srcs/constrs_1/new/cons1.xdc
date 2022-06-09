@@ -35,6 +35,8 @@
 set_property PACKAGE_PIN D4 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
 
+set_property PACKAGE_PIN L2 [get_ports {beep}]
+set_property IOSTANDARD LVCMOS33 [get_ports {beep}]
 ##set_property PACKAGE_PIN A5 [get_ports txd]					
 ##set_property IOSTANDARD LVCMOS33 [get_ports txd]
 ##set_property PACKAGE_PIN A7 [get_ports rxd]					
@@ -183,4 +185,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {seg[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
 
+set_property PACKAGE_PIN A3 [get_ports rxd]					
+set_property IOSTANDARD LVCMOS33 [get_ports rxd]
 
+set_property PACKAGE_PIN D3 [get_ports rxd1]					
+set_property IOSTANDARD LVCMOS33 [get_ports rxd1]

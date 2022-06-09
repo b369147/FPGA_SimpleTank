@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Sun Jun  5 17:30:22 2022
+| Date         : Thu Jun  9 23:57:14 2022
 | Host         : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command      : report_drc -file v1_drc_routed.rpt -pb v1_drc_routed.pb -rpx v1_drc_routed.rpx
 | Design       : v1
@@ -62,7 +62,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net clock/trigger is a gated clock net sourced by a combinational pin clock/finish_flag_i_3/O, cell clock/finish_flag_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net clock/clk_100hz_reg_0 is a gated clock net sourced by a combinational pin clock/finish_i_3/O, cell clock/finish_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
@@ -72,12 +72,9 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT clock/finish_flag_i_3 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
-finish_flag_reg, finish_reg, key_val_cal_last_reg[0],
-key_val_cal_last_reg[1], key_val_cal_last_reg[2], key_val_cal_last_reg[3],
-key_val_cal_last_reg[4], key_val_cal_last_reg[5], key_val_cal_last_reg[6],
-key_val_cal_last_reg[8], out_reg[0], out_reg[1], out_reg[2], out_reg[3],
-shoot_reg (the first 15 of 20 listed)
+A LUT clock/finish_i_3 is driving clock pin of 7 cells. This could lead to large hold time violations. Involved cells are:
+finish_flag_reg, finish_reg, showdata_reg[0], showdata_reg[1],
+showdata_reg[2], showdata_reg[3], showdata_reg[4]
 Related violations: <none>
 
 

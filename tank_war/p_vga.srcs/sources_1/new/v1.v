@@ -8,7 +8,10 @@ module v1(
     row,
     led,
     dig,
-    seg
+    seg,
+    rxd,
+    rxd1,
+    beep
 );
     input clk ;
     input rst_n;
@@ -21,6 +24,9 @@ module v1(
     output [11:0] led;
     output [5:0]dig;
     output [7:0]seg;
+    input rxd;
+    input rxd1;
+    output beep;
 
 
     //wire clk_100M;
@@ -37,7 +43,10 @@ module v1(
     wire s=1'b1;
     wire d;
     //wire shoot = 1'b1;
-
+    wire [23:0] data_disp; 
+    wire [23:0] data_disp1; 
+    reg [23:0] data_disp_out; 
+    reg [23:0] data_disp_out1; 
     // my tank base
     wire		enable_mytank_control = 1'b1;
     wire			myshell_state_fb;
@@ -105,6 +114,8 @@ module v1(
 
     // keyboard trig 每当完成一次操作之后，置位
     wire keyboard_trig;
+    
+    wire ring_key;
 
     assign	mytank_xpos = 	mytank_xpos_feedback;
     assign	mytank_ypos = 	mytank_ypos_feedback;
@@ -116,8 +127,9 @@ module v1(
     assign myshell_x = myshell_x_feedback;
     assign myshell_y = myshell_y_feedback;
 
-    wire  clk_100hz,clk_1khz;
+    wire  clk_100hz,clk_1khz,clk_x,clk_16x;
     reg shoot;
+    reg shoot1;
     clk_wiz_0 A(
         .clk_in1(clk),
         .clk_out1(w_clk)
@@ -131,7 +143,9 @@ module v1(
         .clk_8Hz		(clk_8Hz),
         .clk_2Hz		(clk_2Hz),
         .clk_1khz       (clk_1khz),
-        .clk_100hz       (clk_100hz)
+        .clk_100hz       (clk_100hz),
+        .clk_x           (clk_x),
+        .clk_16x         (clk_16x)
     );
 
     reg [3:0] out=0;
@@ -144,11 +158,11 @@ module v1(
         .enable			(mytank_state),
 
         // input button direction (w,a,s,d)
-        .bt_w			(out[0]),
-        .bt_a			(out[2]),
-        .bt_s			(out[1]),
-        .bt_d			(out[3]),
-        .bt_st			(shoot), // shoot button
+        .bt_w			(data_disp_out1[0]),
+        .bt_a			(data_disp_out1[2]),
+        .bt_s			(data_disp_out1[1]),
+        .bt_d			(data_disp_out1[3]),
+        .bt_st			(shoot1), // shoot button
 
         .myshell_state_feedback	(myshell_state_fb),
         //relative position input and output
@@ -161,8 +175,8 @@ module v1(
         .tank_dir_out	(mytank_dir),
         .shell_sht		(mytank_sht),
         .blood(mytank_blood),
-        .keyboard_trig(keyboard_trig),
-        .connect(connect)
+        .keyboard_trig(),
+        .connect()
     );
 
 
@@ -174,10 +188,10 @@ module v1(
         .enable			(tank1_state),
 
         // input button direction (w,a,s,d)
-        .bt_w			(out[0]),
-        .bt_a			(out[2]),
-        .bt_s			(out[1]),
-        .bt_d			(out[3]),
+        .bt_w			(data_disp_out[0]),
+        .bt_a			(data_disp_out[2]),
+        .bt_s			(data_disp_out[1]),
+        .bt_d			(data_disp_out[3]),
         .bt_st			(shoot), // shoot button
 
         .myshell_state_feedback	(shell1_state_fb),
@@ -351,6 +365,30 @@ module v1(
         .VGA_ypos	(VGA_ypos),
         .VGA_data	(data)
     );
+    
+//        bee		bee1
+//    (
+//        //global clock
+//        .clk		(clk),
+//        .key		(16'b1000000000000000),
+    
+//        //vga interface
+//        .blood		(1),
+//        .beep       (beep)
+//    );
+//    assign beep = 1; 
+//            bee		bee2
+//    (
+//        //global clock
+//        .clk		(clk),
+//        .key		(16'b0010000000000000),
+    
+//        //vga interface
+//        .blood		(mytank_blood),
+//        .beep       (beep)
+//    );
+    
+    
 
 
 
@@ -391,6 +429,27 @@ module v1(
     wire fin_tre;
     always@(posedge clk_1khz)
     begin
+if(data_disp==15) begin 
+shoot = 1;
+data_disp_out = 0;
+end
+else
+begin 
+ shoot = 0;
+ data_disp_out = data_disp;
+ end
+
+if(data_disp1==15) begin 
+shoot1 = 1;
+data_disp_out1 = 0;
+end
+else
+begin 
+ shoot1 = 0;
+ data_disp_out1 = data_disp1;
+ end
+ 
+ 
 
         if(key_val!=0)
             begin
@@ -429,8 +488,8 @@ module v1(
         else if(key_val_last>=29) key_val_cal=key_val_last-16-1;
         else key_val_cal=key_val_last-1;
 
-       if(key_val_cal==15) shoot=1;
-       else shoot = 0;
+      // if(key_val_cal==15) shoot=1;
+      // else shoot = 0;
 
         if(flag)
         begin
@@ -452,7 +511,7 @@ module v1(
                 
                 if(key_val_cal_last==key_val_cal)
                 begin
-                    shoot=0;               
+                    //shoot=0;               
                       end
                 key_val_cal_last<=key_val_cal;
                 finish_flag=~finish_flag;
@@ -466,10 +525,11 @@ module v1(
 
 
 
+wire data_ready;
+wire data_error;
 
-
-
-
+uart_rx a(.clk_16x(clk_16x),.rst(sw[0]),.rxd(rxd1),.data_disp(data_disp),.data_ready(data_ready),.data_error(data_error));//调用串口发送模块
+uart_rx b(.clk_16x(clk_16x),.rst(sw[0]),.rxd(rxd),.data_disp(data_disp1),.data_ready(data_ready),.data_error(data_error));//调用串口发送模块
 
 
 

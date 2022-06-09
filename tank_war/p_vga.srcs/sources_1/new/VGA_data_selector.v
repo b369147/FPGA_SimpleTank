@@ -25,15 +25,19 @@ module VGA_data_selector
 (
 	input		clk,
 //input interfaces
+	input state1,
+	input state2,
 	input 	[11:0]	in1,
 	input	[11:0]	in2,
 	input [11:0] in3,
 	input [11:0] in4,
 	input [11:0] in5,
 	input [11:0] in6,
+	
 //output interfaces	
 	output		[11:0]	out
 );
+
 
 assign out[0]	=	in1[0]	&	in2[0]	& in3[0] & in4[0] & in5[0] & in6[0];
 assign out[1]	=	in1[1]	&	in2[1]	& in3[1] & in4[1] & in5[1] & in6[1];
@@ -47,7 +51,5 @@ assign out[8]	=	in1[8]	&	in2[8]	& in3[8] & in4[8] & in5[8] & in6[8];
 assign out[9]	=	in1[9]	&	in2[9]	& in3[9] & in4[9] & in5[9] & in6[9];
 assign out[10]	=	in1[10]	&	in2[10] & in3[10] & in4[10] & in5[10] & in6[10];
 assign out[11]	=	in1[11]	&	in2[11]	& in3[11] & in4[11] & in5[11] & in6[11];
-
-
 
 endmodule

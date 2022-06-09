@@ -70,9 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_2" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache F:/10_Vivado/tank_war/.Xil/Vivado-20412-DESKTOP-7Q8KQ0A/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tftg256-1
 
@@ -99,6 +102,7 @@ read_verilog -library xil_defaultlib {
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v
+  F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v
   F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v

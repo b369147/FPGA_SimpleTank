@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Sun Jun  5 17:30:24 2022
+| Date             : Thu Jun  9 23:57:16 2022
 | Host             : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command          : report_power -file v1_power_routed.rpt -pb v1_power_summary_routed.pb -rpx v1_power_routed.rpx
 | Design           : v1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.203        |
+| Total On-Chip Power (W)  | 0.204        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.131        |
@@ -52,21 +52,21 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.003 |     2141 |       --- |             --- |
-|   LUT as Logic |     0.003 |     1220 |     20800 |            5.87 |
-|   CARRY4       |    <0.001 |      215 |      8150 |            2.64 |
-|   Register     |    <0.001 |      433 |     41600 |            1.04 |
-|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
+| Clocks         |     0.002 |        5 |       --- |             --- |
+| Slice Logic    |     0.003 |     2343 |       --- |             --- |
+|   LUT as Logic |     0.003 |     1276 |     20800 |            6.13 |
+|   CARRY4       |    <0.001 |      229 |      8150 |            2.81 |
+|   Register     |    <0.001 |      538 |     41600 |            1.29 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
 |   F7/F8 Muxes  |    <0.001 |        8 |     32600 |            0.02 |
-|   Others       |     0.000 |       51 |       --- |             --- |
-| Signals        |     0.003 |     1624 |       --- |             --- |
+|   Others       |     0.000 |       55 |       --- |             --- |
+| Signals        |     0.003 |     1811 |       --- |             --- |
 | Block RAM      |     0.002 |        6 |        50 |           12.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | DSPs           |    <0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.005 |       49 |       170 |           28.82 |
+| I/O            |     0.005 |       53 |       170 |           31.18 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.203 |          |           |                 |
+| Total          |     0.204 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.009 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.020 |       0.010 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.065 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |

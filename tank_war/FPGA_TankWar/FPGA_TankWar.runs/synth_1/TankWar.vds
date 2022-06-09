@@ -1,0 +1,408 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jun  6 16:41:39 2022
+# Process ID: 14656
+# Current directory: F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1
+# Command line: vivado.exe -log TankWar.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TankWar.tcl
+# Log file: F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/TankWar.vds
+# Journal file: F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1\vivado.jou
+# Running On: DESKTOP-7Q8KQ0A, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17012 MB
+#-----------------------------------------------------------
+source TankWar.tcl -notrace
+Command: synth_design -top TankWar -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23648
+CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:363]
+CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:363]
+INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:55]
+WARNING: [Synth 8-992] connect is already implicitly declared earlier [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:420]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TankWar' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset' of module 'clk_wiz_0' is unconnected for instance 'A' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:121]
+WARNING: [Synth 8-7071] port 'locked' of module 'clk_wiz_0' is unconnected for instance 'A' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:121]
+WARNING: [Synth 8-7023] instance 'A' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:121]
+INFO: [Synth 8-6157] synthesizing module 'clock_setting' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/clock_setting.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/clock_setting.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/clock_setting.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'clock_setting' (2#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/clock_setting.v:45]
+INFO: [Synth 8-6157] synthesizing module 'tank' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/tank.v:23]
+	Parameter pos_x bound to: 3 - type: integer 
+	Parameter pos_y bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tank' (3#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/tank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tank__parameterized0' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/tank.v:23]
+	Parameter pos_x bound to: 5 - type: integer 
+	Parameter pos_y bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tank__parameterized0' (3#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/tank.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6157] synthesizing module 'blood' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/blood.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'blood' (5#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/blood.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Base' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:34]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (6#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (4) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:67]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:82]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Base' (7#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:34]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Blood' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (8#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/.Xil/Vivado-14656-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (4) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Blood' (9#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Blood__parameterized0' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:33]
+	Parameter init_pos bound to: 600 - type: integer 
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (4) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Blood__parameterized0' (9#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Selector' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Selector.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Selector' (10#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Driver' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Driver.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Driver' (11#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Driver.v:34]
+INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:23]
+WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:51]
+WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (12#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/key_xd.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/key_xd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'key_xd' (13#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/key_xd.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:383]
+WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:428]
+WARNING: [Synth 8-3848] Net item_faster in module/entity TankWar does not have driver. [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'TankWar' (14#1) [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/TankWar.v:1]
+WARNING: [Synth 8-3917] design TankWar has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_Selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module VGA_Base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module TankWar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1412.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_Base/UUT1'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_Base/UUT1'
+Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_Base/UUT1'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_Base/UUT1'
+Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_Blood/UUT1'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_Blood/UUT1'
+Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_Blood/UUT1'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_Blood/UUT1'
+Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Finished Parsing XDC File [f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1412.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for mytank_Base/UUT1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tank1_Base/UUT1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mytank_Blood/UUT1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tank1_Blood/UUT1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for A. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 0000022F9ED41C50
+DSP Debug: swapped A/B pins for adder 0000022F9ED41AD0
+DSP Debug: swapped A/B pins for adder 0000022F937BBD40
+DSP Debug: swapped A/B pins for adder 0000022F937B8EC0
+WARNING: [Synth 8-327] inferring latch for variable 'show_data_reg' [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/dynamic_led.v:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 4     
+	   2 Input   25 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 10    
+	   3 Input   15 Bit       Adders := 16    
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               15 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 10    
+	               11 Bit    Registers := 2     
+	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 12    
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 14    
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 71    
+	   4 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'tank1_Blood/addra_reg' and it is trimmed from '15' to '4' bits. [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mytank_Blood/addra_reg' and it is trimmed from '15' to '4' bits. [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Blood.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '4' bits. [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:67]
+WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '4' bits. [F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.srcs/sources_1/new/VGA_Base.v:67]
+WARNING: [Synth 8-3917] design TankWar has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design TankWar has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module VGA_Selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module VGA_Base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tank_ide in module VGA_Base__xdcDup__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module TankWar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module TankWar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1412.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module A has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |blk_mem_gen_01 |         2|
+|3     |blk_mem_gen_02 |         2|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |blk_mem_gen    |     1|
+|2     |blk_mem_gen_01 |     1|
+|3     |blk_mem_gen    |     1|
+|4     |blk_mem_gen_02 |     1|
+|5     |clk_wiz        |     1|
+|6     |BUFG           |     1|
+|7     |CARRY4         |   141|
+|8     |LUT1           |    73|
+|9     |LUT2           |   229|
+|10    |LUT3           |   156|
+|11    |LUT4           |   103|
+|12    |LUT5           |   124|
+|13    |LUT6           |   322|
+|14    |FDRE           |   319|
+|15    |FDSE           |    65|
+|16    |LD             |     4|
+|17    |IBUF           |     4|
+|18    |OBUF           |    44|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1426.906 ; gain = 14.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1426.906 ; gain = 14.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1438.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1442.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete, checksum: be1fdced
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 82 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1442.602 ; gain = 29.801
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'F:/10_Vivado/tank_war/FPGA_TankWar/FPGA_TankWar.runs/synth_1/TankWar.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TankWar_utilization_synth.rpt -pb TankWar_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  6 16:42:37 2022...
