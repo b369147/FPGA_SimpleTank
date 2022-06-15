@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 19 23:29:17 2022
+# Process ID: 4264
+# Current directory: D:/FPGA/key/key
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24884 D:\FPGA\key\key\key.xpr
+# Log file: D:/FPGA/key/key/vivado.log
+# Journal file: D:/FPGA/key/key\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/key/key/key.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 818.488 ; gain = 94.840
+update_compile_order -fileset sources_1
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file D:/FPGA/key/key/mcs1.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file D:/FPGA/key/key/mcs1.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 4 -interface SPIx2 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx2 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file D:/FPGA/key/key/mcs1.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file D:/FPGA/key/key/mcs1.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file D:/FPGA/key/key/mcs1.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file D:/FPGA/key/key/mcs1.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs2.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file D:/FPGA/key/key/mcs2.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit
+Writing file D:/FPGA/key/key/mcs2.mcs
+Writing log file D:/FPGA/key/key/mcs2.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    May 19 22:05:51 2022    D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+set_property PROGRAM.FILE {D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property CFGMEM_PART {n25q32-3.3v-spi-x1_x2_x4} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a35t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:12 . Memory (MB): peak = 1619.059 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs2.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file D:/FPGA/key/key/mcs2.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file D:/FPGA/key/key/mcs2.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file "D:/FPGA/key/key/mcs2.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file D:/FPGA/key/key/mcs2.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file "D:/FPGA/key/key/mcs2.mcs"
+Command: write_cfgmem -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file D:/FPGA/key/key/mcs2.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit
+Writing file D:/FPGA/key/key/mcs2.mcs
+Writing log file D:/FPGA/key/key/mcs2.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    May 19 22:05:51 2022    D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 23:40:50 2022...

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 19 23:29:17 2022
+# Process ID: 4264
+# Current directory: D:/FPGA/key/key
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24884 D:\FPGA\key\key\key.xpr
+# Log file: D:/FPGA/key/key/vivado.log
+# Journal file: D:/FPGA/key/key\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/key/key/key.xpr
+update_compile_order -fileset sources_1
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+write_cfgmem  -format mcs -size 4 -interface SPIx2 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs1.mcs"
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs2.mcs"
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property CFGMEM_PART {n25q32-3.3v-spi-x1_x2_x4} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a35t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+endgroup
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -file "D:/FPGA/key/key/mcs2.mcs"
+write_cfgmem  -format mcs -size 4 -interface SPIx4 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file "D:/FPGA/key/key/mcs2.mcs"
+write_cfgmem  -format mcs -size 4 -interface SPIx1 -loadbit {up 0x00000000 "D:/FPGA/key/key/key.runs/impl_1/TOP_V.bit" } -force -file "D:/FPGA/key/key/mcs2.mcs"
