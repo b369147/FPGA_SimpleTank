@@ -37,6 +37,8 @@ module v1(
     // whole interface
     wire [11:0]VGA_mytank_interface;
     wire [11:0]VGA_tank1_interface;
+    wire [11:0]Winner_interface_mytank;
+    wire [11:0]Winner_interface_tank1;
 
     wire w ;
     wire a;
@@ -52,11 +54,14 @@ module v1(
     wire			myshell_state_fb;
     wire [1:0]mytank_dir;
     wire [2:0] mytank_blood;
+    wire mytank_blood_state;
+    
     // tank1 base
     wire enable_tank1_control = 1'b1;
     wire shell1_state_fb;
     wire [1:0] tank1_dir;
     wire [2:0] tank1_blood;
+    wire tank1_blood_state;
 
     wire en;
     wire [10:0]VGA_xpos;
@@ -274,7 +279,9 @@ module v1(
         .shell1_x(shell1_x_feedback),
         .shell1_y(shell1_y_feedback),
         .mytank_blood(mytank_blood),
-        .tank1_blood(tank1_blood)
+        .tank1_blood(tank1_blood),
+        .tank1_blood_state(tank1_blood_state),
+        .mytank_blood_state(mytank_blood_state)
     );
 
     vga_display	mytank_display
@@ -333,14 +340,35 @@ module v1(
        .VGA_data(VGA_tank1_interface)
     );
 
+
+    winner_decide_tank1  #(300, 200) sd(
+    .clk(w_clk),
+    .tank1_state(tank1_state),
+    .VGA_xpos(VGA_xpos),
+    .VGA_ypos(VGA_ypos),
+    .VGA_data(Winner_interface_tank1)
+    );
+
+    winner_decide_mytank  #(300, 200) sd1(
+    .clk(w_clk),
+    .mytank_state(mytank_state),
+    .VGA_xpos(VGA_xpos),
+    .VGA_ypos(VGA_ypos),
+    .VGA_data(Winner_interface_mytank)
+    );
+
     VGA_data_selector select(
         .clk(w_clk),
+        .state1(mytank_state),
+        .state2(tank1_state),
         .in1(VGA_data_myshell),
         .in2(VGA_data_mytank),
         .in3(VGA_data_tank1),
         .in4(VGA_data_shell1),
         .in5(VGA_mytank_interface),
         .in6(VGA_tank1_interface),
+        .in7(Winner_interface_mytank),
+        .in8(Winner_interface_tank1),
         .out(data)
     );
 
@@ -365,6 +393,13 @@ module v1(
         .VGA_ypos	(VGA_ypos),
         .VGA_data	(data)
     );
+    
+//    BEE AD(
+//        .clk(clk),
+//        .key(16'b0100000000000000),
+//        .trig(0),
+//        .beep(beep)
+//    );
     
 //        bee		bee1
 //    (
@@ -393,12 +428,8 @@ module v1(
 
 
 
-    //////////////////////////////////////////////
+//    //////////////////////////////////////////////
 
-
-
-    reg [11:0]led_reg=12'b0000_0000_0000;
-    reg [12:0]data;
     wire [12:0] key_val;
     reg [12:0] key_val_last;
     reg [12:0] key_val_cal;
@@ -406,21 +437,6 @@ module v1(
     reg [12:0] showdata=0;
 
 
-
-    dynamic_led u1(
-        .clk(clk_1khz),
-        .disp_data(showdata),
-        .seg(seg),
-        .dig(dig)
-    );
-    key_xd u2(
-        .clk_10ms(clk_100hz),
-        .clk_1ms(clk_1khz),
-        .col(col),
-        .row(row),
-        .key_val_out(key_val)
-    );
-    assign led=led_reg;
     reg flag=0;
     reg relase_flag=0;
     reg ti_flag=0;
@@ -454,9 +470,6 @@ begin
         if(key_val!=0)
             begin
                 relase_flag=1;
-                //if(key_val!=key_val_last)
-                // begin
-                // led_reg[0]=~led_reg[0];
                 flag=1;
                 // end
                 key_val_last<=key_val;
@@ -466,62 +479,6 @@ begin
         else
             relase_flag=0;
     end
-
-
-    reg [2:0]state=0;
-
-    reg [12:0]x1=7'b0000000;
-    reg [12:0]x2=0;
-    reg [12:0]Y=0;
-    reg [2:0]suan=0;
-
-    reg finish = 0;
-    wire connect;
-    assign connect=((!finish)&(!keyboard_trig))||(finish&keyboard_trig);
-    assign trigger=clk_100hz&(!relase_flag);
-    assign fin_tre=((!finish_flag)&(!ti_flag))||(finish_flag&ti_flag);
-    always@(posedge trigger)
-    begin
-
-     
-        if(key_val_last>=13&&key_val_last<=28) key_val_cal=key_val_last-4-1;
-        else if(key_val_last>=29) key_val_cal=key_val_last-16-1;
-        else key_val_cal=key_val_last-1;
-
-      // if(key_val_cal==15) shoot=1;
-      // else shoot = 0;
-
-        if(flag)
-        begin
-        if(connect == 1)
-           begin
-            if(fin_tre) begin
-
-                if(key_val_cal==5)  out=4'b0001;
-                else if(key_val_cal==1) out=4'b0010;
-                else if(key_val_cal==2) out=4'b0100;
-                else if(key_val_cal==0) out=4'b1000;
-                else
-                    begin
-                      out =0;
-                      finish = ~finish;
-                    end
-//                showdata = out;
-                    showdata = myshell_x_feedback;
-                
-                if(key_val_cal_last==key_val_cal)
-                begin
-                    //shoot=0;               
-                      end
-                key_val_cal_last<=key_val_cal;
-                finish_flag=~finish_flag;
-                finish = ~finish;
-             end             
-             if(key_val_last == 0) out =0;           
-            end      
-        end
-    end
-
 
 
 

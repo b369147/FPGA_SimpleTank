@@ -1,0 +1,206 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 35512
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jun 14 11:25:55 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	a
+User home directory: C:/Users/a
+User working directory: F:/10_Vivado/tank_war
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2021.2
+RDI_DATADIR: E:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	F:/10_Vivado/tank_war/vivado.log
+Vivado journal file: 	F:/10_Vivado/tank_war/vivado.jou
+Engine tmp dir: 	F:/10_Vivado/tank_war/.Xil/Vivado-35512-DESKTOP-7Q8KQ0A
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,418 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 69 MB (+70360kb) [00:00:09]
+// [Engine Memory]: 1,418 MB (+1335204kb) [00:00:09]
+// Opening Vivado Project: F:\10_Vivado\tank_war\p_vga.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 57 MB. Current time: 6/14/22, 11:25:57 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/10_Vivado/tank_war/p_vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+45287kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3757 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1413.082 ; gain = 0.000 
+// Project name: p_vga; location: F:/10_Vivado/tank_war; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (v1.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), A : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 133 MB (+11175kb) [00:00:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  1458 ms.
+// Elapsed time: 24 seconds
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("v1.v", 122, 383); // be
+selectCodeEditor("v1.v", 122, 367); // be
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2 -jobs 6 
+// Tcl Message: [Tue Jun 14 11:26:58 2022] Launched synth_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/synth_2/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_define.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 144 MB (+4425kb) [00:02:16]
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 27 seconds
+selectCodeEditor("v1.v", 512, 396); // be
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 6 
+// Tcl Message: [Tue Jun 14 11:28:05 2022] Launched impl_2... Run output will be captured here: F:/10_Vivado/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 43 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Implementation Failed"); // ag
+// Elapsed time: 15 seconds
+selectCodeEditor("v1.v", 812, 132); // be
+// Elapsed time: 80 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 15, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_define (winner_define.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Thu Jun  9 23:57:16 2022
+| Date             : Tue Jun 14 21:52:26 2022
 | Host             : DESKTOP-7Q8KQ0A running 64-bit major release  (build 9200)
 | Command          : report_power -file v1_power_routed.rpt -pb v1_power_summary_routed.pb -rpx v1_power_routed.rpx
 | Design           : v1
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.204        |
+| Total On-Chip Power (W)  | 0.207        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.131        |
-| Device Static (W)        | 0.072        |
+| Dynamic (W)              | 0.134        |
+| Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 84.0         |
 | Junction Temperature (C) | 26.0         |
@@ -53,20 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        5 |       --- |             --- |
-| Slice Logic    |     0.003 |     2343 |       --- |             --- |
-|   LUT as Logic |     0.003 |     1276 |     20800 |            6.13 |
-|   CARRY4       |    <0.001 |      229 |      8150 |            2.81 |
-|   Register     |    <0.001 |      538 |     41600 |            1.29 |
-|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
-|   F7/F8 Muxes  |    <0.001 |        8 |     32600 |            0.02 |
-|   Others       |     0.000 |       55 |       --- |             --- |
-| Signals        |     0.003 |     1811 |       --- |             --- |
-| Block RAM      |     0.002 |        6 |        50 |           12.00 |
+| Slice Logic    |     0.003 |     2368 |       --- |             --- |
+|   LUT as Logic |     0.003 |     1264 |     20800 |            6.08 |
+|   CARRY4       |    <0.001 |      204 |      8150 |            2.50 |
+|   Register     |    <0.001 |      526 |     41600 |            1.26 |
+|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
+|   Others       |     0.000 |      113 |       --- |             --- |
+| Signals        |     0.004 |     1994 |       --- |             --- |
+| Block RAM      |     0.006 |       34 |        50 |           68.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
-| DSPs           |    <0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.005 |       53 |       170 |           31.18 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.204 |          |           |                 |
+| DSPs           |    <0.001 |        3 |        90 |            3.33 |
+| I/O            |    <0.001 |       49 |       170 |           28.82 |
+| Static Power   |     0.074 |          |           |                 |
+| Total          |     0.207 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.020 |       0.010 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.027 |       0.016 |      0.011 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.065 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -147,13 +146,19 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| v1               |     0.131 |
+| v1               |     0.134 |
 |   A              |     0.117 |
 |     inst         |     0.117 |
 |   clock          |     0.003 |
-|   mytank_display |     0.001 |
+|   mytank_display |     0.002 |
 |     UUT1         |     0.001 |
 |       U0         |     0.001 |
+|   sd             |     0.003 |
+|     UUT4         |     0.003 |
+|       U0         |     0.003 |
+|   sd1            |     0.004 |
+|     UUT3         |     0.003 |
+|       U0         |     0.003 |
 |   tank1_display  |     0.001 |
 |     UUT1         |     0.001 |
 |       U0         |     0.001 |

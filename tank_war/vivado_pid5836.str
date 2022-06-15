@@ -1,0 +1,2034 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 5836
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jun 14 18:57:55 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	E:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	a
+User home directory: C:/Users/a
+User working directory: F:/11_github/tank_war
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2021.2
+RDI_DATADIR: E:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/a/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	F:/11_github/tank_war/vivado.log
+Vivado journal file: 	F:/11_github/tank_war/vivado.jou
+Engine tmp dir: 	F:/11_github/tank_war/.Xil/Vivado-5836-DESKTOP-7Q8KQ0A
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,418 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 99 MB (+101700kb) [00:00:09]
+// [Engine Memory]: 1,418 MB (+1334966kb) [00:00:09]
+// Opening Vivado Project: F:\11_github\tank_war\p_vga.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project F:/11_github/tank_war/p_vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 55 MB. Current time: 6/14/22, 6:57:56 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/11_github/tank_war/p_vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3813 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1413.664 ; gain = 0.000 
+// Project name: p_vga; location: F:/11_github/tank_war; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 124 MB (+20960kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 132 MB (+1644kb) [00:12:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 72 MB. Current time: 6/14/22, 7:27:56 PM CST
+// PAPropertyPanels.initPanels (v1.v) elapsed time: 0.2s
+// Elapsed time: 3270 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), A : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1163 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), tank1_interface : VGA_others (VGA_others.v)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), tank1_interface : VGA_others (VGA_others.v)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false, false, false, false, true, false); // D - Popup Trigger
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+setText("Write Depth", "160004"); // B
+// WARNING: HEventQueue.dispatchEvent() is taking  14448 ms.
+// Thread: Life support thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at com.sigasi.lcm.l.run(SourceFile:82)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: ForkJoinPool.commonPool-worker-5
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:275)
+// 	at java.base@11.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1619)
+// 	at java.base@11.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+// Thread: OutputGobbler
+// 	at java.base@11.0.11/java.io.FileInputStream.readBytes(Native Method)
+// 	at java.base@11.0.11/java.io.FileInputStream.read(FileInputStream.java:279)
+// 	at java.base@11.0.11/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+// 	at java.base@11.0.11/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+// 	at java.base@11.0.11/java.io.InputStreamReader.read(InputStreamReader.java:181)
+// 	at java.base@11.0.11/java.io.BufferedReader.fill(BufferedReader.java:161)
+// 	at java.base@11.0.11/java.io.BufferedReader.readLine(BufferedReader.java:326)
+// 	at java.base@11.0.11/java.io.BufferedReader.readLine(BufferedReader.java:392)
+// 	at java.base@11.0.11/java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
+// 	at java.base@11.0.11/java.util.Iterator.forEachRemaining(Iterator.java:132)
+// 	at java.base@11.0.11/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+// 	at com.sigasi.lcm.C.run(SourceFile:43)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aXx(SourceFile:2513)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Timer-2
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:553)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: pool-4-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Timer-1
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:553)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: ErrorGobbler
+// 	at java.base@11.0.11/java.io.FileInputStream.readBytes(Native Method)
+// 	at java.base@11.0.11/java.io.FileInputStream.read(FileInputStream.java:279)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+// 	at java.base@11.0.11/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+// 	at java.base@11.0.11/java.io.InputStreamReader.read(InputStreamReader.java:181)
+// 	at java.base@11.0.11/java.io.BufferedReader.fill(BufferedReader.java:161)
+// 	at java.base@11.0.11/java.io.BufferedReader.readLine(BufferedReader.java:326)
+// 	at java.base@11.0.11/java.io.BufferedReader.readLine(BufferedReader.java:392)
+// 	at java.base@11.0.11/java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
+// 	at java.base@11.0.11/java.util.Iterator.forEachRemaining(Iterator.java:132)
+// 	at java.base@11.0.11/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+// 	at com.sigasi.lcm.C.run(SourceFile:43)
+// Thread: EMF Reference Cleaner
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+// Thread: pool-9-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+// 	at java.base@11.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.11/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.11/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.11/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+// 	at ui.utils.d.c.iPe(SourceFile:589)
+// 	at ui.frmwork.a.e.aXx(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Finalizer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.11/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: pool-5-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Signal Dispatcher
+// Thread: Monitor File Timestamp Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.f.aXx(SourceFile:225)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Reference Handler
+// 	at java.base@11.0.11/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.11/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: pool-10-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Process Messages Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aXx(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: main
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1150)
+// 	at ui.PlanAhead.jswMain(SourceFile:1197)
+// Thread: Thread-1
+// Thread: Java2D Disposer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.11/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Attach Listener
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Monitor File Timestamp Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.f.aXx(SourceFile:225)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: TimerQueue
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.11/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.11/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: Timer-0
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:553)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: Monitor File Timestamp Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.f.aXx(SourceFile:225)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-6-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-17
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.k.c.z.iHj(SourceFile:136)
+// 	at ui.k.c.z$$Lambda$253/0x00000008007cbc40.run(Unknown Source)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// 	at java.base@11.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: AWT-Windows
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.run(WToolkit.java:305)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-7-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Watchdog Thread for com.sigasi.lsp.server.BootstrappedLspServer
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at com.sigasi.lcm.B.run(SourceFile:66)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: ForkJoinPool.commonPool-worker-23
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+// 	at java.base@11.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Protocol translation thread 0
+// 	at java.base@11.0.11/java.net.SocketInputStream.socketRead0(Native Method)
+// 	at java.base@11.0.11/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+// 	at java.base@11.0.11/java.net.SocketInputStream.read(SocketInputStream.java:168)
+// 	at java.base@11.0.11/java.net.SocketInputStream.read(SocketInputStream.java:140)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1364)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:973)
+// 	at java.base@11.0.11/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:880)
+// 	at com.sigasi.hdt.epl.lsp4j.PatchedStreamMessageProducer.listen(PatchedStreamMessageProducer.java:78)
+// 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+// 	at java.base@11.0.11/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+// 	at java.base@11.0.11/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aXx(SourceFile:373)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-EventQueue-0
+// 	at ui.customizerjni.HACGCJModelJNI.HACGCCustomizer_setParamValue__SWIG_1(Native Method)
+// 	at ui.customizerjni.l.R(SourceFile:152)
+// 	at ui.customizerjni.HACGCJModel.aa(SourceFile:248)
+// 	at ui.data.coregen.a.bk.focusLost(SourceFile:415)
+// 	at java.desktop@11.0.11/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:238)
+// 	at java.desktop@11.0.11/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:237)
+// 	at java.desktop@11.0.11/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:237)
+// 	at java.desktop@11.0.11/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:237)
+// 	at java.desktop@11.0.11/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:237)
+// 	at java.desktop@11.0.11/java.awt.Component.processFocusEvent(Component.java:6527)
+// 	at java.desktop@11.0.11/java.awt.Component.processEvent(Component.java:6391)
+// 	at java.desktop@11.0.11/java.awt.Container.processEvent(Container.java:2263)
+// 	at java.desktop@11.0.11/java.awt.Component.dispatchEventImpl(Component.java:5011)
+// 	at java.desktop@11.0.11/java.awt.Container.dispatchEventImpl(Container.java:2321)
+// 	at java.desktop@11.0.11/java.awt.Component.dispatchEvent(Component.java:4843)
+// 	at java.desktop@11.0.11/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1950)
+// 	at java.desktop@11.0.11/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1059)
+// 	at java.desktop@11.0.11/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:725)
+// 	at java.desktop@11.0.11/java.awt.Component.dispatchEventImpl(Component.java:4892)
+// 	at java.desktop@11.0.11/java.awt.Container.dispatchEventImpl(Container.java:2321)
+// 	at java.desktop@11.0.11/java.awt.Component.dispatchEvent(Component.java:4843)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$5.run(EventQueue.java:745)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$5.run(EventQueue.java:743)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// WARNING: HEventQueue.dispatchEvent() is taking  4633 ms.
+// Elapsed time: 19 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+// Elapsed time: 10 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/1.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  114304 ms.
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK"); // a
+dismissDialog("Error Found"); // I
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 142 MB (+3472kb) [00:57:54]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci 
+// Tcl Message: file delete -force F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1 file delete -force f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_03_1 
+dismissDialog("Remove Sources"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci 
+// Tcl Message: file delete -force F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1 file delete -force f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_04_1 
+dismissDialog("Remove Sources"); // bA
+// [GUI Memory]: 157 MB (+8391kb) [00:58:07]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+dismissDialog("Open IP Catalog"); // bA
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "bram"); // OverlayTextField
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // L
+// [GUI Memory]: 173 MB (+7983kb) [00:58:27]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false, false, false, false, false, true); // L - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // k
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+setText("Component Name", "blk_mem_gen_03"); // B
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+setText("Defines the PortA Write Width(DINA)", "12"); // B
+setText("Write Depth", "160004"); // B
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectCheckBox((HResource) null, "Load Init File", true); // g: TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/1.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  114966 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 117 MB. Current time: 6/14/22, 7:58:24 PM CST
+// Elapsed time: 121 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Validation failed for parameter 'Disable Collision Warnings(Disable_Collision_Warnings)' with value 'false' for IP 'blk_mem_gen_0'. User configuration exceeds BRAM count in the selected device", 0); // a
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Validation failed for parameter 'Disable Collision Warnings(Disable_Collision_Warnings)' with value 'false' for IP 'blk_mem_gen_0'. User configuration exceeds BRAM count in the selected device", 0); // a
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Validation failed for parameter 'Disable Collision Warnings(Disable_Collision_Warnings)' with value 'false' for IP 'blk_mem_gen_0'. User configuration exceeds BRAM count in the selected device", 0, false, false, false, false, true); // a - Double Click
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Validation failed for parameter 'Disable Collision Warnings(Disable_Collision_Warnings)' with value 'false' for IP 'blk_mem_gen_0'. User configuration exceeds BRAM count in the selected device", 0, false, false, false, true, false); // a - Popup Trigger
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK"); // a
+dismissDialog("Error Found"); // I
+selectCheckBox((HResource) null, "Load Init File", false); // g: FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+setText("Write Depth", "40003"); // B
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectCheckBox((HResource) null, "Load Init File", true); // g: TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  29092 ms.
+// Elapsed time: 76 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // r
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_03 
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {blk_mem_gen_03} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {40003} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe}] [get_ips blk_mem_gen_03] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe' provided. It will be converted relative to IP Instance files '../3.coe' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_03'... 
+// Elapsed time: 27 seconds
+dismissDialog("Customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 31 seconds
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_03'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 92 MB. Current time: 6/14/22, 8:01:44 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_03'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.664 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 82 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 7, "Block Memory Generator", 0, false, false, false, false, false, true); // L - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+setText("Component Name", "blk_mem_gen_04"); // B
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+setText("Defines the PortA Write Width(DINA)", "12"); // B
+setText("Write Depth", "40003"); // B
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectCheckBox((HResource) null, "Load Init File", true); // g: TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  29293 ms.
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // r
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_04 
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {blk_mem_gen_04} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {40003} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe}] [get_ips blk_mem_gen_04] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe' provided. It will be converted relative to IP Instance files '../4.coe' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_04'... 
+// Elapsed time: 27 seconds
+dismissDialog("Customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_04'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 99 MB. Current time: 6/14/22, 8:05:30 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_04'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.664 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 85 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cR' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // cU
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 20:06:33 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 20:06:33 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 283 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1551 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+// WARNING: HEventQueue.dispatchEvent() is taking  1305640 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 98 MB. Current time: 6/14/22, 8:36:13 PM CST
+// Elapsed time: 1596 seconds
+selectCodeEditor("v1.v", 1029, 208); // be
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2021.2   **** Build date : Oct 19 2021 at 03:13:30     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// Elapsed time: 12 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2021.2.0   ****** Build date   : Sep 28 2021-05:44:20     **** Build number : 2021.2.1632779060       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1413.664 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'connect_hw_server' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+dismissDialog("Auto Connect"); // bA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // al
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5713 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,059 MB. GUI used memory: 105 MB. Current time: 6/14/22, 8:38:29 PM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3162.379 ; gain = 1748.715 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0] 
+// [Engine Memory]: 3,065 MB (+1653586kb) [01:40:49]
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // s
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "F:/11_github/tank_war", 2); // aj
+setFileChooser("F:/11_github/tank_war/p_vga.runs/impl_2/v1.bin");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bin} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 13 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 65 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "n25q64-3.3v-spi-x1_x2_x4 ; ", 4, "n25q64-3.3v-spi-x1_x2_x4", 0, false, false, false, false, true, false); // t - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, "Program Configuration Memory Device..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,092 MB. GUI used memory: 100 MB. Current time: 6/14/22, 8:39:58 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'aa' command handler elapsed time: 4 seconds
+dismissDialog("Program Configuration Memory Device"); // aE
+// Tcl Message: set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.FILES [list "F:/11_github/tank_war/p_vga.runs/impl_2/v1.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: startgroup  
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]; 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s). 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: Mfg ID : 20   Memory Type : ba   Memory Capacity : 17   Device ID 1 : 0   Device ID 2 : 0 Performing Erase Operation... 
+// Tcl Message: Erase Operation successful. Performing Program and Verify Operations... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,095 MB. GUI used memory: 100 MB. Current time: 6/14/22, 8:40:31 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,098 MB. GUI used memory: 100 MB. Current time: 6/14/22, 8:41:01 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: Program/Verify Operation successful. 
+// Tcl Message: INFO: [Labtoolstcl 44-377] Flash programming completed successfully 
+// Tcl Message: program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:10 . Memory (MB): peak = 3220.379 ; gain = 2.273 
+// Tcl Message: endgroup 
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 80 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "n25q64-3.3v-spi-x1_x2_x4 ; ", 4, "n25q64-3.3v-spi-x1_x2_x4", 0, false, false, false, false, true, false); // t - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, "Program Configuration Memory Device..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+// 'aa' command handler elapsed time: 3 seconds
+dismissDialog("Program Configuration Memory Device"); // aE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 95 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v)]", 14, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v)]", 14, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("winner_decide.v", 865, 338); // be
+selectCodeEditor("winner_decide.v", 865, 338, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("v1.v", 136, 350); // be
+selectCodeEditor("v1.v", 136, 350, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 133, 372); // be
+selectCodeEditor("v1.v", 133, 372, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_decide.v", 2); // m
+selectCodeEditor("winner_decide.v", 261, 386); // be
+selectCodeEditor("winner_decide.v", 261, 386, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 165, 351); // be
+selectCodeEditor("winner_decide.v", 165, 351, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 171, 328); // be
+selectCodeEditor("winner_decide.v", 171, 328, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 179, 316); // be
+selectCodeEditor("winner_decide.v", 179, 316, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 462, 506); // be
+selectCodeEditor("winner_decide.v", 462, 506, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 161, 502); // be
+selectCodeEditor("winner_decide.v", 161, 502, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 797, 258); // be
+selectCodeEditor("winner_decide.v", 771, 463); // be
+selectCodeEditor("winner_decide.v", 884, 329); // be
+selectCodeEditor("winner_decide.v", 884, 329, false, false, false, false, true); // be - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v)]", 14); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  28924 ms.
+// Elapsed time: 39 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {F:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe}] [get_ips blk_mem_gen_04] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/11_github/tank_war/p_vga.srcs/sources_1/ip/3.coe' provided. It will be converted relative to IP Instance files '../3.coe' 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 104 MB. Current time: 6/14/22, 8:45:31 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Elapsed time: 54 seconds
+dismissDialog("Re-customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_04'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 105 MB. Current time: 6/14/22, 8:46:40 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_04'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 3259.379 ; gain = 0.312 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 38 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 20:46:52 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 20:46:52 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 132 seconds
+selectCodeEditor("winner_decide.v", 272, 616); // be
+selectCodeEditor("winner_decide.v", 272, 616, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 225, 595); // be
+selectCodeEditor("winner_decide.v", 225, 595, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 258, 450); // be
+selectCodeEditor("winner_decide.v", 258, 450, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 197, 395); // be
+selectCodeEditor("winner_decide.v", 197, 395, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 96, 129); // be
+selectCodeEditor("winner_decide.v", 96, 129, false, false, false, false, true); // be - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("winner_decide.v", 96, 243); // be
+selectCodeEditor("winner_decide.v", 96, 243, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 105, 224); // be
+selectCodeEditor("winner_decide.v", 105, 224, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 296, 439); // be
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 130 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 50 seconds
+selectCodeEditor("v1.v", 202, 93); // be
+selectCodeEditor("v1.v", 202, 94, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 202, 94); // be
+selectCodeEditor("v1.v", 202, 94); // be
+// Elapsed time: 39 seconds
+selectCodeEditor("v1.v", 212, 396); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_decide.v", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectCodeEditor("winner_decide.v", 144, 104); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("winner_decide.v", 129, 330); // be
+selectCodeEditor("winner_decide.v", 184, 434); // be
+selectCodeEditor("winner_decide.v", 159, 517); // be
+selectCodeEditor("winner_decide.v", 100, 334); // be
+selectCodeEditor("winner_decide.v", 123, 83); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("winner_decide.v", 888, 355); // be
+selectCodeEditor("winner_decide.v", 888, 355, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+selectCodeEditor("v1.v", 139, 350); // be
+selectCodeEditor("v1.v", 139, 349, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 124, 375); // be
+selectCodeEditor("v1.v", 124, 375, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), select : VGA_data_selector (VGA_data_selector.v)]", 17, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1261 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("VGA_data_selector.v", 154, 307); // be
+selectCodeEditor("VGA_data_selector.v", 154, 307, false, false, false, false, true); // be - Double Click
+selectCodeEditor("VGA_data_selector.v", 213, 315); // be
+selectCodeEditor("VGA_data_selector.v", 213, 315, false, false, false, false, true); // be - Double Click
+selectCodeEditor("VGA_data_selector.v", 316, 308); // be
+selectCodeEditor("VGA_data_selector.v", 307, 321); // be
+selectCodeEditor("VGA_data_selector.v", 18, 310); // be
+selectCodeEditor("VGA_data_selector.v", 67, 292); // be
+selectCodeEditor("VGA_data_selector.v", 67, 290, false, false, false, false, true); // be - Double Click
+selectCodeEditor("VGA_data_selector.v", 227, 249); // be
+selectCodeEditor("VGA_data_selector.v", 115, 168); // be
+selectCodeEditor("VGA_data_selector.v", 115, 168, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_decide.v", 2); // m
+selectCodeEditor("winner_decide.v", 168, 198); // be
+selectCodeEditor("winner_decide.v", 184, 376); // be
+selectCodeEditor("winner_decide.v", 184, 376, false, false, false, false, true); // be - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("winner_decide.v", 266, 559); // be
+selectCodeEditor("winner_decide.v", 266, 559, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 268, 362); // be
+selectCodeEditor("winner_decide.v", 268, 362, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 228, 561); // be
+selectCodeEditor("winner_decide.v", 228, 561, false, false, false, false, true); // be - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("winner_decide.v", 380, 560); // be
+selectCodeEditor("winner_decide.v", 191, 232); // be
+typeControlKey((HResource) null, "winner_decide.v", 'v'); // be
+selectCodeEditor("winner_decide.v", 348, 503); // be
+selectCodeEditor("winner_decide.v", 185, 464); // be
+typeControlKey((HResource) null, "winner_decide.v", 'v'); // be
+selectCodeEditor("winner_decide.v", 281, 259); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1012 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("winner_decide.v", 185, 245); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT4 : blk_mem_gen_04 (blk_mem_gen_04.xci)]", 16, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a
+setFileChooser("F:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  29037 ms.
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {F:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe}] [get_ips blk_mem_gen_04] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/11_github/tank_war/p_vga.srcs/sources_1/ip/4.coe' provided. It will be converted relative to IP Instance files '../4.coe' 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 115 MB. Current time: 6/14/22, 8:57:04 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Elapsed time: 57 seconds
+dismissDialog("Re-customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_04'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 115 MB. Current time: 6/14/22, 8:58:12 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_04'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 3263.629 ; gain = 0.152 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 58 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// 'cR' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 20:58:47 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 20:58:47 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 228 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 21:02:39 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:02:39 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 183 MB (+1661kb) [02:04:58]
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 199 seconds
+selectCodeEditor("winner_decide.v", 134, 75, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("winner_decide.v", 72, 102); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 70 seconds
+selectCodeEditor("winner_decide.v", 264, 194); // be
+selectCodeEditor("winner_decide.v", 264, 193, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 267, 312); // be
+selectCodeEditor("winner_decide.v", 267, 308, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 267, 308); // be
+selectCodeEditor("winner_decide.v", 267, 307, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_decide.v", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 13 seconds
+selectCodeEditor("winner_decide.v", 850, 272); // be
+selectCodeEditor("winner_decide.v", 850, 272, false, false, false, false, true); // be - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("winner_decide.v", 309, 131); // be
+selectCodeEditor("winner_decide.v", 309, 129, false, false, false, false, true); // be - Double Click
+// Elapsed time: 309 seconds
+selectCodeEditor("winner_decide.v", 879, 373); // be
+selectCodeEditor("winner_decide.v", 879, 371, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 849, 83); // be
+selectCodeEditor("winner_decide.v", 849, 81, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 668, 216); // be
+selectCodeEditor("winner_decide.v", 319, 281); // be
+selectCodeEditor("winner_decide.v", 319, 280, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 319, 274); // be
+selectCodeEditor("winner_decide.v", 319, 275, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 317, 291); // be
+selectCodeEditor("winner_decide.v", 317, 291, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 287, 282); // be
+selectCodeEditor("winner_decide.v", 287, 282, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 320, 292); // be
+selectCodeEditor("winner_decide.v", 320, 292, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 235, 293); // be
+selectCodeEditor("winner_decide.v", 235, 292, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 233, 310); // be
+selectCodeEditor("winner_decide.v", 233, 310, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 230, 332); // be
+selectCodeEditor("winner_decide.v", 230, 334, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 315, 326); // be
+selectCodeEditor("winner_decide.v", 315, 326, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 181, 293); // be
+selectCodeEditor("winner_decide.v", 181, 293, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 278, 304); // be
+selectCodeEditor("winner_decide.v", 278, 304, false, false, false, false, true); // be - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("winner_decide.v", 382, 291); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // F
+selectButton("CANCEL", "Cancel"); // JButton
+// 'g' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c
+selectCodeEditor("winner_decide.v", 291, 403); // be
+selectCodeEditor("winner_decide.v", 78, 237); // be
+selectCodeEditor("winner_decide.v", 78, 236, false, false, false, false, true); // be - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("winner_decide.v", 195, 572); // be
+// Elapsed time: 21 seconds
+selectCodeEditor("winner_decide.v", 131, 508); // be
+selectCodeEditor("winner_decide.v", 142, 463); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("winner_decide.v", 203, 450); // be
+selectCodeEditor("winner_decide.v", 133, 464); // be
+typeControlKey((HResource) null, "winner_decide.v", 'v'); // be
+selectCodeEditor("winner_decide.v", 194, 337); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+selectCodeEditor("winner_decide.v", 80, 592); // be
+typeControlKey((HResource) null, "winner_decide.v", 'v'); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("winner_decide.v", 272, 292); // be
+selectCodeEditor("winner_decide.v", 171, 289); // be
+selectCodeEditor("winner_decide.v", 134, 167); // be
+selectCodeEditor("winner_decide.v", 99, 186); // be
+selectCodeEditor("winner_decide.v", 112, 160); // be
+// Elapsed time: 18 seconds
+selectCodeEditor("winner_decide.v", 318, 233); // be
+selectCodeEditor("winner_decide.v", 819, 302); // be
+selectCodeEditor("winner_decide.v", 819, 302, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide.v", 324, 445); // be
+selectCodeEditor("winner_decide.v", 763, 450); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1114 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1065 ms. Increasing delay to 3195 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 21:16:32 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:16:32 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 215 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a
+dismissDialog("Feedback Request"); // aH
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 21:20:17 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:20:17 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 235 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 124 MB. Current time: 6/14/22, 9:28:14 PM CST
+// Elapsed time: 286 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectComboBox("Memory Type (Memory_Type)", "Dual Port ROM", 4); // E
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectCheckBox((HResource) null, "Fill Remaining Memory Locations", true); // g: TRUE
+selectCheckBox((HResource) null, "Fill Remaining Memory Locations", false); // g: FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+selectComboBox("Memory Type (Memory_Type)", "Single Port RAM", 0); // E
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, PAResourceEtoH.HACGCBasePanel_IP_SYMBOL, "IP Symbol", 0); // bj
+dismissDialog("Re-customize IP"); // r
+selectCodeEditor("winner_decide.v", 144, 434); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("winner_decide.v", 123, 364); // be
+selectCodeEditor("winner_decide.v", 138, 380); // be
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 27 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "winner_decide_tank1"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("winner_decide.v", 265, 318); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+selectCodeEditor("winner_decide.v", 268, 321); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, winner_decide_tank1 (winner_decide_tank1.v)]", 27, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, winner_decide_tank1 (winner_decide_tank1.v)]", 27, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, winner_decide_tank1 (winner_decide_tank1.v)]", 27, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("winner_decide_tank1.v", 286, 500); // be
+typeControlKey((HResource) null, "winner_decide_tank1.v", 'v'); // be
+selectCodeEditor("winner_decide_tank1.v", 171, 328); // be
+// Elapsed time: 48 seconds
+selectCodeEditor("winner_decide_tank1.v", 136, 526); // be
+selectCodeEditor("winner_decide_tank1.v", 191, 207); // be
+selectCodeEditor("winner_decide_tank1.v", 248, 357); // be
+selectCodeEditor("winner_decide_tank1.v", 73, 343); // be
+selectCodeEditor("winner_decide_tank1.v", 157, 304); // be
+selectCodeEditor("winner_decide_tank1.v", 167, 312); // be
+typeControlKey((HResource) null, "winner_decide_tank1.v", 'c'); // be
+selectCodeEditor("winner_decide_tank1.v", 178, 509); // be
+typeControlKey((HResource) null, "winner_decide_tank1.v", 'v'); // be
+selectCodeEditor("winner_decide_tank1.v", 174, 328); // be
+selectCodeEditor("winner_decide_tank1.v", 117, 354); // be
+selectCodeEditor("winner_decide_tank1.v", 63, 357); // be
+selectCodeEditor("winner_decide_tank1.v", 63, 356, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide_tank1.v", 74, 347); // be
+selectCodeEditor("winner_decide_tank1.v", 52, 146); // be
+selectCodeEditor("winner_decide_tank1.v", 346, 352); // be
+selectCodeEditor("winner_decide_tank1.v", 246, 328); // be
+selectCodeEditor("winner_decide_tank1.v", 224, 331); // be
+selectCodeEditor("winner_decide_tank1.v", 224, 331, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide_tank1.v", 218, 370); // be
+selectCodeEditor("winner_decide_tank1.v", 218, 369, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide_tank1.v", 188, 422); // be
+selectCodeEditor("winner_decide_tank1.v", 188, 422, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide_tank1.v", 111, 369); // be
+selectCodeEditor("winner_decide_tank1.v", 111, 368, false, false, false, false, true); // be - Double Click
+selectCodeEditor("winner_decide_tank1.v", 173, 197); // be
+selectCodeEditor("winner_decide_tank1.v", 78, 270); // be
+// Elapsed time: 73 seconds
+selectCodeEditor("winner_decide_tank1.v", 153, 301); // be
+selectCodeEditor("winner_decide_tank1.v", 136, 299); // be
+selectCodeEditor("winner_decide_tank1.v", 136, 299, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("winner_decide_tank1.v", 211, 432); // be
+selectCodeEditor("winner_decide_tank1.v", 211, 432, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "winner_decide.v", 2); // m
+selectCodeEditor("winner_decide.v", 205, 316); // be
+selectCodeEditor("winner_decide.v", 112, 577); // be
+selectCodeEditor("winner_decide.v", 532, 395); // be
+selectCodeEditor("winner_decide.v", 166, 236); // be
+selectCodeEditor("winner_decide.v", 178, 221); // be
+selectCodeEditor("winner_decide.v", 329, 531); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+typeControlKey((HResource) null, "winner_decide.v", 'c'); // be
+selectCodeEditor("winner_decide.v", 335, 137); // be
+typeControlKey((HResource) null, "winner_decide.v", 'v'); // be
+selectCodeEditor("winner_decide.v", 17, 232); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1508 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+selectCodeEditor("winner_decide.v", 155, 292); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1745 ms.
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("winner_decide.v", 206, 242); // be
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1866 ms. Increasing delay to 5598 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+selectCodeEditor("v1.v", 97, 172); // be
+selectCodeEditor("v1.v", 105, 181); // be
+selectCodeEditor("v1.v", 157, 321); // be
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+selectCodeEditor("v1.v", 67, 329); // be
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 127, 359); // be
+selectCodeEditor("v1.v", 127, 359, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 133, 354); // be
+selectCodeEditor("v1.v", 137, 351); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("v1.v", 210, 411); // be
+selectCodeEditor("v1.v", 215, 221); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1483 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 193 MB (+585kb) [02:39:03]
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), tank1_interface : VGA_others (VGA_others.v)]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v)]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v), blk_mem_gen_04 (blk_mem_gen_04.xci)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v), blk_mem_gen_04 (blk_mem_gen_04.xci)]", 14, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_ALL_IP_INCLUDING_IP_CONTAINED, "Out of context per IP"); // a
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint true [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_04'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 138 MB. Current time: 6/14/22, 9:37:32 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_04'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_04'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 3274.582 ; gain = 0.727 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs blk_mem_gen_04_synth_1 -jobs 6 
+// Tcl Message: [Tue Jun 14 21:37:35 2022] Launched blk_mem_gen_04_synth_1... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/blk_mem_gen_04_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: INFO: [Vivado 12-4357] Exporting simulation files for 'blk_mem_gen_04'... please wait for 'blk_mem_gen_04_synth_1' run to finish... 
+// Tcl Message: wait_on_run blk_mem_gen_04_synth_1 
+// Tcl Message: [Tue Jun 14 21:37:35 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Tue Jun 14 21:37:40 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:37:45 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:37:50 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:38:00 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 140 MB. Current time: 6/14/22, 9:38:02 PM CST
+// Tcl Message: [Tue Jun 14 21:38:10 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:38:20 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:38:30 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 141 MB. Current time: 6/14/22, 9:38:32 PM CST
+// Tcl Message: [Tue Jun 14 21:38:50 2022] Waiting for blk_mem_gen_04_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Tue Jun 14 21:38:55 2022] blk_mem_gen_04_synth_1 finished 
+// Tcl Message: wait_on_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:20 . Memory (MB): peak = 3274.871 ; gain = 0.289 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 117 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v), blk_mem_gen_04 (blk_mem_gen_04.xci)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v), blk_mem_gen_04 (blk_mem_gen_04.xci)]", 14, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_tank1 (winner_decide_tank1.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 204 MB (+2219kb) [02:41:25]
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_mytank (winner_decide.v)]", 14, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_mytank (winner_decide.v)]", 14, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_mytank (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 (v1.v), sd : winner_decide_mytank (winner_decide.v), UUT3 : blk_mem_gen_03 (blk_mem_gen_03.xci)]", 15, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bj
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_ALL_IP_INCLUDING_IP_CONTAINED, "Out of context per IP"); // a
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint true [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// Tcl Message: generate_target all [get_files  f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_03'... 
+// [GUI Memory]: 217 MB (+2334kb) [02:41:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 161 MB. Current time: 6/14/22, 9:39:49 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_03'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_03'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 3298.598 ; gain = 22.824 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs blk_mem_gen_03_synth_1 -jobs 6 
+// Tcl Message: [Tue Jun 14 21:39:52 2022] Launched blk_mem_gen_03_synth_1... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/blk_mem_gen_03_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: INFO: [Vivado 12-4357] Exporting simulation files for 'blk_mem_gen_03'... please wait for 'blk_mem_gen_03_synth_1' run to finish... 
+// Tcl Message: wait_on_run blk_mem_gen_03_synth_1 
+// Tcl Message: [Tue Jun 14 21:39:52 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Tue Jun 14 21:39:57 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:40:02 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:40:07 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:40:17 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 163 MB. Current time: 6/14/22, 9:40:19 PM CST
+// Tcl Message: [Tue Jun 14 21:40:27 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:40:37 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// Tcl Message: [Tue Jun 14 21:40:47 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 163 MB. Current time: 6/14/22, 9:40:50 PM CST
+// Tcl Message: [Tue Jun 14 21:41:07 2022] Waiting for blk_mem_gen_03_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: [Tue Jun 14 21:41:12 2022] blk_mem_gen_03_synth_1 finished 
+// Tcl Message: wait_on_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:01:20 . Memory (MB): peak = 3299.113 ; gain = 0.516 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci] -directory F:/11_github/tank_war/p_vga.ip_user_files/sim_scripts -ip_user_files_dir F:/11_github/tank_war/p_vga.ip_user_files -ipstatic_source_dir F:/11_github/tank_war/p_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/11_github/tank_war/p_vga.cache/compile_simlib/modelsim} {questa=F:/11_github/tank_war/p_vga.cache/compile_simlib/questa} {riviera=F:/11_github/tank_war/p_vga.cache/compile_simlib/riviera} {activehdl=F:/11_github/tank_war/p_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 117 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// [GUI Memory]: 232 MB (+4151kb) [02:43:36]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2 -jobs 6 
+// Tcl Message: [Tue Jun 14 21:41:22 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-988] sd is already declared [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:351]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\11_github\tank_war\p_vga.srcs\sources_1\new\v1.v;-;;-;16;-;line;-;351;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_2, [Synth 8-988] sd is already declared [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:351]. ]", 2, false, false, false, false, false, true); // ah - Double Click
+selectCodeEditor("v1.v", 239, 211); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1556 ms.
+dismissDialog("Save Project"); // al
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 21:42:08 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:42:08 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 94 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net sd1/Q[0] has multiple drivers: sd1/VGA_data_reg[0]/Q, and sd/VGA_data_reg[0]/Q.. ]", 8, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net sd1/Q[0] has multiple drivers: sd1/VGA_data_reg[0]/Q, and sd/VGA_data_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net sd1/Q[3] has multiple drivers: sd1/VGA_data_reg[3]/Q, and sd/VGA_data_reg[3]/Q.. ]", 13, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_2 -jobs 6 
+// Tcl Message: [Tue Jun 14 21:43:54 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 65 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 6 
+// Tcl Message: [Tue Jun 14 21:45:06 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:45:07 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 93 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net sd1/Q[0] has multiple drivers: sd1/VGA_data_reg[0]/Q, and sd/VGA_data_reg[0]/Q.. ]", 8, true); // ah - Node
+// Elapsed time: 27 seconds
+selectCodeEditor("v1.v", 137, 259); // be
+selectCodeEditor("v1.v", 137, 259, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 113, 278); // be
+selectCodeEditor("v1.v", 113, 277, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 125, 314); // be
+selectCodeEditor("v1.v", 125, 314, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 186, 518); // be
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 187, 274); // be
+selectCodeEditor("v1.v", 192, 251); // be
+selectCodeEditor("v1.v", 192, 251, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+selectCodeEditor("v1.v", 158, 501); // be
+selectCodeEditor("v1.v", 158, 501, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 145, 353); // be
+selectCodeEditor("v1.v", 145, 353, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 141, 440); // be
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_data_selector.v", 5); // m
+selectCodeEditor("VGA_data_selector.v", 138, 314); // be
+selectCodeEditor("VGA_data_selector.v", 138, 314, false, false, false, false, true); // be - Double Click
+selectCodeEditor("VGA_data_selector.v", 139, 102); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("VGA_data_selector.v", 120, 310); // be
+selectCodeEditor("VGA_data_selector.v", 161, 359); // be
+selectCodeEditor("VGA_data_selector.v", 162, 372); // be
+selectCodeEditor("VGA_data_selector.v", 52, 160); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("VGA_data_selector.v", 127, 165); // be
+selectCodeEditor("VGA_data_selector.v", 127, 164, false, false, false, false, true); // be - Double Click
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v1.v", 1); // m
+selectCodeEditor("v1.v", 249, 536); // be
+selectCodeEditor("v1.v", 253, 530); // be
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 235, 537); // be
+selectCodeEditor("v1.v", 159, 272); // be
+selectCodeEditor("v1.v", 137, 365); // be
+selectCodeEditor("v1.v", 137, 365, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 198, 524); // be
+selectCodeEditor("v1.v", 198, 524, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+typeControlKey((HResource) null, "v1.v", 'c'); // be
+selectCodeEditor("v1.v", 158, 278); // be
+selectCodeEditor("v1.v", 158, 277, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 166, 279); // be
+selectCodeEditor("v1.v", 166, 279, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "v1.v", 'v'); // be
+selectCodeEditor("v1.v", 182, 538); // be
+selectCodeEditor("v1.v", 182, 538, false, false, false, false, true); // be - Double Click
+selectCodeEditor("v1.v", 254, 355); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1509 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file F:/10_Vivado/p_vga_test/p_vga/p_vga.srcs/utils_1/imports/synth_2/v1.dcp with file F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp 
+// 'cR' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Jun 14 21:50:12 2022] Launched synth_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/synth_2/runme.log [Tue Jun 14 21:50:12 2022] Launched impl_2... Run output will be captured here: F:/11_github/tank_war/p_vga.runs/impl_2/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 154 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 49 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/11_github/tank_war/p_vga.runs/impl_2/v1.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 54 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "n25q64-3.3v-spi-x1_x2_x4 ; ", 4, "n25q64-3.3v-spi-x1_x2_x4", 0, false, false, false, false, true, false); // t - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, "Program Configuration Memory Device..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Program Configuration Memory Device"); // aE
+// Tcl Message: set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.FILES [list "F:/11_github/tank_war/p_vga.runs/impl_2/v1.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: startgroup  
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]; 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s). 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: Mfg ID : 20   Memory Type : ba   Memory Capacity : 17   Device ID 1 : 0   Device ID 2 : 0 Performing Erase Operation... 
+// Tcl Message: Erase Operation successful. Performing Program and Verify Operations... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 160 MB. Current time: 6/14/22, 9:55:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 160 MB. Current time: 6/14/22, 9:55:47 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: Program/Verify Operation successful. 
+// Tcl Message: INFO: [Labtoolstcl 44-377] Flash programming completed successfully 
+// Tcl Message: program_hw_cfgmem: Time (s): cpu = 00:00:03 ; elapsed = 00:01:10 . Memory (MB): peak = 3302.832 ; gain = 3.719 
+// Tcl Message: endgroup 
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 139 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/C1234567A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 159 MB. Current time: 6/14/22, 10:25:49 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 157 MB. Current time: 6/14/22, 10:55:50 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 156 MB. Current time: 6/14/22, 11:25:50 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 156 MB. Current time: 6/14/22, 11:55:50 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 156 MB. Current time: 6/15/22, 12:25:51 AM CST
+// Elapsed time: 9117 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// WARNING: HEventQueue.dispatchEvent() is taking  28820798 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,099 MB. GUI used memory: 157 MB. Current time: 6/15/22, 8:47:27 AM CST

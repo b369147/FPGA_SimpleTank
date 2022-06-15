@@ -22,100 +22,129 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2984
-CRITICAL WARNING: [Synth 8-976] data has already been declared [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:401]
-CRITICAL WARNING: [Synth 8-2654] second declaration of data ignored [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:401]
-INFO: [Synth 8-994] data is declared here [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:64]
-WARNING: [Synth 8-2254] instance name 'a' matches net/port name [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:531]
+INFO: [Synth 8-7075] Helper process launched with PID 10320
+WARNING: [Synth 8-2254] instance name 'a' matches net/port name [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:488]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1413.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'v1' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:127]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:133]
-INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
-INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'v1' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'u_clock' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/11_github/tank_war/p_vga.srcs/sources_1/new/u_clock.v:127]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/11_github/tank_war/p_vga.srcs/sources_1/new/u_clock.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'u_clock' (2#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/u_clock.v:45]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
 	Parameter pos_x bound to: 3 - type: integer 
 	Parameter pos_y bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control' (3#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_control__parameterized0' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
 	Parameter pos_x bound to: 5 - type: integer 
 	Parameter pos_y bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'shell' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
-INFO: [Synth 8-6157] synthesizing module 'blood' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/blood.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'blood' (5#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/blood.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (6#1) [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
-WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
-WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
-WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
-INFO: [Synth 8-6155] done synthesizing module 'vga_display' (7#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
-INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (8#1) [F:/10_Vivado/tank_war/p_vga.runs/synth_2/.Xil/Vivado-25856-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
-WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
-WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
-WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
-INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_control__parameterized0' (3#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/keyboard_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shell' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shell' (4#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/shell.v:25]
+INFO: [Synth 8-6157] synthesizing module 'blood' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/blood.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'blood' (5#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/blood.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_01' [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_01' (6#1) [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_01_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (13) of module 'blk_mem_gen_01' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:199]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (7#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:151]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_02' [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_02' (8#1) [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_02_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others' (9#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_others__parameterized0' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
 	Parameter init_pos bound to: 600 - type: integer 
-WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
-WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
-WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (9#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
-INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (10#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
-WARNING: [Synth 8-7071] port 'state1' of module 'VGA_data_selector' is unconnected for instance 'select' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:336]
-WARNING: [Synth 8-7071] port 'state2' of module 'VGA_data_selector' is unconnected for instance 'select' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:336]
-WARNING: [Synth 8-7023] instance 'select' of module 'VGA_data_selector' has 10 connections declared, but only 8 given [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:336]
-INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (11#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
-INFO: [Synth 8-6157] synthesizing module 'dynamic_led' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
-WARNING: [Synth 8-567] referenced signal 'ge' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
-WARNING: [Synth 8-567] referenced signal 'shi' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
-WARNING: [Synth 8-567] referenced signal 'bai' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
-WARNING: [Synth 8-567] referenced signal 'qian' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:51]
-WARNING: [Synth 8-567] referenced signal 'show_data' should be on the sensitivity list [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'dynamic_led' (12#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:23]
-INFO: [Synth 8-6157] synthesizing module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'key_xd' (13#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/keyxd.v:23]
-WARNING: [Synth 8-689] width (13) of port connection 'key_val_out' does not match port width (7) of module 'key_xd' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:421]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:67]
-WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (14#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:1]
-WARNING: [Synth 8-689] width (24) of port connection 'data_disp' does not match port width (16) of module 'uart_rx' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:531]
-WARNING: [Synth 8-689] width (24) of port connection 'data_disp' does not match port width (16) of module 'uart_rx' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:532]
-WARNING: [Synth 8-6014] Unused sequential element key_val_cal_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:487]
-WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:500]
-WARNING: [Synth 8-6014] Unused sequential element key_val_cal_last_reg was removed.  [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:512]
-WARNING: [Synth 8-3848] Net beep in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:29]
-WARNING: [Synth 8-3848] Net keyboard_trig in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:116]
-WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'v1' (15#1) [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
-WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_02' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:76]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_others__parameterized0' (9#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:33]
+INFO: [Synth 8-6157] synthesizing module 'winner_decide_tank1' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v:33]
+	Parameter init_pos_x bound to: 300 - type: integer 
+	Parameter init_pos_y bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_04' [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_04_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_04' (10#1) [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_04_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v:72]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'winner_decide_tank1' (11#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide_tank1.v:33]
+INFO: [Synth 8-6157] synthesizing module 'winner_decide_mytank' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide.v:33]
+	Parameter init_pos_x bound to: 300 - type: integer 
+	Parameter init_pos_y bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_03' [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_03_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_03' (12#1) [F:/11_github/tank_war/p_vga.runs/synth_2/.Xil/Vivado-23140-DESKTOP-7Q8KQ0A/realtime/blk_mem_gen_03_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element x_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide.v:75]
+WARNING: [Synth 8-6014] Unused sequential element y_ever_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'winner_decide_mytank' (13#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/winner_decide.v:33]
+INFO: [Synth 8-6157] synthesizing module 'VGA_data_selector' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in1' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in2' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in3' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in4' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in5' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in6' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'state1' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in7' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+WARNING: [Synth 8-567] referenced signal 'in8' should be on the sensitivity list [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_data_selector' (14#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_data_selector.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (15#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_driver.v:45]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/11_github/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:67]
+WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (16#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:1]
+WARNING: [Synth 8-689] width (24) of port connection 'data_disp' does not match port width (16) of module 'uart_rx' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:488]
+WARNING: [Synth 8-689] width (24) of port connection 'data_disp' does not match port width (16) of module 'uart_rx' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:489]
+WARNING: [Synth 8-6014] Unused sequential element relase_flag_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:472]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:473]
+WARNING: [Synth 8-6014] Unused sequential element key_val_last_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:475]
+WARNING: [Synth 8-6014] Unused sequential element ti_flag_reg was removed.  [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:477]
+WARNING: [Synth 8-3848] Net col in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:22]
+WARNING: [Synth 8-3848] Net led in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:24]
+WARNING: [Synth 8-3848] Net dig in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:25]
+WARNING: [Synth 8-3848] Net seg in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:26]
+WARNING: [Synth 8-3848] Net beep in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:29]
+WARNING: [Synth 8-3848] Net item_faster in module/entity v1 does not have driver. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'v1' (17#1) [F:/11_github/tank_war/p_vga.srcs/sources_1/new/v1.v:1]
 WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state1 in module VGA_data_selector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state2 in module VGA_data_selector is either unconnected or has no load
 WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[0] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port beep in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
@@ -129,77 +158,86 @@ WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no 
 WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[0] in module v1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1413.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1413.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1413.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1413.258 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_display/UUT1'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_display/UUT1'
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_display/UUT1'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_display/UUT1'
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_interface/UUT1'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_interface/UUT1'
-Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_interface/UUT1'
-Finished Parsing XDC File [f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_interface/UUT1'
-Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
-Finished Parsing XDC File [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'A'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_display/UUT1'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'mytank_display/UUT1'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_display/UUT1'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01/blk_mem_gen_01_in_context.xdc] for cell 'tank1_display/UUT1'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_interface/UUT1'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'mytank_interface/UUT1'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_interface/UUT1'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02/blk_mem_gen_02_in_context.xdc] for cell 'tank1_interface/UUT1'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04/blk_mem_gen_04_in_context.xdc] for cell 'sd/UUT4'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04/blk_mem_gen_04_in_context.xdc] for cell 'sd/UUT4'
+Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03/blk_mem_gen_03_in_context.xdc] for cell 'sd1/UUT3'
+Finished Parsing XDC File [f:/11_github/tank_war/p_vga.gen/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03/blk_mem_gen_03_in_context.xdc] for cell 'sd1/UUT3'
+Parsing XDC File [F:/11_github/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [F:/11_github/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/11_github/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/v1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1446.914 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1446.914 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/10_Vivado/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/11_github/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/11_github/tank_war/p_vga.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for A. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mytank_display/UUT1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for tank1_display/UUT1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mytank_interface/UUT1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for tank1_interface/UUT1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sd/UUT4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sd1/UUT3. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
-DSP Debug: swapped A/B pins for adder 00000243BCBBA3A0
-DSP Debug: swapped A/B pins for adder 00000243BCBB9860
-DSP Debug: swapped A/B pins for adder 00000243A5B296B0
-DSP Debug: swapped A/B pins for adder 00000243A5B278B0
-WARNING: [Synth 8-327] inferring latch for variable 'show_data_reg' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/Dynami_led.v:55]
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:45]
+DSP Debug: swapped A/B pins for adder 000001BB4BBA0FD0
+DSP Debug: swapped A/B pins for adder 000001BB4BBA1E70
+DSP Debug: swapped A/B pins for adder 000001BB4BC869C0
+DSP Debug: swapped A/B pins for adder 000001BB4BC84AA0
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [F:/11_github/tank_war/p_vga.srcs/sources_1/new/uart_rx.v:45]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -212,28 +250,25 @@ Detailed RTL Component Info :
 	   3 Input   16 Bit       Adders := 10    
 	   2 Input   16 Bit       Adders := 2     
 	   3 Input   15 Bit       Adders := 16    
-	   2 Input   13 Bit       Adders := 3     
+	   2 Input   15 Bit       Adders := 4     
 	   2 Input   11 Bit       Adders := 3     
 	   2 Input   10 Bit       Adders := 1     
 	   2 Input    5 Bit       Adders := 8     
-	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 2     
 	               26 Bit    Registers := 1     
 	               25 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
 	               15 Bit    Registers := 4     
-	               12 Bit    Registers := 10    
+	               12 Bit    Registers := 14    
 	               11 Bit    Registers := 2     
 	                8 Bit    Registers := 4     
-	                7 Bit    Registers := 5     
-	                5 Bit    Registers := 13    
-	                4 Bit    Registers := 10    
+	                5 Bit    Registers := 12    
 	                3 Bit    Registers := 4     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 34    
+	                1 Bit    Registers := 31    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 2     
 	   2 Input   25 Bit        Muxes := 1     
@@ -241,25 +276,20 @@ Detailed RTL Component Info :
 	   5 Input   16 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 2     
 	   2 Input   15 Bit        Muxes := 12    
-	   2 Input   13 Bit        Muxes := 2     
-	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 6     
 	   2 Input   11 Bit        Muxes := 3     
 	   2 Input   10 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 8     
 	   8 Input    8 Bit        Muxes := 2     
 	   5 Input    8 Bit        Muxes := 2     
-	   2 Input    6 Bit        Muxes := 1     
-	   7 Input    6 Bit        Muxes := 1     
 	   4 Input    5 Bit        Muxes := 4     
 	   2 Input    5 Bit        Muxes := 4     
-	   5 Input    4 Bit        Muxes := 12    
 	   8 Input    3 Bit        Muxes := 2     
 	   5 Input    3 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 16    
-	   2 Input    1 Bit        Muxes := 71    
+	   2 Input    1 Bit        Muxes := 68    
 	   4 Input    1 Bit        Muxes := 8     
-	   5 Input    1 Bit        Muxes := 20    
-	   7 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 18    
 	   6 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -277,30 +307,54 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'tank1_interface/addra_reg' and it is trimmed from '15' to '10' bits. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mytank_interface/addra_reg' and it is trimmed from '15' to '10' bits. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
-WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '13' bits. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
-WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '13' bits. [F:/10_Vivado/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tank1_interface/addra_reg' and it is trimmed from '15' to '10' bits. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mytank_interface/addra_reg' and it is trimmed from '15' to '10' bits. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/VGA_others.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '13' bits. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+WARNING: [Synth 8-3936] Found unconnected internal register 'addra_reg' and it is trimmed from '15' to '13' bits. [F:/11_github/tank_war/p_vga.srcs/sources_1/new/vga_display.v:184]
+DSP Report: Generating DSP addra_reg, operation Mode is: C+A*(B:0xc8).
+DSP Report: register addra_reg is absorbed into DSP addra_reg.
+DSP Report: operator addra0 is absorbed into DSP addra_reg.
+DSP Report: operator addra1 is absorbed into DSP addra_reg.
+DSP Report: Generating DSP addra_reg, operation Mode is: C+A*(B:0xc8).
+DSP Report: register addra_reg is absorbed into DSP addra_reg.
+DSP Report: operator addra0 is absorbed into DSP addra_reg.
+DSP Report: operator addra1 is absorbed into DSP addra_reg.
 DSP Report: Generating DSP mytank_interface/addra1, operation Mode is: (D+(A:0x3fffffff))*(B:0x1d).
 DSP Report: operator mytank_interface/addra1 is absorbed into DSP mytank_interface/addra1.
 DSP Report: operator mytank_interface/addra2 is absorbed into DSP mytank_interface/addra1.
-WARNING: [Synth 8-3917] design v1 has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[8] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[7] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[6] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[5] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[4] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[3] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[2] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[1] driven by constant 0
-WARNING: [Synth 8-3917] design v1 has port led[0] driven by constant 0
 WARNING: [Synth 8-7129] Port clk in module VGA_data_selector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state1 in module VGA_data_selector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state2 in module VGA_data_selector is either unconnected or has no load
 WARNING: [Synth 8-7129] Port tank_ide in module vga_display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port tank_ide in module vga_display__xdcDup__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dig[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[7] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[6] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[5] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[4] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seg[0] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port beep in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst_n in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[11] in module v1 is either unconnected or has no load
@@ -314,25 +368,31 @@ WARNING: [Synth 8-7129] Port sw[4] in module v1 is either unconnected or has no 
 WARNING: [Synth 8-7129] Port sw[3] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[2] in module v1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[1] in module v1 is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[2]) is unused and will be removed from module uart_rx__1.
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[1]) is unused and will be removed from module uart_rx__1.
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[0]) is unused and will be removed from module uart_rx__1.
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[2]) is unused and will be removed from module uart_rx.
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[1]) is unused and will be removed from module uart_rx.
-WARNING: [Synth 8-3332] Sequential element (next_state_reg[0]) is unused and will be removed from module uart_rx.
+WARNING: [Synth 8-7129] Port row[3] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[2] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[1] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[0] in module v1 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (a/next_state_reg[2]) is unused and will be removed from module v1.
+WARNING: [Synth 8-3332] Sequential element (a/next_state_reg[1]) is unused and will be removed from module v1.
+WARNING: [Synth 8-3332] Sequential element (a/next_state_reg[0]) is unused and will be removed from module v1.
+WARNING: [Synth 8-3332] Sequential element (b/next_state_reg[2]) is unused and will be removed from module v1.
+WARNING: [Synth 8-3332] Sequential element (b/next_state_reg[1]) is unused and will be removed from module v1.
+WARNING: [Synth 8-3332] Sequential element (b/next_state_reg[0]) is unused and will be removed from module v1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1412.918 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|VGA_others  | (D+(A:0x3fffffff))*(B:0x1d) | 10     | 5      | -      | 10     | 15     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++---------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|winner_decide_tank1  | C+A*(B:0xc8)                | 15     | 8      | 15     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|winner_decide_mytank | C+A*(B:0xc8)                | 15     | 8      | 15     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|VGA_others           | (D+(A:0x3fffffff))*(B:0x1d) | 10     | 5      | -      | 10     | 15     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
++---------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -342,19 +402,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1415.672 ; gain = 2.754
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1446.914 ; gain = 33.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1440.137 ; gain = 27.219
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.234 ; gain = 104.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1461.113 ; gain = 48.195
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -372,37 +432,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -415,6 +475,8 @@ Report BlackBoxes:
 |1     |clk_wiz_0      |         1|
 |2     |blk_mem_gen_01 |         2|
 |3     |blk_mem_gen_02 |         2|
+|4     |blk_mem_gen_04 |         1|
+|5     |blk_mem_gen_03 |         1|
 +------+---------------+----------+
 
 Report Cell Usage: 
@@ -425,48 +487,45 @@ Report Cell Usage:
 |2     |blk_mem_gen_01 |     1|
 |3     |blk_mem_gen    |     1|
 |4     |blk_mem_gen_02 |     1|
-|5     |clk_wiz        |     1|
-|6     |BUFG           |     2|
-|7     |CARRY4         |   229|
-|8     |DSP48E1        |     1|
-|9     |LUT1           |   140|
-|10    |LUT2           |   353|
-|11    |LUT3           |   188|
-|12    |LUT4           |   187|
-|13    |LUT5           |   143|
-|14    |LUT6           |   471|
-|15    |MUXF7          |     8|
-|16    |FDRE           |   448|
-|17    |FDSE           |    71|
-|18    |LD             |     4|
-|19    |IBUF           |     7|
-|20    |OBUF           |    44|
-|21    |OBUFT          |     1|
+|5     |blk_mem_gen    |     2|
+|7     |clk_wiz        |     1|
+|8     |BUFG           |     1|
+|9     |CARRY4         |   204|
+|10    |DSP48E1        |     3|
+|12    |LUT1           |   123|
+|13    |LUT2           |   323|
+|14    |LUT3           |   187|
+|15    |LUT4           |   207|
+|16    |LUT5           |   161|
+|17    |LUT6           |   361|
+|18    |FDRE           |   426|
+|19    |FDSE           |    70|
+|20    |IBUF           |     3|
+|21    |OBUF           |    14|
+|22    |OBUFT          |    31|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1475.883 ; gain = 62.965
-Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1475.883 ; gain = 62.965
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1528.324 ; gain = 81.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1528.324 ; gain = 115.066
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1487.949 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1532.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1491.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1535.793 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  LD => LDCE: 4 instances
+No Unisim elements were transformed.
 
-Synth Design complete, checksum: 3dc3ace8
+Synth Design complete, checksum: 46c4f239
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 102 Warnings, 2 Critical Warnings and 0 Errors encountered.
+61 Infos, 150 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1491.613 ; gain = 78.695
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1535.793 ; gain = 122.535
+INFO: [Common 17-1381] The checkpoint 'F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file v1_utilization_synth.rpt -pb v1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  9 23:55:49 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 14 21:51:09 2022...

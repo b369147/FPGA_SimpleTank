@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "F:/10_Vivado/tank_war/p_vga.runs/impl_2/v1.tcl"
+  variable script "F:/11_github/tank_war/p_vga.runs/impl_2/v1.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,8 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_2" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_2" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,9 +123,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache F:/10_Vivado/tank_war/.Xil/Vivado-20412-DESKTOP-7Q8KQ0A/incrSyn
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tftg256-1
@@ -134,18 +131,20 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir F:/10_Vivado/tank_war/p_vga.cache/wt [current_project]
-  set_property parent.project_path F:/10_Vivado/tank_war/p_vga.xpr [current_project]
+  set_property webtalk.parent_dir F:/11_github/tank_war/p_vga.cache/wt [current_project]
+  set_property parent.project_path F:/11_github/tank_war/p_vga.xpr [current_project]
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet F:/10_Vivado/tank_war/p_vga.runs/synth_2/v1.dcp
-  read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
-  read_ip -quiet F:/10_Vivado/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci
+  add_files -quiet F:/11_github/tank_war/p_vga.runs/synth_2/v1.dcp
+  read_ip -quiet F:/11_github/tank_war/p_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_01/blk_mem_gen_01.xci
+  read_ip -quiet F:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_02/blk_mem_gen_02.xci
+  read_ip -quiet f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_04_1/blk_mem_gen_04.xci
+  read_ip -quiet f:/11_github/tank_war/p_vga.srcs/sources_1/ip/blk_mem_gen_03_1/blk_mem_gen_03.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc F:/10_Vivado/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc
+  read_xdc F:/11_github/tank_war/p_vga.srcs/constrs_1/new/cons1.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

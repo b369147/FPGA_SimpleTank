@@ -31,13 +31,18 @@ module blood(
     input  [4:0] shell1_x,
     input  [4:0] shell1_y,
     output reg [2:0] mytank_blood,
-    output reg [2:0] tank1_blood
+    output reg [2:0] tank1_blood,
+    output reg mytank_blood_state,
+    output reg tank1_blood_state
     );
     parameter mytank_init_blood = 5;
     parameter tank1_init_blood = 4;
+
     initial begin
         mytank_blood <= mytank_init_blood;
         tank1_blood <= tank1_init_blood;
+        mytank_blood_state = 0;
+        tank1_blood_state = 0;
     end       
     always@(posedge clk) begin
     if(mytank_x == shell1_x && mytank_y == shell1_y) begin 
@@ -46,6 +51,7 @@ module blood(
         end
         else begin
             mytank_blood <= mytank_blood - 1;
+            mytank_blood_state <= ~mytank_blood_state;
         end
     end
     
@@ -55,6 +61,7 @@ module blood(
         end
         else begin
             tank1_blood <= tank1_blood - 1;
+            tank1_blood_state <= ~tank1_blood_state;
         end
     end
     
